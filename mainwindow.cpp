@@ -10,7 +10,8 @@ MainWindow::MainWindow(QWidget *parent)
     player = new QMediaPlayer(this);
     audioOutput = new QAudioOutput(this);
     player->setAudioOutput(audioOutput);
-
+    //lol
+    //xd
     // Set media to play
     player->setSource(QUrl::fromLocalFile("C:/Users/adria/Desktop/Adrian/music/Blessed & Possessed.mp3"));
 
