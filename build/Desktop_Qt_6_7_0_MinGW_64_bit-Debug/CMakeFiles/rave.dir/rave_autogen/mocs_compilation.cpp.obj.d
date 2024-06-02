@@ -1,9 +1,9 @@
 CMakeFiles/rave.dir/rave_autogen/mocs_compilation.cpp.obj: \
  C:\Users\adria\Desktop\Adrian\projects\Qt\rave\build\Desktop_Qt_6_7_0_MinGW_64_bit-Debug\rave_autogen\mocs_compilation.cpp \
- C:\Users\adria\Desktop\Adrian\projects\Qt\rave\build\Desktop_Qt_6_7_0_MinGW_64_bit-Debug\rave_autogen\EWIEGA46WW/moc_mainwindow.cpp \
- C:/Users/adria/Desktop/Adrian/projects/Qt/rave/mainwindow.h \
- C:/Qt/6.7.0/mingw_64/include/QtWidgets/QMainWindow \
- C:/Qt/6.7.0/mingw_64/include/QtWidgets/qmainwindow.h \
+ C:\Users\adria\Desktop\Adrian\projects\Qt\rave\build\Desktop_Qt_6_7_0_MinGW_64_bit-Debug\rave_autogen\EWIEGA46WW/moc_homescreen.cpp \
+ C:/Users/adria/Desktop/Adrian/projects/Qt/rave/homescreen.h \
+ C:/Qt/6.7.0/mingw_64/include/QtWidgets/QWidget \
+ C:/Qt/6.7.0/mingw_64/include/QtWidgets/qwidget.h \
  C:/Qt/6.7.0/mingw_64/include/QtWidgets/qtwidgetsglobal.h \
  C:/Qt/6.7.0/mingw_64/include/QtGui/qtguiglobal.h \
  C:/Qt/6.7.0/mingw_64/include/QtCore/qglobal.h \
@@ -145,7 +145,6 @@ CMakeFiles/rave.dir/rave_autogen/mocs_compilation.cpp.obj: \
  C:/Qt/6.7.0/mingw_64/include/QtGui/qtguiexports.h \
  C:/Qt/6.7.0/mingw_64/include/QtWidgets/qtwidgets-config.h \
  C:/Qt/6.7.0/mingw_64/include/QtWidgets/qtwidgetsexports.h \
- C:/Qt/6.7.0/mingw_64/include/QtWidgets/qwidget.h \
  C:/Qt/6.7.0/mingw_64/include/QtGui/qwindowdefs.h \
  C:/Qt/6.7.0/mingw_64/include/QtCore/qobjectdefs.h \
  C:/Qt/6.7.0/mingw_64/include/QtCore/qnamespace.h \
@@ -362,6 +361,21 @@ CMakeFiles/rave.dir/rave_autogen/mocs_compilation.cpp.obj: \
  C:/Qt/6.7.0/mingw_64/include/QtWidgets/qsizepolicy.h \
  C:/Qt/6.7.0/mingw_64/include/QtGui/qcursor.h \
  C:/Qt/6.7.0/mingw_64/include/QtGui/qbitmap.h \
+ C:/Qt/6.7.0/mingw_64/include/QtWidgets/QPushButton \
+ C:/Qt/6.7.0/mingw_64/include/QtWidgets/qpushbutton.h \
+ C:/Qt/6.7.0/mingw_64/include/QtWidgets/qabstractbutton.h \
+ C:/Qt/6.7.0/mingw_64/include/QtWidgets/qwidget.h \
+ C:/Qt/6.7.0/mingw_64/include/QtWidgets/QVBoxLayout \
+ C:/Qt/6.7.0/mingw_64/include/QtWidgets/qboxlayout.h \
+ C:/Qt/6.7.0/mingw_64/include/QtWidgets/qlayout.h \
+ C:/Qt/6.7.0/mingw_64/include/QtWidgets/qlayoutitem.h \
+ C:/Qt/6.7.0/mingw_64/include/QtWidgets/qboxlayout.h \
+ C:/Qt/6.7.0/mingw_64/include/QtWidgets/qgridlayout.h \
+ C:/Qt/6.7.0/mingw_64/include/QtCore/qtmochelpers.h \
+ C:\Users\adria\Desktop\Adrian\projects\Qt\rave\build\Desktop_Qt_6_7_0_MinGW_64_bit-Debug\rave_autogen\EWIEGA46WW/moc_mainwindow.cpp \
+ C:/Users/adria/Desktop/Adrian/projects/Qt/rave/mainwindow.h \
+ C:/Qt/6.7.0/mingw_64/include/QtWidgets/QMainWindow \
+ C:/Qt/6.7.0/mingw_64/include/QtWidgets/qmainwindow.h \
  C:/Qt/6.7.0/mingw_64/include/QtWidgets/qtabwidget.h \
  C:/Qt/6.7.0/mingw_64/include/QtMultimedia/QMediaPlayer \
  C:/Qt/6.7.0/mingw_64/include/QtMultimedia/qmediaplayer.h \
@@ -375,4 +389,10 @@ CMakeFiles/rave.dir/rave_autogen/mocs_compilation.cpp.obj: \
  C:/Qt/6.7.0/mingw_64/include/QtMultimedia/qaudio.h \
  C:/Qt/6.7.0/mingw_64/include/QtMultimedia/QAudioOutput \
  C:/Qt/6.7.0/mingw_64/include/QtMultimedia/qaudiooutput.h \
- C:/Qt/6.7.0/mingw_64/include/QtCore/qtmochelpers.h
+ C:/Qt/6.7.0/mingw_64/include/QtWidgets/QStackedWidget \
+ C:/Qt/6.7.0/mingw_64/include/QtWidgets/qstackedwidget.h \
+ C:/Qt/6.7.0/mingw_64/include/QtWidgets/qframe.h \
+ C:/Users/adria/Desktop/Adrian/projects/Qt/rave/homescreen.h \
+ C:/Users/adria/Desktop/Adrian/projects/Qt/rave/otherscreen.h \
+ C:\Users\adria\Desktop\Adrian\projects\Qt\rave\build\Desktop_Qt_6_7_0_MinGW_64_bit-Debug\rave_autogen\EWIEGA46WW/moc_otherscreen.cpp \
+ C:/Users/adria/Desktop/Adrian/projects/Qt/rave/otherscreen.h

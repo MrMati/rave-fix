@@ -374,6 +374,22 @@ CMakeFiles/rave.dir/mainwindow.cpp.obj: \
  C:/Qt/6.7.0/mingw_64/include/QtMultimedia/qaudio.h \
  C:/Qt/6.7.0/mingw_64/include/QtMultimedia/QAudioOutput \
  C:/Qt/6.7.0/mingw_64/include/QtMultimedia/qaudiooutput.h \
+ C:/Qt/6.7.0/mingw_64/include/QtWidgets/QStackedWidget \
+ C:/Qt/6.7.0/mingw_64/include/QtWidgets/qstackedwidget.h \
+ C:/Qt/6.7.0/mingw_64/include/QtWidgets/qframe.h \
+ C:\Users\adria\Desktop\Adrian\projects\Qt\rave\homescreen.h \
+ C:/Qt/6.7.0/mingw_64/include/QtWidgets/QWidget \
+ C:/Qt/6.7.0/mingw_64/include/QtWidgets/qwidget.h \
+ C:/Qt/6.7.0/mingw_64/include/QtWidgets/QPushButton \
+ C:/Qt/6.7.0/mingw_64/include/QtWidgets/qpushbutton.h \
+ C:/Qt/6.7.0/mingw_64/include/QtWidgets/qabstractbutton.h \
+ C:/Qt/6.7.0/mingw_64/include/QtWidgets/QVBoxLayout \
+ C:/Qt/6.7.0/mingw_64/include/QtWidgets/qboxlayout.h \
+ C:/Qt/6.7.0/mingw_64/include/QtWidgets/qlayout.h \
+ C:/Qt/6.7.0/mingw_64/include/QtWidgets/qlayoutitem.h \
+ C:/Qt/6.7.0/mingw_64/include/QtWidgets/qboxlayout.h \
+ C:/Qt/6.7.0/mingw_64/include/QtWidgets/qgridlayout.h \
+ C:\Users\adria\Desktop\Adrian\projects\Qt\rave\otherscreen.h \
  C:/Users/adria/Desktop/Adrian/projects/Qt/rave/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/rave_autogen/include/ui_mainwindow.h \
  C:/Qt/6.7.0/mingw_64/include/QtCore/QVariant \
  C:/Qt/6.7.0/mingw_64/include/QtCore/qvariant.h \
@@ -395,12 +411,10 @@ CMakeFiles/rave.dir/mainwindow.cpp.obj: \
  C:/Qt/6.7.0/mingw_64/include/QtWidgets/qmenubar.h \
  C:/Qt/6.7.0/mingw_64/include/QtWidgets/qmenu.h \
  C:/Qt/6.7.0/mingw_64/include/QtWidgets/QPushButton \
- C:/Qt/6.7.0/mingw_64/include/QtWidgets/qpushbutton.h \
- C:/Qt/6.7.0/mingw_64/include/QtWidgets/qabstractbutton.h \
  C:/Qt/6.7.0/mingw_64/include/QtWidgets/QSlider \
  C:/Qt/6.7.0/mingw_64/include/QtWidgets/qslider.h \
  C:/Qt/6.7.0/mingw_64/include/QtWidgets/qabstractslider.h \
+ C:/Qt/6.7.0/mingw_64/include/QtWidgets/QStackedWidget \
  C:/Qt/6.7.0/mingw_64/include/QtWidgets/QStatusBar \
  C:/Qt/6.7.0/mingw_64/include/QtWidgets/qstatusbar.h \
- C:/Qt/6.7.0/mingw_64/include/QtWidgets/QWidget \
- C:/Qt/6.7.0/mingw_64/include/QtWidgets/qwidget.h
+ C:/Qt/6.7.0/mingw_64/include/QtWidgets/QWidget

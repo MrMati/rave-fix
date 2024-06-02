@@ -374,6 +374,22 @@ CMakeFiles/rave.dir/main.cpp.obj: \
  C:/Qt/6.7.0/mingw_64/include/QtMultimedia/qaudio.h \
  C:/Qt/6.7.0/mingw_64/include/QtMultimedia/QAudioOutput \
  C:/Qt/6.7.0/mingw_64/include/QtMultimedia/qaudiooutput.h \
+ C:/Qt/6.7.0/mingw_64/include/QtWidgets/QStackedWidget \
+ C:/Qt/6.7.0/mingw_64/include/QtWidgets/qstackedwidget.h \
+ C:/Qt/6.7.0/mingw_64/include/QtWidgets/qframe.h \
+ C:\Users\adria\Desktop\Adrian\projects\Qt\rave\homescreen.h \
+ C:/Qt/6.7.0/mingw_64/include/QtWidgets/QWidget \
+ C:/Qt/6.7.0/mingw_64/include/QtWidgets/qwidget.h \
+ C:/Qt/6.7.0/mingw_64/include/QtWidgets/QPushButton \
+ C:/Qt/6.7.0/mingw_64/include/QtWidgets/qpushbutton.h \
+ C:/Qt/6.7.0/mingw_64/include/QtWidgets/qabstractbutton.h \
+ C:/Qt/6.7.0/mingw_64/include/QtWidgets/QVBoxLayout \
+ C:/Qt/6.7.0/mingw_64/include/QtWidgets/qboxlayout.h \
+ C:/Qt/6.7.0/mingw_64/include/QtWidgets/qlayout.h \
+ C:/Qt/6.7.0/mingw_64/include/QtWidgets/qlayoutitem.h \
+ C:/Qt/6.7.0/mingw_64/include/QtWidgets/qboxlayout.h \
+ C:/Qt/6.7.0/mingw_64/include/QtWidgets/qgridlayout.h \
+ C:\Users\adria\Desktop\Adrian\projects\Qt\rave\otherscreen.h \
  C:/Qt/6.7.0/mingw_64/include/QtWidgets/QApplication \
  C:/Qt/6.7.0/mingw_64/include/QtWidgets/qapplication.h \
  C:/Qt/6.7.0/mingw_64/include/QtCore/qcoreapplication.h \
