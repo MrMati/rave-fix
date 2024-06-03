@@ -23,6 +23,7 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
     qt_add_executable(rave
         MANUAL_FINALIZATION
         ${PROJECT_SOURCES}
+        customslider.h customslider.cpp
 
 
     )

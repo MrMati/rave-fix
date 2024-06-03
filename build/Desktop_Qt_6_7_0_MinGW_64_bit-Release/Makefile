@@ -199,6 +199,30 @@ rave_autogen/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\rave_autogen.dir\build.make CMakeFiles/rave_autogen.dir/build
 .PHONY : rave_autogen/fast
 
+customslider.obj: customslider.cpp.obj
+.PHONY : customslider.obj
+
+# target to build an object file
+customslider.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\rave.dir\build.make CMakeFiles/rave.dir/customslider.cpp.obj
+.PHONY : customslider.cpp.obj
+
+customslider.i: customslider.cpp.i
+.PHONY : customslider.i
+
+# target to preprocess a source file
+customslider.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\rave.dir\build.make CMakeFiles/rave.dir/customslider.cpp.i
+.PHONY : customslider.cpp.i
+
+customslider.s: customslider.cpp.s
+.PHONY : customslider.s
+
+# target to generate assembly for a file
+customslider.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\rave.dir\build.make CMakeFiles/rave.dir/customslider.cpp.s
+.PHONY : customslider.cpp.s
+
 main.obj: main.cpp.obj
 .PHONY : main.obj
 
@@ -286,6 +310,9 @@ help:
 	@echo ... rave_autogen
 	@echo ... rave_autogen_timestamp_deps
 	@echo ... rave
+	@echo ... customslider.obj
+	@echo ... customslider.i
+	@echo ... customslider.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

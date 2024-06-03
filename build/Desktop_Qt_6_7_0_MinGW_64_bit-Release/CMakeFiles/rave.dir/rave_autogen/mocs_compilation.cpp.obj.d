@@ -1,11 +1,11 @@
 CMakeFiles/rave.dir/rave_autogen/mocs_compilation.cpp.obj: \
  C:\Users\adria\Desktop\Adrian\projects\Qt\rave\build\Desktop_Qt_6_7_0_MinGW_64_bit-Release\rave_autogen\mocs_compilation.cpp \
- C:\Users\adria\Desktop\Adrian\projects\Qt\rave\build\Desktop_Qt_6_7_0_MinGW_64_bit-Release\rave_autogen\EWIEGA46WW/moc_mainwindow.cpp \
- C:/Users/adria/Desktop/Adrian/projects/Qt/rave/mainwindow.h \
- C:/Qt/6.7.0/mingw_64/include/QtWidgets/QMainWindow \
- C:/Qt/6.7.0/mingw_64/include/QtWidgets/qmainwindow.h \
- C:/Qt/6.7.0/mingw_64/include/QtWidgets/qtwidgetsglobal.h \
- C:/Qt/6.7.0/mingw_64/include/QtGui/qtguiglobal.h \
+ C:\Users\adria\Desktop\Adrian\projects\Qt\rave\build\Desktop_Qt_6_7_0_MinGW_64_bit-Release\rave_autogen\EWIEGA46WW/moc_customslider.cpp \
+ C:/Users/adria/Desktop/Adrian/projects/Qt/rave/customslider.h \
+ C:/Qt/6.7.0/mingw_64/include/QtCore/QObject \
+ C:/Qt/6.7.0/mingw_64/include/QtCore/qobject.h \
+ C:/Qt/6.7.0/mingw_64/include/QtCore/qobjectdefs.h \
+ C:/Qt/6.7.0/mingw_64/include/QtCore/qnamespace.h \
  C:/Qt/6.7.0/mingw_64/include/QtCore/qglobal.h \
  C:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/type_traits \
  C:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \
@@ -141,14 +141,6 @@ CMakeFiles/rave.dir/rave_autogen/mocs_compilation.cpp.obj: \
  C:/Qt/6.7.0/mingw_64/include/QtCore/qtresource.h \
  C:/Qt/6.7.0/mingw_64/include/QtCore/qttranslation.h \
  C:/Qt/6.7.0/mingw_64/include/QtCore/qversiontagging.h \
- C:/Qt/6.7.0/mingw_64/include/QtGui/qtgui-config.h \
- C:/Qt/6.7.0/mingw_64/include/QtGui/qtguiexports.h \
- C:/Qt/6.7.0/mingw_64/include/QtWidgets/qtwidgets-config.h \
- C:/Qt/6.7.0/mingw_64/include/QtWidgets/qtwidgetsexports.h \
- C:/Qt/6.7.0/mingw_64/include/QtWidgets/qwidget.h \
- C:/Qt/6.7.0/mingw_64/include/QtGui/qwindowdefs.h \
- C:/Qt/6.7.0/mingw_64/include/QtCore/qobjectdefs.h \
- C:/Qt/6.7.0/mingw_64/include/QtCore/qnamespace.h \
  C:/Qt/6.7.0/mingw_64/include/QtCore/qtmetamacros.h \
  C:/Qt/6.7.0/mingw_64/include/QtCore/qobjectdefs_impl.h \
  C:/Qt/6.7.0/mingw_64/include/QtCore/qfunctionaltools_impl.h \
@@ -203,8 +195,6 @@ CMakeFiles/rave.dir/rave_autogen/mocs_compilation.cpp.obj: \
  C:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward/auto_ptr.h \
  C:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/pstl/glue_memory_defs.h \
  C:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/pstl/execution_defs.h \
- C:/Qt/6.7.0/mingw_64/include/QtGui/qwindowdefs_win.h \
- C:/Qt/6.7.0/mingw_64/include/QtCore/qobject.h \
  C:/Qt/6.7.0/mingw_64/include/QtCore/qstring.h \
  C:/Qt/6.7.0/mingw_64/include/QtCore/qchar.h \
  C:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/functional \
@@ -321,6 +311,17 @@ CMakeFiles/rave.dir/rave_autogen/mocs_compilation.cpp.obj: \
  C:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/chrono \
  C:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ratio \
  C:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ctime \
+ C:/Qt/6.7.0/mingw_64/include/QtWidgets/QWidget \
+ C:/Qt/6.7.0/mingw_64/include/QtWidgets/qwidget.h \
+ C:/Qt/6.7.0/mingw_64/include/QtWidgets/qtwidgetsglobal.h \
+ C:/Qt/6.7.0/mingw_64/include/QtGui/qtguiglobal.h \
+ C:/Qt/6.7.0/mingw_64/include/QtGui/qtgui-config.h \
+ C:/Qt/6.7.0/mingw_64/include/QtGui/qtguiexports.h \
+ C:/Qt/6.7.0/mingw_64/include/QtWidgets/qtwidgets-config.h \
+ C:/Qt/6.7.0/mingw_64/include/QtWidgets/qtwidgetsexports.h \
+ C:/Qt/6.7.0/mingw_64/include/QtGui/qwindowdefs.h \
+ C:/Qt/6.7.0/mingw_64/include/QtGui/qwindowdefs_win.h \
+ C:/Qt/6.7.0/mingw_64/include/QtCore/qobject.h \
  C:/Qt/6.7.0/mingw_64/include/QtCore/qmargins.h \
  C:/Qt/6.7.0/mingw_64/include/QtCore/q23utility.h \
  C:/Qt/6.7.0/mingw_64/include/QtGui/qaction.h \
@@ -362,6 +363,15 @@ CMakeFiles/rave.dir/rave_autogen/mocs_compilation.cpp.obj: \
  C:/Qt/6.7.0/mingw_64/include/QtWidgets/qsizepolicy.h \
  C:/Qt/6.7.0/mingw_64/include/QtGui/qcursor.h \
  C:/Qt/6.7.0/mingw_64/include/QtGui/qbitmap.h \
+ C:/Qt/6.7.0/mingw_64/include/QtWidgets/QSlider \
+ C:/Qt/6.7.0/mingw_64/include/QtWidgets/qslider.h \
+ C:/Qt/6.7.0/mingw_64/include/QtWidgets/qabstractslider.h \
+ C:/Qt/6.7.0/mingw_64/include/QtWidgets/qwidget.h \
+ C:/Qt/6.7.0/mingw_64/include/QtCore/qtmochelpers.h \
+ C:\Users\adria\Desktop\Adrian\projects\Qt\rave\build\Desktop_Qt_6_7_0_MinGW_64_bit-Release\rave_autogen\EWIEGA46WW/moc_mainwindow.cpp \
+ C:/Users/adria/Desktop/Adrian/projects/Qt/rave/mainwindow.h \
+ C:/Qt/6.7.0/mingw_64/include/QtWidgets/QMainWindow \
+ C:/Qt/6.7.0/mingw_64/include/QtWidgets/qmainwindow.h \
  C:/Qt/6.7.0/mingw_64/include/QtWidgets/qtabwidget.h \
  C:/Qt/6.7.0/mingw_64/include/QtMultimedia/QMediaPlayer \
  C:/Qt/6.7.0/mingw_64/include/QtMultimedia/qmediaplayer.h \
@@ -379,6 +389,19 @@ CMakeFiles/rave.dir/rave_autogen/mocs_compilation.cpp.obj: \
  C:/Qt/6.7.0/mingw_64/include/QtWidgets/qstackedwidget.h \
  C:/Qt/6.7.0/mingw_64/include/QtWidgets/qframe.h \
  C:/Qt/6.7.0/mingw_64/include/QtWidgets/Qslider \
- C:/Qt/6.7.0/mingw_64/include/QtWidgets/qslider.h \
- C:/Qt/6.7.0/mingw_64/include/QtWidgets/qabstractslider.h \
- C:/Qt/6.7.0/mingw_64/include/QtCore/qtmochelpers.h
+ C:/Qt/6.7.0/mingw_64/include/QtCore/QDebug \
+ C:/Qt/6.7.0/mingw_64/include/QtCore/qdebug.h \
+ C:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/iostream \
+ C:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ostream \
+ C:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ios \
+ C:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/basic_ios.h \
+ C:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/locale_facets.h \
+ C:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cwctype \
+ C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/wctype.h \
+ C:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/ctype_base.h \
+ C:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/ctype_inline.h \
+ C:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/locale_facets.tcc \
+ C:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/basic_ios.tcc \
+ C:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/ostream.tcc \
+ C:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/istream \
+ C:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/istream.tcc

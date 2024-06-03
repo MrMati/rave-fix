@@ -6,6 +6,8 @@
 #include <QAudioOutput>
 #include <QStackedWidget>
 #include <Qslider>
+#include <QDebug>
+#include <iostream>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -21,7 +23,6 @@ public:
 private slots:
     void on_homeScreen_clicked();
     void on_playerScreen_clicked();
-    void set_position(int position);
 
 private:
     Ui::MainWindow* ui;

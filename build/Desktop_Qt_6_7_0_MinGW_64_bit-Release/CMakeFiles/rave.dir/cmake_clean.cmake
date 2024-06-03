@@ -2,6 +2,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/rave_autogen.dir/AutogenUsed.txt"
   "CMakeFiles/rave_autogen.dir/ParseCache.txt"
   "rave_autogen"
+  "CMakeFiles/rave.dir/customslider.cpp.obj"
+  "CMakeFiles/rave.dir/customslider.cpp.obj.d"
   "CMakeFiles/rave.dir/main.cpp.obj"
   "CMakeFiles/rave.dir/main.cpp.obj.d"
   "CMakeFiles/rave.dir/mainwindow.cpp.obj"
