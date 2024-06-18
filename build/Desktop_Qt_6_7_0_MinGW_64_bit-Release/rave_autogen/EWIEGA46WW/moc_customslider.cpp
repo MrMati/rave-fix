@@ -36,7 +36,7 @@ namespace {
 struct qt_meta_stringdata_CLASSCustomSliderENDCLASS_t {};
 constexpr auto qt_meta_stringdata_CLASSCustomSliderENDCLASS = QtMocHelpers::stringData(
     "CustomSlider",
-    "sliderClicked",
+    "slider_clicked",
     "",
     "position"
 );
@@ -76,7 +76,7 @@ Q_CONSTINIT const QMetaObject CustomSlider::staticMetaObject = { {
     qt_incomplete_metaTypeArray<qt_meta_stringdata_CLASSCustomSliderENDCLASS_t,
         // Q_OBJECT / Q_GADGET
         QtPrivate::TypeAndForceComplete<CustomSlider, std::true_type>,
-        // method 'sliderClicked'
+        // method 'slider_clicked'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         QtPrivate::TypeAndForceComplete<int, std::false_type>
     >,
@@ -89,14 +89,14 @@ void CustomSlider::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id
         auto *_t = static_cast<CustomSlider *>(_o);
         (void)_t;
         switch (_id) {
-        case 0: _t->sliderClicked((*reinterpret_cast< std::add_pointer_t<int>>(_a[1]))); break;
+        case 0: _t->slider_clicked((*reinterpret_cast< std::add_pointer_t<int>>(_a[1]))); break;
         default: ;
         }
     } else if (_c == QMetaObject::IndexOfMethod) {
         int *result = reinterpret_cast<int *>(_a[0]);
         {
             using _t = void (CustomSlider::*)(int );
-            if (_t _q_method = &CustomSlider::sliderClicked; *reinterpret_cast<_t *>(_a[1]) == _q_method) {
+            if (_t _q_method = &CustomSlider::slider_clicked; *reinterpret_cast<_t *>(_a[1]) == _q_method) {
                 *result = 0;
                 return;
             }
@@ -135,7 +135,7 @@ int CustomSlider::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 }
 
 // SIGNAL 0
-void CustomSlider::sliderClicked(int _t1)
+void CustomSlider::slider_clicked(int _t1)
 {
     void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t1))) };
     QMetaObject::activate(this, &staticMetaObject, 0, _a);

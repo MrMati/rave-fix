@@ -382,6 +382,14 @@ CMakeFiles/rave.dir/mainwindow.cpp.obj: \
  C:/Qt/6.7.0/mingw_64/include/QtWidgets/qabstractslider.h \
  C:/Qt/6.7.0/mingw_64/include/QtCore/QDebug \
  C:/Qt/6.7.0/mingw_64/include/QtCore/qdebug.h \
+ C:/Qt/6.7.0/mingw_64/include/QtWidgets/QLabel \
+ C:/Qt/6.7.0/mingw_64/include/QtWidgets/qlabel.h \
+ C:/Qt/6.7.0/mingw_64/include/QtGui/qpicture.h \
+ C:/Qt/6.7.0/mingw_64/include/QtCore/qiodevice.h \
+ C:/Qt/6.7.0/mingw_64/include/QtGui/qtextdocument.h \
+ C:/Qt/6.7.0/mingw_64/include/QtCore/QTimer \
+ C:/Qt/6.7.0/mingw_64/include/QtCore/qtimer.h \
+ C:/Qt/6.7.0/mingw_64/include/QtCore/qbasictimer.h \
  C:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/iostream \
  C:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ostream \
  C:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ios \
@@ -412,6 +420,7 @@ CMakeFiles/rave.dir/mainwindow.cpp.obj: \
  C:/Qt/6.7.0/mingw_64/include/QtGui/qinputmethod.h \
  C:/Qt/6.7.0/mingw_64/include/QtCore/qlocale.h \
  C:/Qt/6.7.0/mingw_64/include/QtGui/qguiapplication_platform.h \
+ C:/Qt/6.7.0/mingw_64/include/QtWidgets/QLabel \
  C:/Qt/6.7.0/mingw_64/include/QtWidgets/QMainWindow \
  C:/Qt/6.7.0/mingw_64/include/QtWidgets/QMenuBar \
  C:/Qt/6.7.0/mingw_64/include/QtWidgets/qmenubar.h \

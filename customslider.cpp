@@ -1,5 +1,6 @@
 #include "customslider.h"
 #include <QMouseEvent>
+#include <QDebug>
 #include <QStyle>
 CustomSlider::CustomSlider(QWidget *parent)
     : QSlider(parent)
@@ -17,9 +18,11 @@ void CustomSlider::mousePressEvent(QMouseEvent *event)
     else if (value > maximum())
         value = maximum();
 
+    qDebug() << "clicked on slider: " << value;
+
     // Set the new value and emit the signal
     setValue(value);
-    emit sliderClicked(value);
+    emit slider_clicked(value);
 
     // Propagate the event to the base class for default handling
     QSlider::mousePressEvent(event);

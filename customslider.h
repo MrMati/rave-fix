@@ -11,10 +11,10 @@ class CustomSlider: public QSlider{
         CustomSlider(QWidget *parent = nullptr);
 
     protected:
-        void mousePressEvent(QMouseEvent *event) override;
+        virtual void mousePressEvent(QMouseEvent *event) override;
 
     signals:
-        void sliderClicked(int position);
+        void slider_clicked(int position);
 };
 
 #endif // CUSTOMSLIDER_H

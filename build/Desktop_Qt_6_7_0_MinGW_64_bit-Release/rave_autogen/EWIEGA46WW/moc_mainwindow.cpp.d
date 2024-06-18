@@ -1,6 +1,7 @@
 C:/Users/adria/Desktop/Adrian/projects/Qt/rave/build/Desktop_Qt_6_7_0_MinGW_64_bit-Release/rave_autogen/EWIEGA46WW/moc_mainwindow.cpp: C:/Users/adria/Desktop/Adrian/projects/Qt/rave/mainwindow.h \
   C:/Users/adria/Desktop/Adrian/projects/Qt/rave/build/Desktop_Qt_6_7_0_MinGW_64_bit-Release/rave_autogen/moc_predefs.h \
   C:/Qt/6.7.0/mingw_64/include/QtCore/QDebug \
+  C:/Qt/6.7.0/mingw_64/include/QtCore/QTimer \
   C:/Qt/6.7.0/mingw_64/include/QtCore/q20functional.h \
   C:/Qt/6.7.0/mingw_64/include/QtCore/q20memory.h \
   C:/Qt/6.7.0/mingw_64/include/QtCore/q20type_traits.h \
@@ -14,6 +15,7 @@ C:/Users/adria/Desktop/Adrian/projects/Qt/rave/build/Desktop_Qt_6_7_0_MinGW_64_b
   C:/Qt/6.7.0/mingw_64/include/QtCore/qatomic.h \
   C:/Qt/6.7.0/mingw_64/include/QtCore/qatomic_cxx11.h \
   C:/Qt/6.7.0/mingw_64/include/QtCore/qbasicatomic.h \
+  C:/Qt/6.7.0/mingw_64/include/QtCore/qbasictimer.h \
   C:/Qt/6.7.0/mingw_64/include/QtCore/qbindingstorage.h \
   C:/Qt/6.7.0/mingw_64/include/QtCore/qbytearray.h \
   C:/Qt/6.7.0/mingw_64/include/QtCore/qbytearrayalgorithms.h \
@@ -45,6 +47,7 @@ C:/Users/adria/Desktop/Adrian/projects/Qt/rave/build/Desktop_Qt_6_7_0_MinGW_64_b
   C:/Qt/6.7.0/mingw_64/include/QtCore/qglobalstatic.h \
   C:/Qt/6.7.0/mingw_64/include/QtCore/qhash.h \
   C:/Qt/6.7.0/mingw_64/include/QtCore/qhashfunctions.h \
+  C:/Qt/6.7.0/mingw_64/include/QtCore/qiodevice.h \
   C:/Qt/6.7.0/mingw_64/include/QtCore/qiodevicebase.h \
   C:/Qt/6.7.0/mingw_64/include/QtCore/qiterable.h \
   C:/Qt/6.7.0/mingw_64/include/QtCore/qiterator.h \
@@ -103,6 +106,7 @@ C:/Users/adria/Desktop/Adrian/projects/Qt/rave/build/Desktop_Qt_6_7_0_MinGW_64_b
   C:/Qt/6.7.0/mingw_64/include/QtCore/qtdeprecationmarkers.h \
   C:/Qt/6.7.0/mingw_64/include/QtCore/qtenvironmentvariables.h \
   C:/Qt/6.7.0/mingw_64/include/QtCore/qtextstream.h \
+  C:/Qt/6.7.0/mingw_64/include/QtCore/qtimer.h \
   C:/Qt/6.7.0/mingw_64/include/QtCore/qtmetamacros.h \
   C:/Qt/6.7.0/mingw_64/include/QtCore/qtnoop.h \
   C:/Qt/6.7.0/mingw_64/include/QtCore/qtpreprocessorsupport.h \
@@ -133,12 +137,14 @@ C:/Users/adria/Desktop/Adrian/projects/Qt/rave/build/Desktop_Qt_6_7_0_MinGW_64_b
   C:/Qt/6.7.0/mingw_64/include/QtGui/qkeysequence.h \
   C:/Qt/6.7.0/mingw_64/include/QtGui/qpaintdevice.h \
   C:/Qt/6.7.0/mingw_64/include/QtGui/qpalette.h \
+  C:/Qt/6.7.0/mingw_64/include/QtGui/qpicture.h \
   C:/Qt/6.7.0/mingw_64/include/QtGui/qpixelformat.h \
   C:/Qt/6.7.0/mingw_64/include/QtGui/qpixmap.h \
   C:/Qt/6.7.0/mingw_64/include/QtGui/qpolygon.h \
   C:/Qt/6.7.0/mingw_64/include/QtGui/qregion.h \
   C:/Qt/6.7.0/mingw_64/include/QtGui/qrgb.h \
   C:/Qt/6.7.0/mingw_64/include/QtGui/qrgba64.h \
+  C:/Qt/6.7.0/mingw_64/include/QtGui/qtextdocument.h \
   C:/Qt/6.7.0/mingw_64/include/QtGui/qtgui-config.h \
   C:/Qt/6.7.0/mingw_64/include/QtGui/qtguiexports.h \
   C:/Qt/6.7.0/mingw_64/include/QtGui/qtguiglobal.h \
@@ -155,11 +161,13 @@ C:/Users/adria/Desktop/Adrian/projects/Qt/rave/build/Desktop_Qt_6_7_0_MinGW_64_b
   C:/Qt/6.7.0/mingw_64/include/QtMultimedia/qtmultimedia-config.h \
   C:/Qt/6.7.0/mingw_64/include/QtMultimedia/qtmultimediaexports.h \
   C:/Qt/6.7.0/mingw_64/include/QtMultimedia/qtmultimediaglobal.h \
+  C:/Qt/6.7.0/mingw_64/include/QtWidgets/QLabel \
   C:/Qt/6.7.0/mingw_64/include/QtWidgets/QMainWindow \
   C:/Qt/6.7.0/mingw_64/include/QtWidgets/QStackedWidget \
   C:/Qt/6.7.0/mingw_64/include/QtWidgets/Qslider \
   C:/Qt/6.7.0/mingw_64/include/QtWidgets/qabstractslider.h \
   C:/Qt/6.7.0/mingw_64/include/QtWidgets/qframe.h \
+  C:/Qt/6.7.0/mingw_64/include/QtWidgets/qlabel.h \
   C:/Qt/6.7.0/mingw_64/include/QtWidgets/qmainwindow.h \
   C:/Qt/6.7.0/mingw_64/include/QtWidgets/qsizepolicy.h \
   C:/Qt/6.7.0/mingw_64/include/QtWidgets/qslider.h \

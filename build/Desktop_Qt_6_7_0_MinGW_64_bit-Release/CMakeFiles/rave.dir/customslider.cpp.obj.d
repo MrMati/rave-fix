@@ -398,5 +398,7 @@ CMakeFiles/rave.dir/customslider.cpp.obj: \
  C:/Qt/6.7.0/mingw_64/include/QtGui/qinputmethod.h \
  C:/Qt/6.7.0/mingw_64/include/QtCore/qlocale.h \
  C:/Qt/6.7.0/mingw_64/include/QtGui/qguiapplication_platform.h \
+ C:/Qt/6.7.0/mingw_64/include/QtCore/QDebug \
+ C:/Qt/6.7.0/mingw_64/include/QtCore/qdebug.h \
  C:/Qt/6.7.0/mingw_64/include/QtWidgets/QStyle \
  C:/Qt/6.7.0/mingw_64/include/QtWidgets/qstyle.h
