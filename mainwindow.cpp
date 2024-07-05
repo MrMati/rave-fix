@@ -2,7 +2,7 @@
 #include "ui_mainwindow.h"
 #include "customslider.h"
 
-MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWindow) {
+MainWindow::MainWindow(QWidget *parent): QMainWindow(parent), ui(new Ui::MainWindow) {
     ui->setupUi(this);
 
     player = new QMediaPlayer(this);
@@ -10,6 +10,9 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWi
     player->setAudioOutput(audioOutput);
 
     player->setSource(QUrl::fromLocalFile("C:/Users/adria/Desktop/Adrian/music/Blessed & Possessed.mp3"));
+
+
+
 
 
     connect(player, &QMediaPlayer::positionChanged, this, &MainWindow::update_current_time);
@@ -41,6 +44,9 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWi
     audioOutput->setVolume(initial_vol / 10);
     ui->volume->setText(QString::number(initial_vol));
 
+
+    // customSlider = new CustomSlider(this);
+    // setCentralWidget(customSlider);
 }
 
 MainWindow::~MainWindow(){

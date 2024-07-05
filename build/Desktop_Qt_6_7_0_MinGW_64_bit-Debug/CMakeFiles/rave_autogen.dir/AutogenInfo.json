@@ -347,9 +347,21 @@
 	"HEADERS" : 
 	[
 		[
+			"C:/Users/adria/Desktop/Adrian/projects/Qt/rave/customslider.h",
+			"MU",
+			"EWIEGA46WW/moc_customslider.cpp",
+			null
+		],
+		[
 			"C:/Users/adria/Desktop/Adrian/projects/Qt/rave/mainwindow.h",
 			"MU",
 			"EWIEGA46WW/moc_mainwindow.cpp",
+			null
+		],
+		[
+			"C:/Users/adria/Desktop/Adrian/projects/Qt/rave/songs.h",
+			"MU",
+			"EWIEGA46WW/moc_songs.cpp",
 			null
 		]
 	],
@@ -428,9 +440,19 @@
 	"SETTINGS_FILE" : "C:/Users/adria/Desktop/Adrian/projects/Qt/rave/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/CMakeFiles/rave_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
+		[
+			"C:/Users/adria/Desktop/Adrian/projects/Qt/rave/customslider.cpp",
+			"MU",
+			null
+		],
 		[ "C:/Users/adria/Desktop/Adrian/projects/Qt/rave/main.cpp", "MU", null ],
 		[
 			"C:/Users/adria/Desktop/Adrian/projects/Qt/rave/mainwindow.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/adria/Desktop/Adrian/projects/Qt/rave/songs.cpp",
 			"MU",
 			null
 		]

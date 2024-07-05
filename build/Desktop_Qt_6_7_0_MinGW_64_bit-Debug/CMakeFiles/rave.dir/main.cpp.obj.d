@@ -377,19 +377,33 @@ CMakeFiles/rave.dir/main.cpp.obj: \
  C:/Qt/6.7.0/mingw_64/include/QtWidgets/QStackedWidget \
  C:/Qt/6.7.0/mingw_64/include/QtWidgets/qstackedwidget.h \
  C:/Qt/6.7.0/mingw_64/include/QtWidgets/qframe.h \
- C:\Users\adria\Desktop\Adrian\projects\Qt\rave\homescreen.h \
- C:/Qt/6.7.0/mingw_64/include/QtWidgets/QWidget \
- C:/Qt/6.7.0/mingw_64/include/QtWidgets/qwidget.h \
- C:/Qt/6.7.0/mingw_64/include/QtWidgets/QPushButton \
- C:/Qt/6.7.0/mingw_64/include/QtWidgets/qpushbutton.h \
- C:/Qt/6.7.0/mingw_64/include/QtWidgets/qabstractbutton.h \
- C:/Qt/6.7.0/mingw_64/include/QtWidgets/QVBoxLayout \
- C:/Qt/6.7.0/mingw_64/include/QtWidgets/qboxlayout.h \
- C:/Qt/6.7.0/mingw_64/include/QtWidgets/qlayout.h \
- C:/Qt/6.7.0/mingw_64/include/QtWidgets/qlayoutitem.h \
- C:/Qt/6.7.0/mingw_64/include/QtWidgets/qboxlayout.h \
- C:/Qt/6.7.0/mingw_64/include/QtWidgets/qgridlayout.h \
- C:\Users\adria\Desktop\Adrian\projects\Qt\rave\otherscreen.h \
+ C:/Qt/6.7.0/mingw_64/include/QtWidgets/Qslider \
+ C:/Qt/6.7.0/mingw_64/include/QtWidgets/qslider.h \
+ C:/Qt/6.7.0/mingw_64/include/QtWidgets/qabstractslider.h \
+ C:/Qt/6.7.0/mingw_64/include/QtCore/QDebug \
+ C:/Qt/6.7.0/mingw_64/include/QtCore/qdebug.h \
+ C:/Qt/6.7.0/mingw_64/include/QtWidgets/QLabel \
+ C:/Qt/6.7.0/mingw_64/include/QtWidgets/qlabel.h \
+ C:/Qt/6.7.0/mingw_64/include/QtGui/qpicture.h \
+ C:/Qt/6.7.0/mingw_64/include/QtCore/qiodevice.h \
+ C:/Qt/6.7.0/mingw_64/include/QtGui/qtextdocument.h \
+ C:/Qt/6.7.0/mingw_64/include/QtCore/QTimer \
+ C:/Qt/6.7.0/mingw_64/include/QtCore/qtimer.h \
+ C:/Qt/6.7.0/mingw_64/include/QtCore/qbasictimer.h \
+ C:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/iostream \
+ C:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ostream \
+ C:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ios \
+ C:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/basic_ios.h \
+ C:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/locale_facets.h \
+ C:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cwctype \
+ C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/wctype.h \
+ C:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/ctype_base.h \
+ C:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/ctype_inline.h \
+ C:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/locale_facets.tcc \
+ C:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/basic_ios.tcc \
+ C:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/ostream.tcc \
+ C:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/istream \
+ C:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/istream.tcc \
  C:/Qt/6.7.0/mingw_64/include/QtWidgets/QApplication \
  C:/Qt/6.7.0/mingw_64/include/QtWidgets/qapplication.h \
  C:/Qt/6.7.0/mingw_64/include/QtCore/qcoreapplication.h \

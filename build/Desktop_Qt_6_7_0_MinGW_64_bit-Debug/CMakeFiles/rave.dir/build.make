@@ -120,11 +120,43 @@ CMakeFiles/rave.dir/mainwindow.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/rave.dir/mainwindow.cpp.s"
 	C:\Qt\Tools\mingw1120_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\adria\Desktop\Adrian\projects\Qt\rave\mainwindow.cpp -o CMakeFiles\rave.dir\mainwindow.cpp.s
 
+CMakeFiles/rave.dir/customslider.cpp.obj: CMakeFiles/rave.dir/flags.make
+CMakeFiles/rave.dir/customslider.cpp.obj: CMakeFiles/rave.dir/includes_CXX.rsp
+CMakeFiles/rave.dir/customslider.cpp.obj: C:/Users/adria/Desktop/Adrian/projects/Qt/rave/customslider.cpp
+CMakeFiles/rave.dir/customslider.cpp.obj: CMakeFiles/rave.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\adria\Desktop\Adrian\projects\Qt\rave\build\Desktop_Qt_6_7_0_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/rave.dir/customslider.cpp.obj"
+	C:\Qt\Tools\mingw1120_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/rave.dir/customslider.cpp.obj -MF CMakeFiles\rave.dir\customslider.cpp.obj.d -o CMakeFiles\rave.dir\customslider.cpp.obj -c C:\Users\adria\Desktop\Adrian\projects\Qt\rave\customslider.cpp
+
+CMakeFiles/rave.dir/customslider.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/rave.dir/customslider.cpp.i"
+	C:\Qt\Tools\mingw1120_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\adria\Desktop\Adrian\projects\Qt\rave\customslider.cpp > CMakeFiles\rave.dir\customslider.cpp.i
+
+CMakeFiles/rave.dir/customslider.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/rave.dir/customslider.cpp.s"
+	C:\Qt\Tools\mingw1120_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\adria\Desktop\Adrian\projects\Qt\rave\customslider.cpp -o CMakeFiles\rave.dir\customslider.cpp.s
+
+CMakeFiles/rave.dir/songs.cpp.obj: CMakeFiles/rave.dir/flags.make
+CMakeFiles/rave.dir/songs.cpp.obj: CMakeFiles/rave.dir/includes_CXX.rsp
+CMakeFiles/rave.dir/songs.cpp.obj: C:/Users/adria/Desktop/Adrian/projects/Qt/rave/songs.cpp
+CMakeFiles/rave.dir/songs.cpp.obj: CMakeFiles/rave.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\adria\Desktop\Adrian\projects\Qt\rave\build\Desktop_Qt_6_7_0_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/rave.dir/songs.cpp.obj"
+	C:\Qt\Tools\mingw1120_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/rave.dir/songs.cpp.obj -MF CMakeFiles\rave.dir\songs.cpp.obj.d -o CMakeFiles\rave.dir\songs.cpp.obj -c C:\Users\adria\Desktop\Adrian\projects\Qt\rave\songs.cpp
+
+CMakeFiles/rave.dir/songs.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/rave.dir/songs.cpp.i"
+	C:\Qt\Tools\mingw1120_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\adria\Desktop\Adrian\projects\Qt\rave\songs.cpp > CMakeFiles\rave.dir\songs.cpp.i
+
+CMakeFiles/rave.dir/songs.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/rave.dir/songs.cpp.s"
+	C:\Qt\Tools\mingw1120_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\adria\Desktop\Adrian\projects\Qt\rave\songs.cpp -o CMakeFiles\rave.dir\songs.cpp.s
+
 # Object files for target rave
 rave_OBJECTS = \
 "CMakeFiles/rave.dir/rave_autogen/mocs_compilation.cpp.obj" \
 "CMakeFiles/rave.dir/main.cpp.obj" \
-"CMakeFiles/rave.dir/mainwindow.cpp.obj"
+"CMakeFiles/rave.dir/mainwindow.cpp.obj" \
+"CMakeFiles/rave.dir/customslider.cpp.obj" \
+"CMakeFiles/rave.dir/songs.cpp.obj"
 
 # External object files for target rave
 rave_EXTERNAL_OBJECTS =
@@ -132,6 +164,8 @@ rave_EXTERNAL_OBJECTS =
 rave.exe: CMakeFiles/rave.dir/rave_autogen/mocs_compilation.cpp.obj
 rave.exe: CMakeFiles/rave.dir/main.cpp.obj
 rave.exe: CMakeFiles/rave.dir/mainwindow.cpp.obj
+rave.exe: CMakeFiles/rave.dir/customslider.cpp.obj
+rave.exe: CMakeFiles/rave.dir/songs.cpp.obj
 rave.exe: CMakeFiles/rave.dir/build.make
 rave.exe: C:/Qt/6.7.0/mingw_64/lib/libQt6Widgets.a
 rave.exe: C:/Qt/6.7.0/mingw_64/lib/libQt6Multimedia.a
@@ -142,7 +176,7 @@ rave.exe: C:/Qt/6.7.0/mingw_64/lib/libQt6EntryPoint.a
 rave.exe: CMakeFiles/rave.dir/linkLibs.rsp
 rave.exe: CMakeFiles/rave.dir/objects1.rsp
 rave.exe: CMakeFiles/rave.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\adria\Desktop\Adrian\projects\Qt\rave\build\Desktop_Qt_6_7_0_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable rave.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\adria\Desktop\Adrian\projects\Qt\rave\build\Desktop_Qt_6_7_0_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable rave.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\rave.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

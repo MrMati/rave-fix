@@ -199,6 +199,30 @@ rave_autogen/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\rave_autogen.dir\build.make CMakeFiles/rave_autogen.dir/build
 .PHONY : rave_autogen/fast
 
+customslider.obj: customslider.cpp.obj
+.PHONY : customslider.obj
+
+# target to build an object file
+customslider.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\rave.dir\build.make CMakeFiles/rave.dir/customslider.cpp.obj
+.PHONY : customslider.cpp.obj
+
+customslider.i: customslider.cpp.i
+.PHONY : customslider.i
+
+# target to preprocess a source file
+customslider.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\rave.dir\build.make CMakeFiles/rave.dir/customslider.cpp.i
+.PHONY : customslider.cpp.i
+
+customslider.s: customslider.cpp.s
+.PHONY : customslider.s
+
+# target to generate assembly for a file
+customslider.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\rave.dir\build.make CMakeFiles/rave.dir/customslider.cpp.s
+.PHONY : customslider.cpp.s
+
 main.obj: main.cpp.obj
 .PHONY : main.obj
 
@@ -271,6 +295,30 @@ rave_autogen/mocs_compilation.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\rave.dir\build.make CMakeFiles/rave.dir/rave_autogen/mocs_compilation.cpp.s
 .PHONY : rave_autogen/mocs_compilation.cpp.s
 
+songs.obj: songs.cpp.obj
+.PHONY : songs.obj
+
+# target to build an object file
+songs.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\rave.dir\build.make CMakeFiles/rave.dir/songs.cpp.obj
+.PHONY : songs.cpp.obj
+
+songs.i: songs.cpp.i
+.PHONY : songs.i
+
+# target to preprocess a source file
+songs.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\rave.dir\build.make CMakeFiles/rave.dir/songs.cpp.i
+.PHONY : songs.cpp.i
+
+songs.s: songs.cpp.s
+.PHONY : songs.s
+
+# target to generate assembly for a file
+songs.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\rave.dir\build.make CMakeFiles/rave.dir/songs.cpp.s
+.PHONY : songs.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -286,6 +334,9 @@ help:
 	@echo ... rave_autogen
 	@echo ... rave_autogen_timestamp_deps
 	@echo ... rave
+	@echo ... customslider.obj
+	@echo ... customslider.i
+	@echo ... customslider.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
@@ -295,6 +346,9 @@ help:
 	@echo ... rave_autogen/mocs_compilation.obj
 	@echo ... rave_autogen/mocs_compilation.i
 	@echo ... rave_autogen/mocs_compilation.s
+	@echo ... songs.obj
+	@echo ... songs.i
+	@echo ... songs.s
 .PHONY : help
 
 
