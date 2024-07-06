@@ -404,22 +404,59 @@ CMakeFiles/rave.dir/mainwindow.cpp.obj: \
  C:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/ostream.tcc \
  C:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/istream \
  C:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/istream.tcc \
+ C:\Users\adria\Desktop\Adrian\projects\Qt\rave\customslider.h \
+ C:/Qt/6.7.0/mingw_64/include/QtCore/QObject \
+ C:/Qt/6.7.0/mingw_64/include/QtCore/qobject.h \
+ C:/Qt/6.7.0/mingw_64/include/QtWidgets/QWidget \
+ C:/Qt/6.7.0/mingw_64/include/QtWidgets/qwidget.h \
+ C:/Qt/6.7.0/mingw_64/include/QtWidgets/QSlider \
+ C:/Qt/6.7.0/mingw_64/include/QtWidgets/QStyleOptionSlider \
+ C:/Qt/6.7.0/mingw_64/include/QtWidgets/qstyleoption.h \
+ C:/Qt/6.7.0/mingw_64/include/QtCore/qlocale.h \
+ C:/Qt/6.7.0/mingw_64/include/QtWidgets/qabstractspinbox.h \
+ C:/Qt/6.7.0/mingw_64/include/QtGui/qvalidator.h \
+ C:/Qt/6.7.0/mingw_64/include/QtCore/qregularexpression.h \
+ C:/Qt/6.7.0/mingw_64/include/QtWidgets/qslider.h \
+ C:/Qt/6.7.0/mingw_64/include/QtWidgets/qstyle.h \
+ C:/Qt/6.7.0/mingw_64/include/QtWidgets/qtabbar.h \
+ C:/Qt/6.7.0/mingw_64/include/QtWidgets/qrubberband.h \
+ C:/Qt/6.7.0/mingw_64/include/QtCore/qabstractitemmodel.h \
+ C:/Qt/6.7.0/mingw_64/include/QtGui/QMouseEvent \
+ C:/Qt/6.7.0/mingw_64/include/QtGui/qevent.h \
+ C:/Qt/6.7.0/mingw_64/include/QtCore/qcoreevent.h \
+ C:/Qt/6.7.0/mingw_64/include/QtGui/qeventpoint.h \
+ C:/Qt/6.7.0/mingw_64/include/QtGui/qvector2d.h \
+ C:/Qt/6.7.0/mingw_64/include/QtGui/qvectornd.h \
+ C:/Qt/6.7.0/mingw_64/include/QtGui/qpointingdevice.h \
+ C:/Qt/6.7.0/mingw_64/include/QtGui/qinputdevice.h \
+ C:/Qt/6.7.0/mingw_64/include/QtGui/qscreen.h \
+ C:/Qt/6.7.0/mingw_64/include/QtCore/QList \
+ C:/Qt/6.7.0/mingw_64/include/QtCore/qlist.h \
+ C:/Qt/6.7.0/mingw_64/include/QtCore/QObject \
+ C:/Qt/6.7.0/mingw_64/include/QtCore/QRect \
+ C:/Qt/6.7.0/mingw_64/include/QtCore/qrect.h \
+ C:/Qt/6.7.0/mingw_64/include/QtCore/QSize \
+ C:/Qt/6.7.0/mingw_64/include/QtCore/qsize.h \
+ C:/Qt/6.7.0/mingw_64/include/QtCore/QSizeF \
+ C:/Qt/6.7.0/mingw_64/include/QtGui/QTransform \
+ C:/Qt/6.7.0/mingw_64/include/QtGui/qtransform.h \
+ C:/Qt/6.7.0/mingw_64/include/QtCore/qnativeinterface.h \
+ C:/Qt/6.7.0/mingw_64/include/QtGui/qscreen_platform.h \
+ C:/Qt/6.7.0/mingw_64/include/QtGui/qguiapplication.h \
+ C:/Qt/6.7.0/mingw_64/include/QtCore/qcoreapplication.h \
+ C:/Qt/6.7.0/mingw_64/include/QtCore/qdeadlinetimer.h \
+ C:/Qt/6.7.0/mingw_64/include/QtCore/qelapsedtimer.h \
+ C:/Qt/6.7.0/mingw_64/include/QtCore/qeventloop.h \
+ C:/Qt/6.7.0/mingw_64/include/QtCore/qcoreapplication_platform.h \
+ C:/Qt/6.7.0/mingw_64/include/QtGui/qinputmethod.h \
+ C:/Qt/6.7.0/mingw_64/include/QtGui/qguiapplication_platform.h \
+ C:/Qt/6.7.0/mingw_64/include/QtWidgets/QStyle \
+ C:/Qt/6.7.0/mingw_64/include/QtWidgets/qstyle.h \
  C:/Users/adria/Desktop/Adrian/projects/Qt/rave/build/Desktop_Qt_6_7_0_MinGW_64_bit-Release/rave_autogen/include/ui_mainwindow.h \
  C:/Qt/6.7.0/mingw_64/include/QtCore/QVariant \
  C:/Qt/6.7.0/mingw_64/include/QtCore/qvariant.h \
  C:/Qt/6.7.0/mingw_64/include/QtWidgets/QApplication \
  C:/Qt/6.7.0/mingw_64/include/QtWidgets/qapplication.h \
- C:/Qt/6.7.0/mingw_64/include/QtCore/qcoreapplication.h \
- C:/Qt/6.7.0/mingw_64/include/QtCore/qcoreevent.h \
- C:/Qt/6.7.0/mingw_64/include/QtCore/qdeadlinetimer.h \
- C:/Qt/6.7.0/mingw_64/include/QtCore/qelapsedtimer.h \
- C:/Qt/6.7.0/mingw_64/include/QtCore/qeventloop.h \
- C:/Qt/6.7.0/mingw_64/include/QtCore/qnativeinterface.h \
- C:/Qt/6.7.0/mingw_64/include/QtCore/qcoreapplication_platform.h \
- C:/Qt/6.7.0/mingw_64/include/QtGui/qguiapplication.h \
- C:/Qt/6.7.0/mingw_64/include/QtGui/qinputmethod.h \
- C:/Qt/6.7.0/mingw_64/include/QtCore/qlocale.h \
- C:/Qt/6.7.0/mingw_64/include/QtGui/qguiapplication_platform.h \
  C:/Qt/6.7.0/mingw_64/include/QtWidgets/QLabel \
  C:/Qt/6.7.0/mingw_64/include/QtWidgets/QMainWindow \
  C:/Qt/6.7.0/mingw_64/include/QtWidgets/QMenuBar \
@@ -432,10 +469,10 @@ CMakeFiles/rave.dir/mainwindow.cpp.obj: \
  C:/Qt/6.7.0/mingw_64/include/QtWidgets/QStackedWidget \
  C:/Qt/6.7.0/mingw_64/include/QtWidgets/QStatusBar \
  C:/Qt/6.7.0/mingw_64/include/QtWidgets/qstatusbar.h \
- C:/Qt/6.7.0/mingw_64/include/QtWidgets/QWidget \
- C:/Qt/6.7.0/mingw_64/include/QtWidgets/qwidget.h \
- C:\Users\adria\Desktop\Adrian\projects\Qt\rave\customslider.h \
- C:/Qt/6.7.0/mingw_64/include/QtCore/QObject \
- C:/Qt/6.7.0/mingw_64/include/QtCore/qobject.h \
- C:/Qt/6.7.0/mingw_64/include/QtWidgets/QWidget \
- C:/Qt/6.7.0/mingw_64/include/QtWidgets/QSlider
+ C:/Qt/6.7.0/mingw_64/include/QtWidgets/QVBoxLayout \
+ C:/Qt/6.7.0/mingw_64/include/QtWidgets/qboxlayout.h \
+ C:/Qt/6.7.0/mingw_64/include/QtWidgets/qlayout.h \
+ C:/Qt/6.7.0/mingw_64/include/QtWidgets/qlayoutitem.h \
+ C:/Qt/6.7.0/mingw_64/include/QtWidgets/qboxlayout.h \
+ C:/Qt/6.7.0/mingw_64/include/QtWidgets/qgridlayout.h \
+ C:/Qt/6.7.0/mingw_64/include/QtWidgets/QWidget

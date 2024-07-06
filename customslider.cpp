@@ -1,7 +1,4 @@
 #include "customslider.h"
-#include <QMouseEvent>
-#include <QDebug>
-#include <QStyle>
 
 CustomSlider::CustomSlider(QWidget *parent): QSlider(Qt::Horizontal, parent){}
 
@@ -23,6 +20,7 @@ void CustomSlider::mouseMoveEvent(QMouseEvent *event){
     }else{
         QSlider::mouseMoveEvent(event);
     }
+    emit slider_clicked(this->value());
 }
 
 void CustomSlider::mouseReleaseEvent(QMouseEvent *event){
@@ -32,6 +30,7 @@ void CustomSlider::mouseReleaseEvent(QMouseEvent *event){
     }else{
         QSlider::mouseReleaseEvent(event);
     }
+    emit slider_clicked(this->value());
 }
 
 void CustomSlider::updateSliderValue(const QPoint &pos){

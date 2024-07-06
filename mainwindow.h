@@ -27,8 +27,6 @@ private slots:
     void on_player_screen_clicked();
     void slider_clicked(int value);
 
-    void on_time_slider_slider_pressed();
-
     void update_current_time(qint64 position);
     void update_current_volume(qint64 position);
 

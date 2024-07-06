@@ -366,6 +366,19 @@ CMakeFiles/rave.dir/customslider.cpp.obj: \
  C:/Qt/6.7.0/mingw_64/include/QtWidgets/qslider.h \
  C:/Qt/6.7.0/mingw_64/include/QtWidgets/qabstractslider.h \
  C:/Qt/6.7.0/mingw_64/include/QtWidgets/qwidget.h \
+ C:/Qt/6.7.0/mingw_64/include/QtWidgets/QStyleOptionSlider \
+ C:/Qt/6.7.0/mingw_64/include/QtWidgets/qstyleoption.h \
+ C:/Qt/6.7.0/mingw_64/include/QtCore/qlocale.h \
+ C:/Qt/6.7.0/mingw_64/include/QtWidgets/qabstractspinbox.h \
+ C:/Qt/6.7.0/mingw_64/include/QtGui/qvalidator.h \
+ C:/Qt/6.7.0/mingw_64/include/QtCore/qregularexpression.h \
+ C:/Qt/6.7.0/mingw_64/include/QtWidgets/qslider.h \
+ C:/Qt/6.7.0/mingw_64/include/QtWidgets/qstyle.h \
+ C:/Qt/6.7.0/mingw_64/include/QtWidgets/qtabbar.h \
+ C:/Qt/6.7.0/mingw_64/include/QtWidgets/qtabwidget.h \
+ C:/Qt/6.7.0/mingw_64/include/QtWidgets/qrubberband.h \
+ C:/Qt/6.7.0/mingw_64/include/QtWidgets/qframe.h \
+ C:/Qt/6.7.0/mingw_64/include/QtCore/qabstractitemmodel.h \
  C:/Qt/6.7.0/mingw_64/include/QtGui/QMouseEvent \
  C:/Qt/6.7.0/mingw_64/include/QtGui/qevent.h \
  C:/Qt/6.7.0/mingw_64/include/QtCore/qcoreevent.h \
@@ -396,7 +409,6 @@ CMakeFiles/rave.dir/customslider.cpp.obj: \
  C:/Qt/6.7.0/mingw_64/include/QtCore/qeventloop.h \
  C:/Qt/6.7.0/mingw_64/include/QtCore/qcoreapplication_platform.h \
  C:/Qt/6.7.0/mingw_64/include/QtGui/qinputmethod.h \
- C:/Qt/6.7.0/mingw_64/include/QtCore/qlocale.h \
  C:/Qt/6.7.0/mingw_64/include/QtGui/qguiapplication_platform.h \
  C:/Qt/6.7.0/mingw_64/include/QtCore/QDebug \
  C:/Qt/6.7.0/mingw_64/include/QtCore/qdebug.h \

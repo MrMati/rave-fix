@@ -367,15 +367,61 @@ CMakeFiles/rave.dir/rave_autogen/mocs_compilation.cpp.obj: \
  C:/Qt/6.7.0/mingw_64/include/QtWidgets/qslider.h \
  C:/Qt/6.7.0/mingw_64/include/QtWidgets/qabstractslider.h \
  C:/Qt/6.7.0/mingw_64/include/QtWidgets/qwidget.h \
+ C:/Qt/6.7.0/mingw_64/include/QtWidgets/QStyleOptionSlider \
+ C:/Qt/6.7.0/mingw_64/include/QtWidgets/qstyleoption.h \
+ C:/Qt/6.7.0/mingw_64/include/QtCore/qlocale.h \
+ C:/Qt/6.7.0/mingw_64/include/QtWidgets/qabstractspinbox.h \
+ C:/Qt/6.7.0/mingw_64/include/QtGui/qvalidator.h \
+ C:/Qt/6.7.0/mingw_64/include/QtCore/qregularexpression.h \
+ C:/Qt/6.7.0/mingw_64/include/QtWidgets/qslider.h \
+ C:/Qt/6.7.0/mingw_64/include/QtWidgets/qstyle.h \
+ C:/Qt/6.7.0/mingw_64/include/QtWidgets/qtabbar.h \
+ C:/Qt/6.7.0/mingw_64/include/QtWidgets/qtabwidget.h \
+ C:/Qt/6.7.0/mingw_64/include/QtWidgets/qrubberband.h \
+ C:/Qt/6.7.0/mingw_64/include/QtWidgets/qframe.h \
+ C:/Qt/6.7.0/mingw_64/include/QtCore/qabstractitemmodel.h \
+ C:/Qt/6.7.0/mingw_64/include/QtGui/QMouseEvent \
+ C:/Qt/6.7.0/mingw_64/include/QtGui/qevent.h \
+ C:/Qt/6.7.0/mingw_64/include/QtCore/qcoreevent.h \
+ C:/Qt/6.7.0/mingw_64/include/QtCore/qiodevice.h \
+ C:/Qt/6.7.0/mingw_64/include/QtCore/qurl.h \
+ C:/Qt/6.7.0/mingw_64/include/QtGui/qeventpoint.h \
+ C:/Qt/6.7.0/mingw_64/include/QtGui/qvector2d.h \
+ C:/Qt/6.7.0/mingw_64/include/QtGui/qvectornd.h \
+ C:/Qt/6.7.0/mingw_64/include/QtGui/qpointingdevice.h \
+ C:/Qt/6.7.0/mingw_64/include/QtGui/qinputdevice.h \
+ C:/Qt/6.7.0/mingw_64/include/QtGui/qscreen.h \
+ C:/Qt/6.7.0/mingw_64/include/QtCore/QList \
+ C:/Qt/6.7.0/mingw_64/include/QtCore/qlist.h \
+ C:/Qt/6.7.0/mingw_64/include/QtCore/QObject \
+ C:/Qt/6.7.0/mingw_64/include/QtCore/QRect \
+ C:/Qt/6.7.0/mingw_64/include/QtCore/qrect.h \
+ C:/Qt/6.7.0/mingw_64/include/QtCore/QSize \
+ C:/Qt/6.7.0/mingw_64/include/QtCore/qsize.h \
+ C:/Qt/6.7.0/mingw_64/include/QtCore/QSizeF \
+ C:/Qt/6.7.0/mingw_64/include/QtGui/QTransform \
+ C:/Qt/6.7.0/mingw_64/include/QtGui/qtransform.h \
+ C:/Qt/6.7.0/mingw_64/include/QtCore/qnativeinterface.h \
+ C:/Qt/6.7.0/mingw_64/include/QtGui/qscreen_platform.h \
+ C:/Qt/6.7.0/mingw_64/include/QtGui/qguiapplication.h \
+ C:/Qt/6.7.0/mingw_64/include/QtCore/qcoreapplication.h \
+ C:/Qt/6.7.0/mingw_64/include/QtCore/qdeadlinetimer.h \
+ C:/Qt/6.7.0/mingw_64/include/QtCore/qelapsedtimer.h \
+ C:/Qt/6.7.0/mingw_64/include/QtCore/qeventloop.h \
+ C:/Qt/6.7.0/mingw_64/include/QtCore/qcoreapplication_platform.h \
+ C:/Qt/6.7.0/mingw_64/include/QtGui/qinputmethod.h \
+ C:/Qt/6.7.0/mingw_64/include/QtGui/qguiapplication_platform.h \
+ C:/Qt/6.7.0/mingw_64/include/QtCore/QDebug \
+ C:/Qt/6.7.0/mingw_64/include/QtCore/qdebug.h \
+ C:/Qt/6.7.0/mingw_64/include/QtWidgets/QStyle \
+ C:/Qt/6.7.0/mingw_64/include/QtWidgets/qstyle.h \
  C:/Qt/6.7.0/mingw_64/include/QtCore/qtmochelpers.h \
  C:\Users\adria\Desktop\Adrian\projects\Qt\rave\build\Desktop_Qt_6_7_0_MinGW_64_bit-Release\rave_autogen\EWIEGA46WW/moc_mainwindow.cpp \
  C:/Users/adria/Desktop/Adrian/projects/Qt/rave/mainwindow.h \
  C:/Qt/6.7.0/mingw_64/include/QtWidgets/QMainWindow \
  C:/Qt/6.7.0/mingw_64/include/QtWidgets/qmainwindow.h \
- C:/Qt/6.7.0/mingw_64/include/QtWidgets/qtabwidget.h \
  C:/Qt/6.7.0/mingw_64/include/QtMultimedia/QMediaPlayer \
  C:/Qt/6.7.0/mingw_64/include/QtMultimedia/qmediaplayer.h \
- C:/Qt/6.7.0/mingw_64/include/QtCore/qurl.h \
  C:/Qt/6.7.0/mingw_64/include/QtMultimedia/qtmultimediaglobal.h \
  C:/Qt/6.7.0/mingw_64/include/QtMultimedia/qtmultimedia-config.h \
  C:/Qt/6.7.0/mingw_64/include/QtMultimedia/qtmultimediaexports.h \
@@ -387,14 +433,10 @@ CMakeFiles/rave.dir/rave_autogen/mocs_compilation.cpp.obj: \
  C:/Qt/6.7.0/mingw_64/include/QtMultimedia/qaudiooutput.h \
  C:/Qt/6.7.0/mingw_64/include/QtWidgets/QStackedWidget \
  C:/Qt/6.7.0/mingw_64/include/QtWidgets/qstackedwidget.h \
- C:/Qt/6.7.0/mingw_64/include/QtWidgets/qframe.h \
  C:/Qt/6.7.0/mingw_64/include/QtWidgets/Qslider \
- C:/Qt/6.7.0/mingw_64/include/QtCore/QDebug \
- C:/Qt/6.7.0/mingw_64/include/QtCore/qdebug.h \
  C:/Qt/6.7.0/mingw_64/include/QtWidgets/QLabel \
  C:/Qt/6.7.0/mingw_64/include/QtWidgets/qlabel.h \
  C:/Qt/6.7.0/mingw_64/include/QtGui/qpicture.h \
- C:/Qt/6.7.0/mingw_64/include/QtCore/qiodevice.h \
  C:/Qt/6.7.0/mingw_64/include/QtGui/qtextdocument.h \
  C:/Qt/6.7.0/mingw_64/include/QtCore/QTimer \
  C:/Qt/6.7.0/mingw_64/include/QtCore/qtimer.h \

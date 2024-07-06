@@ -14,140 +14,90 @@
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QStackedWidget" name="stackedWidget">
-    <property name="geometry">
-     <rect>
-      <x>0</x>
-      <y>0</y>
-      <width>801</width>
-      <height>571</height>
-     </rect>
-    </property>
-    <property name="currentIndex">
-     <number>1</number>
-    </property>
-    <widget class="QWidget" name="player">
-     <widget class="QPushButton" name="homeScreen">
-      <property name="geometry">
-       <rect>
-        <x>10</x>
-        <y>10</y>
-        <width>93</width>
-        <height>29</height>
-       </rect>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QStackedWidget" name="stackedWidget">
+      <property name="currentIndex">
+       <number>0</number>
       </property>
-      <property name="text">
-       <string>Home</string>
-      </property>
+      <widget class="QWidget" name="player">
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <item>
+         <widget class="QPushButton" name="homeScreen">
+          <property name="text">
+           <string>Home</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QSlider" name="volumeSlider">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="volume">
+          <property name="text">
+           <string>0</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="playButton">
+          <property name="text">
+           <string>Play</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pauseButton">
+          <property name="text">
+           <string>Pause</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="stopButton">
+          <property name="text">
+           <string>Stop</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="timer">
+          <property name="text">
+           <string>00:00</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="CustomSlider" name="timeSlider">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="home">
+       <widget class="QPushButton" name="playerButton">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>93</width>
+          <height>29</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Player</string>
+        </property>
+       </widget>
+      </widget>
      </widget>
-     <widget class="QSlider" name="timeSlider">
-      <property name="geometry">
-       <rect>
-        <x>20</x>
-        <y>500</y>
-        <width>631</width>
-        <height>22</height>
-       </rect>
-      </property>
-      <property name="orientation">
-       <enum>Qt::Horizontal</enum>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="stopButton">
-      <property name="geometry">
-       <rect>
-        <x>560</x>
-        <y>430</y>
-        <width>93</width>
-        <height>29</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>Stop</string>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="pauseButton">
-      <property name="geometry">
-       <rect>
-        <x>460</x>
-        <y>430</y>
-        <width>93</width>
-        <height>29</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>Pause</string>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="playButton">
-      <property name="geometry">
-       <rect>
-        <x>360</x>
-        <y>430</y>
-        <width>93</width>
-        <height>29</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>Play</string>
-      </property>
-     </widget>
-     <widget class="QSlider" name="volumeSlider">
-      <property name="geometry">
-       <rect>
-        <x>40</x>
-        <y>260</y>
-        <width>22</width>
-        <height>160</height>
-       </rect>
-      </property>
-      <property name="orientation">
-       <enum>Qt::Vertical</enum>
-      </property>
-     </widget>
-     <widget class="QLabel" name="timer">
-      <property name="geometry">
-       <rect>
-        <x>700</x>
-        <y>500</y>
-        <width>63</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>00:00</string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="volume">
-      <property name="geometry">
-       <rect>
-        <x>40</x>
-        <y>430</y>
-        <width>63</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>0</string>
-      </property>
-     </widget>
-    </widget>
-    <widget class="QWidget" name="home">
-     <widget class="QPushButton" name="playerButton">
-      <property name="geometry">
-       <rect>
-        <x>10</x>
-        <y>10</y>
-        <width>93</width>
-        <height>29</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>Player</string>
-      </property>
-     </widget>
-    </widget>
-   </widget>
+    </item>
+   </layout>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
@@ -161,6 +111,13 @@
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
+ <customwidgets>
+  <customwidget>
+   <class>CustomSlider</class>
+   <extends>QSlider</extends>
+   <header location="global">customslider.h</header>
+  </customwidget>
+ </customwidgets>
  <resources/>
  <connections/>
 </ui>

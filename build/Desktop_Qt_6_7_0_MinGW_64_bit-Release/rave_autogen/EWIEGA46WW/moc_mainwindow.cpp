@@ -42,7 +42,6 @@ constexpr auto qt_meta_stringdata_CLASSMainWindowENDCLASS = QtMocHelpers::string
     "on_player_screen_clicked",
     "slider_clicked",
     "value",
-    "on_time_slider_slider_pressed",
     "update_current_time",
     "position",
     "update_current_volume"
@@ -58,7 +57,7 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSMainWindowENDCLASS[] = {
       12,       // revision
        0,       // classname
        0,    0, // classinfo
-       6,   14, // methods
+       5,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -66,20 +65,18 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSMainWindowENDCLASS[] = {
        0,       // signalCount
 
  // slots: name, argc, parameters, tag, flags, initial metatype offsets
-       1,    0,   50,    2, 0x08,    1 /* Private */,
-       3,    0,   51,    2, 0x08,    2 /* Private */,
-       4,    1,   52,    2, 0x08,    3 /* Private */,
-       6,    0,   55,    2, 0x08,    5 /* Private */,
-       7,    1,   56,    2, 0x08,    6 /* Private */,
-       9,    1,   59,    2, 0x08,    8 /* Private */,
+       1,    0,   44,    2, 0x08,    1 /* Private */,
+       3,    0,   45,    2, 0x08,    2 /* Private */,
+       4,    1,   46,    2, 0x08,    3 /* Private */,
+       6,    1,   49,    2, 0x08,    5 /* Private */,
+       8,    1,   52,    2, 0x08,    7 /* Private */,
 
  // slots: parameters
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void, QMetaType::Int,    5,
-    QMetaType::Void,
-    QMetaType::Void, QMetaType::LongLong,    8,
-    QMetaType::Void, QMetaType::LongLong,    8,
+    QMetaType::Void, QMetaType::LongLong,    7,
+    QMetaType::Void, QMetaType::LongLong,    7,
 
        0        // eod
 };
@@ -100,8 +97,6 @@ Q_CONSTINIT const QMetaObject MainWindow::staticMetaObject = { {
         // method 'slider_clicked'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         QtPrivate::TypeAndForceComplete<int, std::false_type>,
-        // method 'on_time_slider_slider_pressed'
-        QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'update_current_time'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         QtPrivate::TypeAndForceComplete<qint64, std::false_type>,
@@ -121,9 +116,8 @@ void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         case 0: _t->on_home_screen_clicked(); break;
         case 1: _t->on_player_screen_clicked(); break;
         case 2: _t->slider_clicked((*reinterpret_cast< std::add_pointer_t<int>>(_a[1]))); break;
-        case 3: _t->on_time_slider_slider_pressed(); break;
-        case 4: _t->update_current_time((*reinterpret_cast< std::add_pointer_t<qint64>>(_a[1]))); break;
-        case 5: _t->update_current_volume((*reinterpret_cast< std::add_pointer_t<qint64>>(_a[1]))); break;
+        case 3: _t->update_current_time((*reinterpret_cast< std::add_pointer_t<qint64>>(_a[1]))); break;
+        case 4: _t->update_current_volume((*reinterpret_cast< std::add_pointer_t<qint64>>(_a[1]))); break;
         default: ;
         }
     }
@@ -148,13 +142,13 @@ int MainWindow::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 6)
+        if (_id < 5)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 6;
+        _id -= 5;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 6)
+        if (_id < 5)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 6;
+        _id -= 5;
     }
     return _id;
 }

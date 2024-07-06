@@ -5,6 +5,9 @@
 #include <QWidget>
 #include <QSlider>
 #include <QStyleOptionSlider>
+#include <QMouseEvent>
+#include <QDebug>
+#include <QStyle>
 
 class CustomSlider: public QSlider{
     Q_OBJECT
