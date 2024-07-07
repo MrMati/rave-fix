@@ -26,8 +26,6 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         customslider.h customslider.cpp
         songs.h songs.cpp
         songwidget.h songwidget.cpp
-
-
     )
 else()
     if(ANDROID)

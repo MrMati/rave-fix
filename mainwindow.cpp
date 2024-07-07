@@ -4,7 +4,6 @@
 #include "songs.h"
 #include "ui_mainwindow.h"
 
-
 MainWindow::MainWindow(QWidget *parent): QMainWindow(parent), ui(new Ui::MainWindow) {
     ui->setupUi(this);
 
@@ -14,21 +13,8 @@ MainWindow::MainWindow(QWidget *parent): QMainWindow(parent), ui(new Ui::MainWin
 
     player->setSource(QUrl::fromLocalFile("C:/Users/adria/Desktop/Adrian/music/Blessed & Possessed.mp3"));
 
-
-
-    // CustomSlider *customSlider = static_cast<CustomSlider*>(ui->timeSlider);
-
-    // customSlider = new CustomSlider(this);
-    // QVBoxLayout* layout = qobject_cast<QVBoxLayout*>(ui->player->layout());
-    // layout->addWidget(customSlider);
-    // layout->addStretch();
-
-
-
-
     connect(player, &QMediaPlayer::positionChanged, this, &MainWindow::update_current_time);
     connect(ui->volumeSlider, &CustomSlider::slider_clicked, this, &MainWindow::update_current_volume);
-
 
     connect(ui->playButton, &QPushButton::clicked, player, &QMediaPlayer::play);
     connect(ui->pauseButton, &QPushButton::clicked, player, &QMediaPlayer::pause);
@@ -39,18 +25,14 @@ MainWindow::MainWindow(QWidget *parent): QMainWindow(parent), ui(new Ui::MainWin
     connect(player, &QMediaPlayer::positionChanged, this, [this](qint64 position) {ui->timeSlider->setValue(static_cast<int>(position));});
     connect(player, &QMediaPlayer::durationChanged, this, [this](qint64 duration){ui->timeSlider->setMaximum(static_cast<int>(duration));});
 
-
     connect(ui->homeScreen, &QPushButton::clicked, this, &MainWindow::on_home_screen_clicked);
     connect(ui->playerButton, &QPushButton::clicked, this, &MainWindow::on_player_screen_clicked);
-
 
     ui->stackedWidget->setCurrentIndex(0);
     qint64 initial_vol = 40;
     ui->volumeSlider->setValue(initial_vol);
     audioOutput->setVolume(initial_vol / 10);
     ui->volume->setText(QString::number(initial_vol));
-
-
 
     songListWidget = new QListWidget(this);
     for(const Song *song : songs.getLibrary()){
@@ -104,7 +86,6 @@ void MainWindow::update_current_volume(qint64 position){
 }
 
 void MainWindow::onPlaySong(QUrl fileUrl){
-    QMediaPlayer *player = new QMediaPlayer;
     player->setSource(fileUrl);
     player->play();
 }

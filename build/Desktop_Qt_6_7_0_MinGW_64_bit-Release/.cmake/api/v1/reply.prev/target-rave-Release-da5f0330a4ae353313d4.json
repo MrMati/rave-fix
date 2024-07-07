@@ -80,13 +80,13 @@
 			{
 				"command" : 4,
 				"file" : 1,
-				"line" : 59,
+				"line" : 60,
 				"parent" : 0
 			},
 			{
 				"command" : 5,
 				"file" : 1,
-				"line" : 44,
+				"line" : 45,
 				"parent" : 0
 			},
 			{
@@ -475,11 +475,11 @@
 	"dependencies" : 
 	[
 		{
-			"id" : "rave_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
-		},
-		{
 			"backtrace" : 0,
 			"id" : "rave_autogen::@6890427a1f51a3e7e1df"
+		},
+		{
+			"id" : "rave_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
 		}
 	],
 	"id" : "rave::@6890427a1f51a3e7e1df",
@@ -620,7 +620,7 @@
 				5,
 				7,
 				9,
-				11
+				12
 			]
 		},
 		{
@@ -628,14 +628,15 @@
 			"sourceIndexes" : 
 			[
 				4,
-				12
+				11,
+				13
 			]
 		},
 		{
 			"name" : "CMake Rules",
 			"sourceIndexes" : 
 			[
-				13
+				14
 			]
 		}
 	],
@@ -702,6 +703,11 @@
 			"compileGroupIndex" : 0,
 			"path" : "songwidget.cpp",
 			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"path" : "main.qml",
+			"sourceGroupIndex" : 2
 		},
 		{
 			"backtrace" : 0,
