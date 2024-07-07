@@ -319,6 +319,30 @@ songs.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\rave.dir\build.make CMakeFiles/rave.dir/songs.cpp.s
 .PHONY : songs.cpp.s
 
+songwidget.obj: songwidget.cpp.obj
+.PHONY : songwidget.obj
+
+# target to build an object file
+songwidget.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\rave.dir\build.make CMakeFiles/rave.dir/songwidget.cpp.obj
+.PHONY : songwidget.cpp.obj
+
+songwidget.i: songwidget.cpp.i
+.PHONY : songwidget.i
+
+# target to preprocess a source file
+songwidget.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\rave.dir\build.make CMakeFiles/rave.dir/songwidget.cpp.i
+.PHONY : songwidget.cpp.i
+
+songwidget.s: songwidget.cpp.s
+.PHONY : songwidget.s
+
+# target to generate assembly for a file
+songwidget.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\rave.dir\build.make CMakeFiles/rave.dir/songwidget.cpp.s
+.PHONY : songwidget.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -349,6 +373,9 @@ help:
 	@echo ... songs.obj
 	@echo ... songs.i
 	@echo ... songs.s
+	@echo ... songwidget.obj
+	@echo ... songwidget.i
+	@echo ... songwidget.s
 .PHONY : help
 
 

@@ -40,11 +40,11 @@ constexpr auto qt_meta_stringdata_CLASSMainWindowENDCLASS = QtMocHelpers::string
     "on_home_screen_clicked",
     "",
     "on_player_screen_clicked",
-    "slider_clicked",
-    "value",
     "update_current_time",
     "position",
-    "update_current_volume"
+    "update_current_volume",
+    "onPlaySong",
+    "fileUrl"
 );
 #else  // !QT_MOC_HAS_STRINGDATA
 #error "qtmochelpers.h not found or too old."
@@ -69,14 +69,14 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSMainWindowENDCLASS[] = {
        3,    0,   45,    2, 0x08,    2 /* Private */,
        4,    1,   46,    2, 0x08,    3 /* Private */,
        6,    1,   49,    2, 0x08,    5 /* Private */,
-       8,    1,   52,    2, 0x08,    7 /* Private */,
+       7,    1,   52,    2, 0x08,    7 /* Private */,
 
  // slots: parameters
     QMetaType::Void,
     QMetaType::Void,
-    QMetaType::Void, QMetaType::Int,    5,
-    QMetaType::Void, QMetaType::LongLong,    7,
-    QMetaType::Void, QMetaType::LongLong,    7,
+    QMetaType::Void, QMetaType::LongLong,    5,
+    QMetaType::Void, QMetaType::LongLong,    5,
+    QMetaType::Void, QMetaType::QUrl,    8,
 
        0        // eod
 };
@@ -94,15 +94,15 @@ Q_CONSTINIT const QMetaObject MainWindow::staticMetaObject = { {
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'on_player_screen_clicked'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        // method 'slider_clicked'
-        QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        QtPrivate::TypeAndForceComplete<int, std::false_type>,
         // method 'update_current_time'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         QtPrivate::TypeAndForceComplete<qint64, std::false_type>,
         // method 'update_current_volume'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        QtPrivate::TypeAndForceComplete<qint64, std::false_type>
+        QtPrivate::TypeAndForceComplete<qint64, std::false_type>,
+        // method 'onPlaySong'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        QtPrivate::TypeAndForceComplete<QUrl, std::false_type>
     >,
     nullptr
 } };
@@ -115,9 +115,9 @@ void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         switch (_id) {
         case 0: _t->on_home_screen_clicked(); break;
         case 1: _t->on_player_screen_clicked(); break;
-        case 2: _t->slider_clicked((*reinterpret_cast< std::add_pointer_t<int>>(_a[1]))); break;
-        case 3: _t->update_current_time((*reinterpret_cast< std::add_pointer_t<qint64>>(_a[1]))); break;
-        case 4: _t->update_current_volume((*reinterpret_cast< std::add_pointer_t<qint64>>(_a[1]))); break;
+        case 2: _t->update_current_time((*reinterpret_cast< std::add_pointer_t<qint64>>(_a[1]))); break;
+        case 3: _t->update_current_volume((*reinterpret_cast< std::add_pointer_t<qint64>>(_a[1]))); break;
+        case 4: _t->onPlaySong((*reinterpret_cast< std::add_pointer_t<QUrl>>(_a[1]))); break;
         default: ;
         }
     }

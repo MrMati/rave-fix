@@ -15,13 +15,13 @@
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QMenuBar>
 #include <QtWidgets/QPushButton>
-#include <QtWidgets/QSlider>
 #include <QtWidgets/QStackedWidget>
 #include <QtWidgets/QStatusBar>
 #include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
 
 class CustomSlider;
+class SongWidget;
 
 QT_BEGIN_NAMESPACE
 
@@ -34,7 +34,7 @@ public:
     QWidget *player;
     QVBoxLayout *verticalLayout_2;
     QPushButton *homeScreen;
-    QSlider *volumeSlider;
+    CustomSlider *volumeSlider;
     QLabel *volume;
     QPushButton *playButton;
     QPushButton *pauseButton;
@@ -66,7 +66,7 @@ public:
 
         verticalLayout_2->addWidget(homeScreen);
 
-        volumeSlider = new QSlider(player);
+        volumeSlider = new CustomSlider(player);
         volumeSlider->setObjectName("volumeSlider");
         volumeSlider->setOrientation(Qt::Vertical);
 
@@ -124,7 +124,7 @@ public:
 
         retranslateUi(MainWindow);
 
-        stackedWidget->setCurrentIndex(0);
+        stackedWidget->setCurrentIndex(1);
 
 
         QMetaObject::connectSlotsByName(MainWindow);

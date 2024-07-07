@@ -12,6 +12,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/rave.dir/rave_autogen/mocs_compilation.cpp.obj.d"
   "CMakeFiles/rave.dir/songs.cpp.obj"
   "CMakeFiles/rave.dir/songs.cpp.obj.d"
+  "CMakeFiles/rave.dir/songwidget.cpp.obj"
+  "CMakeFiles/rave.dir/songwidget.cpp.obj.d"
   "librave.dll.a"
   "rave.exe"
   "rave.exe.manifest"

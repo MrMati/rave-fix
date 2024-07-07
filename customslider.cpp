@@ -10,7 +10,6 @@ void CustomSlider::mousePressEvent(QMouseEvent *event){
         QSlider::mousePressEvent(event);
     }
     emit slider_clicked(this->value());
-    qDebug() << "clicked";
 }
 
 void CustomSlider::mouseMoveEvent(QMouseEvent *event){

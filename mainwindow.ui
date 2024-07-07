@@ -18,7 +18,7 @@
     <item>
      <widget class="QStackedWidget" name="stackedWidget">
       <property name="currentIndex">
-       <number>0</number>
+       <number>1</number>
       </property>
       <widget class="QWidget" name="player">
        <layout class="QVBoxLayout" name="verticalLayout_2">
@@ -30,7 +30,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QSlider" name="volumeSlider">
+         <widget class="CustomSlider" name="volumeSlider">
           <property name="orientation">
            <enum>Qt::Vertical</enum>
           </property>

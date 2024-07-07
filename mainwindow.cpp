@@ -1,6 +1,9 @@
 #include "mainwindow.h"
 #include "customslider.h"
+#include "songwidget.h"
+#include "songs.h"
 #include "ui_mainwindow.h"
+
 
 MainWindow::MainWindow(QWidget *parent): QMainWindow(parent), ui(new Ui::MainWindow) {
     ui->setupUi(this);
@@ -24,13 +27,13 @@ MainWindow::MainWindow(QWidget *parent): QMainWindow(parent), ui(new Ui::MainWin
 
 
     connect(player, &QMediaPlayer::positionChanged, this, &MainWindow::update_current_time);
-    connect(ui->volumeSlider, &QSlider::sliderMoved, this, &MainWindow::update_current_volume);
+    connect(ui->volumeSlider, &CustomSlider::slider_clicked, this, &MainWindow::update_current_volume);
 
 
     connect(ui->playButton, &QPushButton::clicked, player, &QMediaPlayer::play);
     connect(ui->pauseButton, &QPushButton::clicked, player, &QMediaPlayer::pause);
     connect(ui->stopButton, &QPushButton::clicked, player, &QMediaPlayer::stop);
-    connect(ui->volumeSlider, &QSlider::sliderMoved, this, [this](int value){audioOutput->setVolume(value / 100.0);});
+    connect(ui->volumeSlider, &CustomSlider::slider_clicked, this, [this](int value){audioOutput->setVolume(value / 100.0);});
 
     connect(ui->timeSlider, &CustomSlider::slider_clicked, this, [this](int value){player->setPosition(static_cast<qint64>(value));});
     connect(player, &QMediaPlayer::positionChanged, this, [this](qint64 position) {ui->timeSlider->setValue(static_cast<int>(position));});
@@ -47,6 +50,28 @@ MainWindow::MainWindow(QWidget *parent): QMainWindow(parent), ui(new Ui::MainWin
     audioOutput->setVolume(initial_vol / 10);
     ui->volume->setText(QString::number(initial_vol));
 
+
+
+    songListWidget = new QListWidget(this);
+    for(const Song *song : songs.getLibrary()){
+        QListWidgetItem *item = new QListWidgetItem(songListWidget);
+        SongWidget *songWidget = new SongWidget(QString::fromStdString(song->name),
+                                                QString::fromStdString(song->artist.at(0)),
+                                                QString::fromStdString(song->genre),
+                                                song->file_url);
+        connect(songWidget, &SongWidget::playClicked, this, &MainWindow::onPlaySong);
+        item->setSizeHint(songWidget->sizeHint());
+        songListWidget->setItemWidget(item, songWidget);
+    }
+
+    QVBoxLayout* homeLayout = qobject_cast<QVBoxLayout*>(ui->home->layout());
+    if(!homeLayout){
+        homeLayout = new QVBoxLayout(ui->home);
+        ui->home->setLayout(homeLayout);
+    }
+    int margin = static_cast<int>(ui->home->height() * 0.1);
+    homeLayout->setContentsMargins(0, margin, 0, 0);
+    homeLayout->addWidget(songListWidget);
 }
 
 MainWindow::~MainWindow(){
@@ -60,13 +85,6 @@ void MainWindow::on_home_screen_clicked(){
 void MainWindow::on_player_screen_clicked(){
     ui->stackedWidget->setCurrentIndex(0);
 }
-
-void MainWindow::slider_clicked(int value)
-{
-    qDebug() << "lamda value: " << value;
-    player->setPosition(static_cast<qint64>(value));
-}
-
 
 void MainWindow::update_current_time(qint64 position){
     qint64 minutes = position / 60000;
@@ -83,4 +101,10 @@ void MainWindow::update_current_volume(qint64 position){
     QString timeString = QString("%1").arg(vol);
 
     ui->volume->setText(timeString);
+}
+
+void MainWindow::onPlaySong(QUrl fileUrl){
+    QMediaPlayer *player = new QMediaPlayer;
+    player->setSource(fileUrl);
+    player->play();
 }

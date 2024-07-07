@@ -10,32 +10,37 @@
 #include <QLabel>
 #include <QTimer>
 #include <iostream>
+#include <QListWidget>
+#include "songs.h"
+
 
 QT_BEGIN_NAMESPACE
-namespace Ui { class MainWindow; }
+namespace Ui {class MainWindow;}
 QT_END_NAMESPACE
 
 class MainWindow: public QMainWindow{
     Q_OBJECT
 
-public:
-    MainWindow(QWidget *parent = nullptr);
-    ~MainWindow();
+    public:
+        MainWindow(QWidget *parent = nullptr);
+        ~MainWindow();
 
-private slots:
-    void on_home_screen_clicked();
-    void on_player_screen_clicked();
-    void slider_clicked(int value);
+    private slots:
+        void on_home_screen_clicked();
+        void on_player_screen_clicked();
 
-    void update_current_time(qint64 position);
-    void update_current_volume(qint64 position);
+        void update_current_time(qint64 position);
+        void update_current_volume(qint64 position);
+        void onPlaySong(QUrl fileUrl);
 
-private:
-    Ui::MainWindow* ui;
-    QMediaPlayer* player;
-    QAudioOutput* audioOutput;
-    QStackedWidget* stackedWidget;
 
+    private:
+        Ui::MainWindow* ui;
+        QMediaPlayer* player;
+        QAudioOutput* audioOutput;
+        QStackedWidget* stackedWidget;
+        QListWidget *songListWidget;
+        Songs songs;
 
 };
 #endif

@@ -363,6 +363,12 @@
 			"MU",
 			"EWIEGA46WW/moc_songs.cpp",
 			null
+		],
+		[
+			"C:/Users/adria/Desktop/Adrian/projects/Qt/rave/songwidget.h",
+			"MU",
+			"EWIEGA46WW/moc_songwidget.cpp",
+			null
 		]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
@@ -454,6 +460,11 @@
 		],
 		[
 			"C:/Users/adria/Desktop/Adrian/projects/Qt/rave/songs.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/adria/Desktop/Adrian/projects/Qt/rave/songwidget.cpp",
 			"MU",
 			null
 		]

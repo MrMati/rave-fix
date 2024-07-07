@@ -14,6 +14,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/Users/adria/Desktop/Adrian/projects/Qt/rave/mainwindow.cpp" "CMakeFiles/rave.dir/mainwindow.cpp.obj" "gcc" "CMakeFiles/rave.dir/mainwindow.cpp.obj.d"
   "C:/Users/adria/Desktop/Adrian/projects/Qt/rave/build/Desktop_Qt_6_7_0_MinGW_64_bit-Release/rave_autogen/mocs_compilation.cpp" "CMakeFiles/rave.dir/rave_autogen/mocs_compilation.cpp.obj" "gcc" "CMakeFiles/rave.dir/rave_autogen/mocs_compilation.cpp.obj.d"
   "C:/Users/adria/Desktop/Adrian/projects/Qt/rave/songs.cpp" "CMakeFiles/rave.dir/songs.cpp.obj" "gcc" "CMakeFiles/rave.dir/songs.cpp.obj.d"
+  "C:/Users/adria/Desktop/Adrian/projects/Qt/rave/songwidget.cpp" "CMakeFiles/rave.dir/songwidget.cpp.obj" "gcc" "CMakeFiles/rave.dir/songwidget.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

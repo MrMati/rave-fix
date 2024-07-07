@@ -25,6 +25,7 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         ${PROJECT_SOURCES}
         customslider.h customslider.cpp
         songs.h songs.cpp
+        songwidget.h songwidget.cpp
 
 
     )
