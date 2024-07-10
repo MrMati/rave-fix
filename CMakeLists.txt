@@ -11,6 +11,8 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Widgets Multimedia)
 find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets Multimedia)
+find_package(Qt6 REQUIRED COMPONENTS Qml)
+find_package(Qt6 REQUIRED COMPONENTS QuickWidgets)
 
 set(PROJECT_SOURCES
     main.cpp
@@ -26,6 +28,9 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         customslider.h customslider.cpp
         songs.h songs.cpp
         songwidget.h songwidget.cpp
+        main.qml
+        qml.qrc
+        PlayButton.qml
     )
 else()
     if(ANDROID)
@@ -40,6 +45,8 @@ else()
 endif()
 
 target_link_libraries(rave PRIVATE Qt${QT_VERSION_MAJOR}::Widgets Qt${QT_VERSION_MAJOR}::Multimedia)
+target_link_libraries(rave PRIVATE Qt6::Qml)
+target_link_libraries(rave PRIVATE Qt6::QuickWidgets)
 
 if(${QT_VERSION} VERSION_LESS 6.1.0)
     set(BUNDLE_ID_OPTION MACOSX_BUNDLE_GUI_IDENTIFIER com.example.rave)

@@ -6,6 +6,7 @@
 #include <QPushButton>
 #include <QHBoxLayout>
 #include <QUrl>
+#include <QQuickWidget>
 
 class SongWidget: public QWidget{
     Q_OBJECT
@@ -23,7 +24,7 @@ class SongWidget: public QWidget{
         QLabel *nameLabel;
         QLabel *artistLabel;
         QLabel *genreLabel;
-        QPushButton *playButton;
+        QQuickWidget *playButton;
         QUrl fileUrl;
 };
 

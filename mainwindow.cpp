@@ -4,14 +4,25 @@
 #include "songs.h"
 #include "ui_mainwindow.h"
 
-MainWindow::MainWindow(QWidget *parent): QMainWindow(parent), ui(new Ui::MainWindow) {
+MainWindow::MainWindow(QWidget *parent): QMainWindow(parent), ui(new Ui::MainWindow){
     ui->setupUi(this);
 
     player = new QMediaPlayer(this);
     audioOutput = new QAudioOutput(this);
     player->setAudioOutput(audioOutput);
 
-    player->setSource(QUrl::fromLocalFile("C:/Users/adria/Desktop/Adrian/music/Blessed & Possessed.mp3"));
+    // load settings
+    QSettings settings("AL", "Rave");
+    QString last_played_song = settings.value("last_played_song", "").toString();
+
+    int last_vol = settings.value("last_vol", 40).toInt();
+    if(!last_played_song.isEmpty()){
+        player->setSource(QUrl::fromUserInput(last_played_song));
+    }
+
+    audioOutput->setVolume(last_vol / 10);
+    ui->volumeSlider->setValue(last_vol);
+    ui->volume->setText(QString::number(last_vol));
 
     connect(player, &QMediaPlayer::positionChanged, this, &MainWindow::update_current_time);
     connect(ui->volumeSlider, &CustomSlider::slider_clicked, this, &MainWindow::update_current_volume);
@@ -29,10 +40,6 @@ MainWindow::MainWindow(QWidget *parent): QMainWindow(parent), ui(new Ui::MainWin
     connect(ui->playerButton, &QPushButton::clicked, this, &MainWindow::on_player_screen_clicked);
 
     ui->stackedWidget->setCurrentIndex(0);
-    qint64 initial_vol = 40;
-    ui->volumeSlider->setValue(initial_vol);
-    audioOutput->setVolume(initial_vol / 10);
-    ui->volume->setText(QString::number(initial_vol));
 
     songListWidget = new QListWidget(this);
     for(const Song *song : songs.getLibrary()){
@@ -54,11 +61,27 @@ MainWindow::MainWindow(QWidget *parent): QMainWindow(parent), ui(new Ui::MainWin
     int margin = static_cast<int>(ui->home->height() * 0.1);
     homeLayout->setContentsMargins(0, margin, 0, 0);
     homeLayout->addWidget(songListWidget);
+
+    // QQmlApplicationEngine *engine = new QQmlApplicationEngine(this);
+    // engine->rootContext()->setContextProperty("mainWindow", this);
+    // engine->load(QUrl(QStringLiteral("qrc:/main.qml")));
 }
 
 MainWindow::~MainWindow(){
     delete ui;
 }
+
+void MainWindow::closeEvent(QCloseEvent *event){
+    QSettings settings("AL", "Rave");
+    QUrl current_song = player->source().url();
+    int current_volume = static_cast<int>(audioOutput->volume() * 100);
+
+    settings.setValue("last_played_song", current_song.toString());
+    settings.setValue("last_vol", current_volume);
+
+    QMainWindow::closeEvent(event);
+}
+
 
 void MainWindow::on_home_screen_clicked(){
     ui->stackedWidget->setCurrentIndex(1);

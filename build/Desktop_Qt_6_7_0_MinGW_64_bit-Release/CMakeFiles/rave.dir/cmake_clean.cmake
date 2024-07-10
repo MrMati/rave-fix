@@ -8,6 +8,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/rave.dir/main.cpp.obj.d"
   "CMakeFiles/rave.dir/mainwindow.cpp.obj"
   "CMakeFiles/rave.dir/mainwindow.cpp.obj.d"
+  "CMakeFiles/rave.dir/rave_autogen/EWIEGA46WW/qrc_qml.cpp.obj"
+  "CMakeFiles/rave.dir/rave_autogen/EWIEGA46WW/qrc_qml.cpp.obj.d"
   "CMakeFiles/rave.dir/rave_autogen/mocs_compilation.cpp.obj"
   "CMakeFiles/rave.dir/rave_autogen/mocs_compilation.cpp.obj.d"
   "CMakeFiles/rave.dir/songs.cpp.obj"
@@ -18,6 +20,7 @@ file(REMOVE_RECURSE
   "rave.exe"
   "rave.exe.manifest"
   "rave.pdb"
+  "rave_autogen/EWIEGA46WW/qrc_qml.cpp"
   "rave_autogen/mocs_compilation.cpp"
   "rave_autogen/timestamp"
 )

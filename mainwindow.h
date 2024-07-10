@@ -11,6 +11,9 @@
 #include <QTimer>
 #include <iostream>
 #include <QListWidget>
+#include <QQmlApplicationEngine>
+#include <QQmlContext>
+#include <QSettings>
 #include "songs.h"
 
 
@@ -24,6 +27,13 @@ class MainWindow: public QMainWindow{
     public:
         MainWindow(QWidget *parent = nullptr);
         ~MainWindow();
+
+        Q_INVOKABLE void play() { player->play(); }
+        Q_INVOKABLE void pause() { player->pause(); }
+        Q_INVOKABLE void stop() { player->stop(); }
+
+    protected:
+        void closeEvent(QCloseEvent *event) override;
 
     private slots:
         void on_home_screen_clicked();
@@ -44,5 +54,3 @@ class MainWindow: public QMainWindow{
 
 };
 #endif
-
-// in home user can chose the song, then it opens player with this music

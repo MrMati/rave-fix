@@ -361,6 +361,9 @@ Qt6Qml_DIR:PATH=C:/Qt/6.7.0/mingw_64/lib/cmake/Qt6Qml
 //The directory containing a CMake configuration file for Qt6QuickTools.
 Qt6QuickTools_DIR:PATH=C:/Qt/6.7.0/mingw_64/lib/cmake/Qt6QuickTools
 
+//The directory containing a CMake configuration file for Qt6QuickWidgets.
+Qt6QuickWidgets_DIR:PATH=C:/Qt/6.7.0/mingw_64/lib/cmake/Qt6QuickWidgets
+
 //The directory containing a CMake configuration file for Qt6Quick.
 Qt6Quick_DIR:PATH=C:/Qt/6.7.0/mingw_64/lib/cmake/Qt6Quick
 
@@ -1478,6 +1481,8 @@ QT_FEATURE_xmlstreamwriter:INTERNAL=ON
 QT_FEATURE_xrender:INTERNAL=OFF
 //Qt feature: zstd (from target Qt6::Core)
 QT_FEATURE_zstd:INTERNAL=OFF
+//Path to the wrapper of the tool commands
+QT_TOOL_COMMAND_WRAPPER_PATH:INTERNAL=C:/Users/adria/Desktop/Adrian/projects/Qt/rave/build/Desktop_Qt_6_7_0_MinGW_64_bit-Release/.qt/bin/qt_setup_tool_path.bat
 //ADVANCED property for variable: Vulkan_GLSLANG_VALIDATOR_EXECUTABLE
 Vulkan_GLSLANG_VALIDATOR_EXECUTABLE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: Vulkan_GLSLC_EXECUTABLE

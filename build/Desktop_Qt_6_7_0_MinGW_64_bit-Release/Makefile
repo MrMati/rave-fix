@@ -174,6 +174,19 @@ rave/fast:
 .PHONY : rave/fast
 
 #=============================================================================
+# Target rules for targets named rave_qmlimportscan
+
+# Build rule for target.
+rave_qmlimportscan: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 rave_qmlimportscan
+.PHONY : rave_qmlimportscan
+
+# fast build rule for target.
+rave_qmlimportscan/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\rave_qmlimportscan.dir\build.make CMakeFiles/rave_qmlimportscan.dir/build
+.PHONY : rave_qmlimportscan/fast
+
+#=============================================================================
 # Target rules for targets named rave_autogen_timestamp_deps
 
 # Build rule for target.
@@ -271,6 +284,30 @@ mainwindow.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\rave.dir\build.make CMakeFiles/rave.dir/mainwindow.cpp.s
 .PHONY : mainwindow.cpp.s
 
+rave_autogen/EWIEGA46WW/qrc_qml.obj: rave_autogen/EWIEGA46WW/qrc_qml.cpp.obj
+.PHONY : rave_autogen/EWIEGA46WW/qrc_qml.obj
+
+# target to build an object file
+rave_autogen/EWIEGA46WW/qrc_qml.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\rave.dir\build.make CMakeFiles/rave.dir/rave_autogen/EWIEGA46WW/qrc_qml.cpp.obj
+.PHONY : rave_autogen/EWIEGA46WW/qrc_qml.cpp.obj
+
+rave_autogen/EWIEGA46WW/qrc_qml.i: rave_autogen/EWIEGA46WW/qrc_qml.cpp.i
+.PHONY : rave_autogen/EWIEGA46WW/qrc_qml.i
+
+# target to preprocess a source file
+rave_autogen/EWIEGA46WW/qrc_qml.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\rave.dir\build.make CMakeFiles/rave.dir/rave_autogen/EWIEGA46WW/qrc_qml.cpp.i
+.PHONY : rave_autogen/EWIEGA46WW/qrc_qml.cpp.i
+
+rave_autogen/EWIEGA46WW/qrc_qml.s: rave_autogen/EWIEGA46WW/qrc_qml.cpp.s
+.PHONY : rave_autogen/EWIEGA46WW/qrc_qml.s
+
+# target to generate assembly for a file
+rave_autogen/EWIEGA46WW/qrc_qml.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\rave.dir\build.make CMakeFiles/rave.dir/rave_autogen/EWIEGA46WW/qrc_qml.cpp.s
+.PHONY : rave_autogen/EWIEGA46WW/qrc_qml.cpp.s
+
 rave_autogen/mocs_compilation.obj: rave_autogen/mocs_compilation.cpp.obj
 .PHONY : rave_autogen/mocs_compilation.obj
 
@@ -357,6 +394,7 @@ help:
 	@echo ... rebuild_cache
 	@echo ... rave_autogen
 	@echo ... rave_autogen_timestamp_deps
+	@echo ... rave_qmlimportscan
 	@echo ... rave
 	@echo ... customslider.obj
 	@echo ... customslider.i
@@ -367,6 +405,9 @@ help:
 	@echo ... mainwindow.obj
 	@echo ... mainwindow.i
 	@echo ... mainwindow.s
+	@echo ... rave_autogen/EWIEGA46WW/qrc_qml.obj
+	@echo ... rave_autogen/EWIEGA46WW/qrc_qml.i
+	@echo ... rave_autogen/EWIEGA46WW/qrc_qml.s
 	@echo ... rave_autogen/mocs_compilation.obj
 	@echo ... rave_autogen/mocs_compilation.i
 	@echo ... rave_autogen/mocs_compilation.s

@@ -421,6 +421,40 @@ CMakeFiles/rave.dir/mainwindow.cpp.obj: \
  C:/Qt/6.7.0/mingw_64/include/QtWidgets/qstyle.h \
  C:/Qt/6.7.0/mingw_64/include/QtWidgets/qtabbar.h \
  C:/Qt/6.7.0/mingw_64/include/QtWidgets/qrubberband.h \
+ C:/Qt/6.7.0/mingw_64/include/QtQml/QQmlApplicationEngine \
+ C:/Qt/6.7.0/mingw_64/include/QtQml/qqmlapplicationengine.h \
+ C:/Qt/6.7.0/mingw_64/include/QtQml/qqmlengine.h \
+ C:/Qt/6.7.0/mingw_64/include/QtQml/qjsengine.h \
+ C:/Qt/6.7.0/mingw_64/include/QtCore/qtimezone.h \
+ C:/Qt/6.7.0/mingw_64/include/QtCore/qdatetime.h \
+ C:/Qt/6.7.0/mingw_64/include/QtCore/qcalendar.h \
+ C:/Qt/6.7.0/mingw_64/include/QtQml/qjsvalue.h \
+ C:/Qt/6.7.0/mingw_64/include/QtQml/qtqmlglobal.h \
+ C:/Qt/6.7.0/mingw_64/include/QtQml/qtqml-config.h \
+ C:/Qt/6.7.0/mingw_64/include/QtNetwork/qtnetworkglobal.h \
+ C:/Qt/6.7.0/mingw_64/include/QtNetwork/qtnetwork-config.h \
+ C:/Qt/6.7.0/mingw_64/include/QtNetwork/qtnetworkexports.h \
+ C:/Qt/6.7.0/mingw_64/include/QtQml/qtqmlexports.h \
+ C:/Qt/6.7.0/mingw_64/include/QtQml/qjsmanagedvalue.h \
+ C:/Qt/6.7.0/mingw_64/include/QtQml/qjsprimitivevalue.h \
+ C:/Qt/6.7.0/mingw_64/include/QtQml/qjsnumbercoercion.h \
+ C:/Qt/6.7.0/mingw_64/include/QtQml/qqmldebug.h \
+ C:/Qt/6.7.0/mingw_64/include/QtQml/qqml.h \
+ C:/Qt/6.7.0/mingw_64/include/QtQml/qqmlprivate.h \
+ C:/Qt/6.7.0/mingw_64/include/QtQml/qqmllist.h \
+ C:/Qt/6.7.0/mingw_64/include/QtQml/qqmlparserstatus.h \
+ C:/Qt/6.7.0/mingw_64/include/QtQml/qqmlpropertyvaluesource.h \
+ C:/Qt/6.7.0/mingw_64/include/QtCore/qpointer.h \
+ C:/Qt/6.7.0/mingw_64/include/QtCore/qversionnumber.h \
+ C:/Qt/6.7.0/mingw_64/include/QtCore/qtyperevision.h \
+ C:/Qt/6.7.0/mingw_64/include/QtQml/qqmlregistration.h \
+ C:/Qt/6.7.0/mingw_64/include/QtQmlIntegration/qqmlintegration.h \
+ C:/Qt/6.7.0/mingw_64/include/QtQml/qqmlerror.h \
+ C:/Qt/6.7.0/mingw_64/include/QtQml/qqmlabstracturlinterceptor.h \
+ C:/Qt/6.7.0/mingw_64/include/QtQml/QQmlContext \
+ C:/Qt/6.7.0/mingw_64/include/QtQml/qqmlcontext.h \
+ C:/Qt/6.7.0/mingw_64/include/QtCore/QSettings \
+ C:/Qt/6.7.0/mingw_64/include/QtCore/qsettings.h \
  C:\Users\adria\Desktop\Adrian\projects\Qt\rave\songs.h \
  C:/Qt/6.7.0/mingw_64/include/QtCore/QUrl \
  C:/Qt/6.7.0/mingw_64/include/QtCore/qurl.h \
@@ -448,9 +482,6 @@ CMakeFiles/rave.dir/mainwindow.cpp.obj: \
  C:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/fs_dir.h \
  C:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/fs_ops.h \
  C:/Qt/6.7.0/mingw_64/include/QtCore/qfileinfo.h \
- C:/Qt/6.7.0/mingw_64/include/QtCore/qdatetime.h \
- C:/Qt/6.7.0/mingw_64/include/QtCore/qcalendar.h \
- C:/Qt/6.7.0/mingw_64/include/QtCore/qtimezone.h \
  C:/Qt/6.7.0/mingw_64/include/QtCore/QFileInfoList \
  C:/Qt/6.7.0/mingw_64/include/QtCore/qfileinfo.h \
  C:/Qt/6.7.0/mingw_64/include/QtCore/QFileInfo \
@@ -503,6 +534,35 @@ CMakeFiles/rave.dir/mainwindow.cpp.obj: \
  C:/Qt/6.7.0/mingw_64/include/QtWidgets/qlayoutitem.h \
  C:/Qt/6.7.0/mingw_64/include/QtWidgets/qboxlayout.h \
  C:/Qt/6.7.0/mingw_64/include/QtWidgets/qgridlayout.h \
+ C:/Qt/6.7.0/mingw_64/include/QtQuickWidgets/QQuickWidget \
+ C:/Qt/6.7.0/mingw_64/include/QtQuickWidgets/qquickwidget.h \
+ C:/Qt/6.7.0/mingw_64/include/QtQuick/qquickwindow.h \
+ C:/Qt/6.7.0/mingw_64/include/QtQuick/qtquickglobal.h \
+ C:/Qt/6.7.0/mingw_64/include/QtQuick/qtquick-config.h \
+ C:/Qt/6.7.0/mingw_64/include/QtQuick/qtquickexports.h \
+ C:/Qt/6.7.0/mingw_64/include/QtQuick/qsgrendererinterface.h \
+ C:/Qt/6.7.0/mingw_64/include/QtQuick/qsgnode.h \
+ C:/Qt/6.7.0/mingw_64/include/QtQuick/qsggeometry.h \
+ C:/Qt/6.7.0/mingw_64/include/QtCore/QRectF \
+ C:/Qt/6.7.0/mingw_64/include/QtGui/QMatrix4x4 \
+ C:/Qt/6.7.0/mingw_64/include/QtGui/qmatrix4x4.h \
+ C:/Qt/6.7.0/mingw_64/include/QtGui/qvector3d.h \
+ C:/Qt/6.7.0/mingw_64/include/QtGui/qvector4d.h \
+ C:/Qt/6.7.0/mingw_64/include/QtGui/qquaternion.h \
+ C:/Qt/6.7.0/mingw_64/include/QtGui/qgenericmatrix.h \
+ C:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/float.h \
+ C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/float.h \
+ C:/Qt/6.7.0/mingw_64/include/QtGui/qwindow.h \
+ C:/Qt/6.7.0/mingw_64/include/QtCore/QEvent \
+ C:/Qt/6.7.0/mingw_64/include/QtCore/qcoreevent.h \
+ C:/Qt/6.7.0/mingw_64/include/QtCore/QMargins \
+ C:/Qt/6.7.0/mingw_64/include/QtCore/qmargins.h \
+ C:/Qt/6.7.0/mingw_64/include/QtGui/qsurface.h \
+ C:/Qt/6.7.0/mingw_64/include/QtGui/qsurfaceformat.h \
+ C:/Qt/6.7.0/mingw_64/include/QtGui/qevent.h \
+ C:/Qt/6.7.0/mingw_64/include/QtQml/qqmlinfo.h \
+ C:/Qt/6.7.0/mingw_64/include/QtQuickWidgets/qtquickwidgetsglobal.h \
+ C:/Qt/6.7.0/mingw_64/include/QtQuickWidgets/qtquickwidgetsexports.h \
  C:/Users/adria/Desktop/Adrian/projects/Qt/rave/build/Desktop_Qt_6_7_0_MinGW_64_bit-Release/rave_autogen/include/ui_mainwindow.h \
  C:/Qt/6.7.0/mingw_64/include/QtCore/QVariant \
  C:/Qt/6.7.0/mingw_64/include/QtCore/qvariant.h \

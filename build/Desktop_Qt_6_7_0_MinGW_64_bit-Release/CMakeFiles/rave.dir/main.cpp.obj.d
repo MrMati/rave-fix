@@ -421,6 +421,40 @@ CMakeFiles/rave.dir/main.cpp.obj: \
  C:/Qt/6.7.0/mingw_64/include/QtWidgets/qstyle.h \
  C:/Qt/6.7.0/mingw_64/include/QtWidgets/qtabbar.h \
  C:/Qt/6.7.0/mingw_64/include/QtWidgets/qrubberband.h \
+ C:/Qt/6.7.0/mingw_64/include/QtQml/QQmlApplicationEngine \
+ C:/Qt/6.7.0/mingw_64/include/QtQml/qqmlapplicationengine.h \
+ C:/Qt/6.7.0/mingw_64/include/QtQml/qqmlengine.h \
+ C:/Qt/6.7.0/mingw_64/include/QtQml/qjsengine.h \
+ C:/Qt/6.7.0/mingw_64/include/QtCore/qtimezone.h \
+ C:/Qt/6.7.0/mingw_64/include/QtCore/qdatetime.h \
+ C:/Qt/6.7.0/mingw_64/include/QtCore/qcalendar.h \
+ C:/Qt/6.7.0/mingw_64/include/QtQml/qjsvalue.h \
+ C:/Qt/6.7.0/mingw_64/include/QtQml/qtqmlglobal.h \
+ C:/Qt/6.7.0/mingw_64/include/QtQml/qtqml-config.h \
+ C:/Qt/6.7.0/mingw_64/include/QtNetwork/qtnetworkglobal.h \
+ C:/Qt/6.7.0/mingw_64/include/QtNetwork/qtnetwork-config.h \
+ C:/Qt/6.7.0/mingw_64/include/QtNetwork/qtnetworkexports.h \
+ C:/Qt/6.7.0/mingw_64/include/QtQml/qtqmlexports.h \
+ C:/Qt/6.7.0/mingw_64/include/QtQml/qjsmanagedvalue.h \
+ C:/Qt/6.7.0/mingw_64/include/QtQml/qjsprimitivevalue.h \
+ C:/Qt/6.7.0/mingw_64/include/QtQml/qjsnumbercoercion.h \
+ C:/Qt/6.7.0/mingw_64/include/QtQml/qqmldebug.h \
+ C:/Qt/6.7.0/mingw_64/include/QtQml/qqml.h \
+ C:/Qt/6.7.0/mingw_64/include/QtQml/qqmlprivate.h \
+ C:/Qt/6.7.0/mingw_64/include/QtQml/qqmllist.h \
+ C:/Qt/6.7.0/mingw_64/include/QtQml/qqmlparserstatus.h \
+ C:/Qt/6.7.0/mingw_64/include/QtQml/qqmlpropertyvaluesource.h \
+ C:/Qt/6.7.0/mingw_64/include/QtCore/qpointer.h \
+ C:/Qt/6.7.0/mingw_64/include/QtCore/qversionnumber.h \
+ C:/Qt/6.7.0/mingw_64/include/QtCore/qtyperevision.h \
+ C:/Qt/6.7.0/mingw_64/include/QtQml/qqmlregistration.h \
+ C:/Qt/6.7.0/mingw_64/include/QtQmlIntegration/qqmlintegration.h \
+ C:/Qt/6.7.0/mingw_64/include/QtQml/qqmlerror.h \
+ C:/Qt/6.7.0/mingw_64/include/QtQml/qqmlabstracturlinterceptor.h \
+ C:/Qt/6.7.0/mingw_64/include/QtQml/QQmlContext \
+ C:/Qt/6.7.0/mingw_64/include/QtQml/qqmlcontext.h \
+ C:/Qt/6.7.0/mingw_64/include/QtCore/QSettings \
+ C:/Qt/6.7.0/mingw_64/include/QtCore/qsettings.h \
  C:\Users\adria\Desktop\Adrian\projects\Qt\rave\songs.h \
  C:/Qt/6.7.0/mingw_64/include/QtCore/QUrl \
  C:/Qt/6.7.0/mingw_64/include/QtCore/qurl.h \
@@ -448,9 +482,6 @@ CMakeFiles/rave.dir/main.cpp.obj: \
  C:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/fs_dir.h \
  C:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/fs_ops.h \
  C:/Qt/6.7.0/mingw_64/include/QtCore/qfileinfo.h \
- C:/Qt/6.7.0/mingw_64/include/QtCore/qdatetime.h \
- C:/Qt/6.7.0/mingw_64/include/QtCore/qcalendar.h \
- C:/Qt/6.7.0/mingw_64/include/QtCore/qtimezone.h \
  C:/Qt/6.7.0/mingw_64/include/QtCore/QFileInfoList \
  C:/Qt/6.7.0/mingw_64/include/QtCore/qfileinfo.h \
  C:/Qt/6.7.0/mingw_64/include/QtCore/QFileInfo \
