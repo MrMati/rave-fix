@@ -21,7 +21,6 @@
 #include <QtWidgets/QWidget>
 
 class CustomSlider;
-class SongWidget;
 
 QT_BEGIN_NAMESPACE
 
@@ -124,7 +123,7 @@ public:
 
         retranslateUi(MainWindow);
 
-        stackedWidget->setCurrentIndex(1);
+        stackedWidget->setCurrentIndex(0);
 
 
         QMetaObject::connectSlotsByName(MainWindow);

@@ -497,6 +497,18 @@ CMakeFiles/rave.dir/rave_autogen/mocs_compilation.cpp.obj: \
  C:/Qt/6.7.0/mingw_64/include/QtQml/qqmlcontext.h \
  C:/Qt/6.7.0/mingw_64/include/QtCore/QSettings \
  C:/Qt/6.7.0/mingw_64/include/QtCore/qsettings.h \
+ C:/Qt/6.7.0/mingw_64/include/QtQuick/QQuickItem \
+ C:/Qt/6.7.0/mingw_64/include/QtQuick/qquickitem.h \
+ C:/Qt/6.7.0/mingw_64/include/QtQuick/qtquickglobal.h \
+ C:/Qt/6.7.0/mingw_64/include/QtQuick/qtquick-config.h \
+ C:/Qt/6.7.0/mingw_64/include/QtQuick/qtquickexports.h \
+ C:/Qt/6.7.0/mingw_64/include/QtQml/qqmlcomponent.h \
+ C:/Qt/6.7.0/mingw_64/include/QtCore/qproperty.h \
+ C:/Qt/6.7.0/mingw_64/include/QtCore/qpropertyprivate.h \
+ C:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/experimental/source_location \
+ C:/Qt/6.7.0/mingw_64/include/QtGui/qevent.h \
+ C:/Qt/6.7.0/mingw_64/include/QtGui/qaccessible.h \
+ C:/Qt/6.7.0/mingw_64/include/QtGui/qaccessible_base.h \
  C:/Users/adria/Desktop/Adrian/projects/Qt/rave/songs.h \
  C:/Qt/6.7.0/mingw_64/include/QtCore/QUrl \
  C:/Qt/6.7.0/mingw_64/include/QtCore/qurl.h \
@@ -545,9 +557,6 @@ CMakeFiles/rave.dir/rave_autogen/mocs_compilation.cpp.obj: \
  C:/Qt/6.7.0/mingw_64/include/QtQuickWidgets/QQuickWidget \
  C:/Qt/6.7.0/mingw_64/include/QtQuickWidgets/qquickwidget.h \
  C:/Qt/6.7.0/mingw_64/include/QtQuick/qquickwindow.h \
- C:/Qt/6.7.0/mingw_64/include/QtQuick/qtquickglobal.h \
- C:/Qt/6.7.0/mingw_64/include/QtQuick/qtquick-config.h \
- C:/Qt/6.7.0/mingw_64/include/QtQuick/qtquickexports.h \
  C:/Qt/6.7.0/mingw_64/include/QtQuick/qsgrendererinterface.h \
  C:/Qt/6.7.0/mingw_64/include/QtQuick/qsgnode.h \
  C:/Qt/6.7.0/mingw_64/include/QtQuick/qsggeometry.h \
@@ -567,7 +576,6 @@ CMakeFiles/rave.dir/rave_autogen/mocs_compilation.cpp.obj: \
  C:/Qt/6.7.0/mingw_64/include/QtCore/qmargins.h \
  C:/Qt/6.7.0/mingw_64/include/QtGui/qsurface.h \
  C:/Qt/6.7.0/mingw_64/include/QtGui/qsurfaceformat.h \
- C:/Qt/6.7.0/mingw_64/include/QtGui/qevent.h \
  C:/Qt/6.7.0/mingw_64/include/QtQml/qqmlinfo.h \
  C:/Qt/6.7.0/mingw_64/include/QtQuickWidgets/qtquickwidgetsglobal.h \
  C:/Qt/6.7.0/mingw_64/include/QtQuickWidgets/qtquickwidgetsexports.h

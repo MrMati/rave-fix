@@ -49,6 +49,7 @@ MainWindow::MainWindow(QWidget *parent): QMainWindow(parent), ui(new Ui::MainWin
                                                 QString::fromStdString(song->genre),
                                                 song->file_url);
         connect(songWidget, &SongWidget::playClicked, this, &MainWindow::onPlaySong);
+        connect(songWidget, &SongWidget::pauseClicked, this, &MainWindow::onPauseSong);
         item->setSizeHint(songWidget->sizeHint());
         songListWidget->setItemWidget(item, songWidget);
     }
@@ -112,3 +113,20 @@ void MainWindow::onPlaySong(QUrl fileUrl){
     player->setSource(fileUrl);
     player->play();
 }
+
+void MainWindow::onPauseSong() {
+    player->pause();
+}
+
+// void MainWindow::resetPlayButtons() {
+//     for (int i = 0; i < songListWidget->count(); ++i) {
+//         QListWidgetItem *item = songListWidget->item(i);
+//         SongWidget *songWidget = qobject_cast<SongWidget *>(songListWidget->itemWidget(item));
+//         if (songWidget) {
+//             QObject *rootObject = qobject_cast<QObject *>(songWidget->getPlayButton()->rootObject());
+//             if (rootObject) {
+//                 QMetaObject::invokeMethod(rootObject, "resetPlayButton", Qt::DirectConnection);
+//             }
+//         }
+//     }
+// }

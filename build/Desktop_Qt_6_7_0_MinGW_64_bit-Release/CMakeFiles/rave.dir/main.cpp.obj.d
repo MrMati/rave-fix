@@ -455,6 +455,46 @@ CMakeFiles/rave.dir/main.cpp.obj: \
  C:/Qt/6.7.0/mingw_64/include/QtQml/qqmlcontext.h \
  C:/Qt/6.7.0/mingw_64/include/QtCore/QSettings \
  C:/Qt/6.7.0/mingw_64/include/QtCore/qsettings.h \
+ C:/Qt/6.7.0/mingw_64/include/QtQuick/QQuickItem \
+ C:/Qt/6.7.0/mingw_64/include/QtQuick/qquickitem.h \
+ C:/Qt/6.7.0/mingw_64/include/QtQuick/qtquickglobal.h \
+ C:/Qt/6.7.0/mingw_64/include/QtQuick/qtquick-config.h \
+ C:/Qt/6.7.0/mingw_64/include/QtQuick/qtquickexports.h \
+ C:/Qt/6.7.0/mingw_64/include/QtQml/qqmlcomponent.h \
+ C:/Qt/6.7.0/mingw_64/include/QtCore/QObject \
+ C:/Qt/6.7.0/mingw_64/include/QtCore/qobject.h \
+ C:/Qt/6.7.0/mingw_64/include/QtCore/QList \
+ C:/Qt/6.7.0/mingw_64/include/QtCore/qlist.h \
+ C:/Qt/6.7.0/mingw_64/include/QtCore/qproperty.h \
+ C:/Qt/6.7.0/mingw_64/include/QtCore/qpropertyprivate.h \
+ C:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/experimental/source_location \
+ C:/Qt/6.7.0/mingw_64/include/QtGui/qevent.h \
+ C:/Qt/6.7.0/mingw_64/include/QtCore/qcoreevent.h \
+ C:/Qt/6.7.0/mingw_64/include/QtGui/qeventpoint.h \
+ C:/Qt/6.7.0/mingw_64/include/QtGui/qvector2d.h \
+ C:/Qt/6.7.0/mingw_64/include/QtGui/qvectornd.h \
+ C:/Qt/6.7.0/mingw_64/include/QtGui/qpointingdevice.h \
+ C:/Qt/6.7.0/mingw_64/include/QtGui/qinputdevice.h \
+ C:/Qt/6.7.0/mingw_64/include/QtGui/qscreen.h \
+ C:/Qt/6.7.0/mingw_64/include/QtCore/QRect \
+ C:/Qt/6.7.0/mingw_64/include/QtCore/qrect.h \
+ C:/Qt/6.7.0/mingw_64/include/QtCore/QSize \
+ C:/Qt/6.7.0/mingw_64/include/QtCore/qsize.h \
+ C:/Qt/6.7.0/mingw_64/include/QtCore/QSizeF \
+ C:/Qt/6.7.0/mingw_64/include/QtGui/QTransform \
+ C:/Qt/6.7.0/mingw_64/include/QtGui/qtransform.h \
+ C:/Qt/6.7.0/mingw_64/include/QtCore/qnativeinterface.h \
+ C:/Qt/6.7.0/mingw_64/include/QtGui/qscreen_platform.h \
+ C:/Qt/6.7.0/mingw_64/include/QtGui/qguiapplication.h \
+ C:/Qt/6.7.0/mingw_64/include/QtCore/qcoreapplication.h \
+ C:/Qt/6.7.0/mingw_64/include/QtCore/qdeadlinetimer.h \
+ C:/Qt/6.7.0/mingw_64/include/QtCore/qelapsedtimer.h \
+ C:/Qt/6.7.0/mingw_64/include/QtCore/qeventloop.h \
+ C:/Qt/6.7.0/mingw_64/include/QtCore/qcoreapplication_platform.h \
+ C:/Qt/6.7.0/mingw_64/include/QtGui/qinputmethod.h \
+ C:/Qt/6.7.0/mingw_64/include/QtGui/qguiapplication_platform.h \
+ C:/Qt/6.7.0/mingw_64/include/QtGui/qaccessible.h \
+ C:/Qt/6.7.0/mingw_64/include/QtGui/qaccessible_base.h \
  C:\Users\adria\Desktop\Adrian\projects\Qt\rave\songs.h \
  C:/Qt/6.7.0/mingw_64/include/QtCore/QUrl \
  C:/Qt/6.7.0/mingw_64/include/QtCore/qurl.h \
@@ -486,14 +526,4 @@ CMakeFiles/rave.dir/main.cpp.obj: \
  C:/Qt/6.7.0/mingw_64/include/QtCore/qfileinfo.h \
  C:/Qt/6.7.0/mingw_64/include/QtCore/QFileInfo \
  C:/Qt/6.7.0/mingw_64/include/QtWidgets/QApplication \
- C:/Qt/6.7.0/mingw_64/include/QtWidgets/qapplication.h \
- C:/Qt/6.7.0/mingw_64/include/QtCore/qcoreapplication.h \
- C:/Qt/6.7.0/mingw_64/include/QtCore/qcoreevent.h \
- C:/Qt/6.7.0/mingw_64/include/QtCore/qdeadlinetimer.h \
- C:/Qt/6.7.0/mingw_64/include/QtCore/qelapsedtimer.h \
- C:/Qt/6.7.0/mingw_64/include/QtCore/qeventloop.h \
- C:/Qt/6.7.0/mingw_64/include/QtCore/qnativeinterface.h \
- C:/Qt/6.7.0/mingw_64/include/QtCore/qcoreapplication_platform.h \
- C:/Qt/6.7.0/mingw_64/include/QtGui/qguiapplication.h \
- C:/Qt/6.7.0/mingw_64/include/QtGui/qinputmethod.h \
- C:/Qt/6.7.0/mingw_64/include/QtGui/qguiapplication_platform.h
+ C:/Qt/6.7.0/mingw_64/include/QtWidgets/qapplication.h

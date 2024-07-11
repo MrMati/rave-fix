@@ -16,8 +16,10 @@ SongWidget::SongWidget(QString name, QString artist, QString genre, QUrl fileUrl
         if(status == QQuickWidget::Ready){
             QQuickItem *rootObject = playButton->rootObject();
             connect(rootObject, SIGNAL(playClicked()), this, SLOT(onPlayButtonClicked()));
+            connect(rootObject, SIGNAL(pauseClicked()), this, SLOT(onPauseButtonClicked()));
         }
     });
+
     QHBoxLayout *layout = new QHBoxLayout;
     layout->addWidget(nameLabel);
     layout->addWidget(artistLabel);
@@ -26,7 +28,16 @@ SongWidget::SongWidget(QString name, QString artist, QString genre, QUrl fileUrl
     setLayout(layout);
 }
 
+QQuickWidget* SongWidget::getPlayButton() const{
+    return playButton;
+}
+
 void SongWidget::onPlayButtonClicked() {
     qDebug() << "Play button clicked for song: " << fileUrl.toString();
     emit playClicked(fileUrl);
+}
+
+void SongWidget::onPauseButtonClicked(){
+    qDebug() << "Pause button clicked for song: " << fileUrl.toString();
+    emit pauseClicked();
 }

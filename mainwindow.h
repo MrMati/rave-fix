@@ -14,6 +14,7 @@
 #include <QQmlApplicationEngine>
 #include <QQmlContext>
 #include <QSettings>
+#include <QQuickItem>
 #include "songs.h"
 
 
@@ -42,7 +43,8 @@ class MainWindow: public QMainWindow{
         void update_current_time(qint64 position);
         void update_current_volume(qint64 position);
         void onPlaySong(QUrl fileUrl);
-
+        void onPauseSong();
+        // void resetPlayButtons();
 
     private:
         Ui::MainWindow* ui;
@@ -52,5 +54,7 @@ class MainWindow: public QMainWindow{
         QListWidget *songListWidget;
         Songs songs;
 
+        QUrl currentSongUrl;
+        bool isPaused = false;
 };
 #endif

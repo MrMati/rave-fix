@@ -13,12 +13,15 @@ class SongWidget: public QWidget{
 
     public:
         SongWidget(QString name, QString artist, QString genre, QUrl fileUrl, QWidget *parent = nullptr);
+        QQuickWidget* getPlayButton() const;
 
     signals:
         void playClicked(QUrl fileUrl);
+        void pauseClicked();
 
     private slots:
         void onPlayButtonClicked();
+        void onPauseButtonClicked();
 
     private:
         QLabel *nameLabel;
