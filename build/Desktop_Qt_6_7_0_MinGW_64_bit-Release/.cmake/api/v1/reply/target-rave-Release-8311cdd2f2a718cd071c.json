@@ -98,19 +98,19 @@
 			{
 				"command" : 4,
 				"file" : 1,
-				"line" : 63,
+				"line" : 64,
 				"parent" : 0
 			},
 			{
 				"command" : 5,
 				"file" : 1,
-				"line" : 46,
+				"line" : 47,
 				"parent" : 0
 			},
 			{
 				"command" : 5,
 				"file" : 1,
-				"line" : 48,
+				"line" : 49,
 				"parent" : 0
 			},
 			{
@@ -200,7 +200,7 @@
 			{
 				"command" : 5,
 				"file" : 1,
-				"line" : 47,
+				"line" : 48,
 				"parent" : 0
 			},
 			{
@@ -534,7 +534,7 @@
 			{
 				"command" : 17,
 				"file" : 1,
-				"line" : 70,
+				"line" : 71,
 				"parent" : 0
 			},
 			{
@@ -766,7 +766,7 @@
 				6,
 				8,
 				10,
-				15
+				16
 			]
 		}
 	],
@@ -777,11 +777,11 @@
 			"id" : "rave_qmlimportscan::@6890427a1f51a3e7e1df"
 		},
 		{
-			"backtrace" : 0,
-			"id" : "rave_autogen::@6890427a1f51a3e7e1df"
+			"id" : "rave_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
 		},
 		{
-			"id" : "rave_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
+			"backtrace" : 0,
+			"id" : "rave_autogen::@6890427a1f51a3e7e1df"
 		}
 	],
 	"id" : "rave::@6890427a1f51a3e7e1df",
@@ -947,7 +947,7 @@
 				6,
 				8,
 				10,
-				15
+				16
 			]
 		},
 		{
@@ -958,7 +958,7 @@
 				5,
 				7,
 				9,
-				13
+				14
 			]
 		},
 		{
@@ -968,15 +968,16 @@
 				4,
 				11,
 				12,
-				14
+				13,
+				15
 			]
 		},
 		{
 			"name" : "CMake Rules",
 			"sourceIndexes" : 
 			[
-				16,
-				17
+				17,
+				18
 			]
 		}
 	],
@@ -1052,6 +1053,11 @@
 		{
 			"backtrace" : 4,
 			"path" : "qml.qrc",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 4,
+			"path" : "PlayButton.qml",
 			"sourceGroupIndex" : 2
 		},
 		{

@@ -80,6 +80,7 @@ rave_autogen/EWIEGA46WW/qrc_qml.cpp: CMakeFiles/rave_autogen.dir/AutoRcc_qml_EWI
 rave_autogen/EWIEGA46WW/qrc_qml.cpp: C:/Users/adria/Desktop/Adrian/projects/Qt/rave/PlayButton.qml
 rave_autogen/EWIEGA46WW/qrc_qml.cpp: C:/Users/adria/Desktop/Adrian/projects/Qt/rave/main.qml
 rave_autogen/EWIEGA46WW/qrc_qml.cpp: C:/Users/adria/Desktop/Adrian/projects/Qt/rave/resources/images/play_black.png
+rave_autogen/EWIEGA46WW/qrc_qml.cpp: C:/Users/adria/Desktop/Adrian/projects/Qt/rave/resources/images/pause_black.png
 rave_autogen/EWIEGA46WW/qrc_qml.cpp: C:/Qt/6.7.0/mingw_64/./bin/rcc.exe
 rave_autogen/EWIEGA46WW/qrc_qml.cpp: C:/Qt/6.7.0/mingw_64/./bin/rcc.exe
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=C:\Users\adria\Desktop\Adrian\projects\Qt\rave\build\Desktop_Qt_6_7_0_MinGW_64_bit-Release\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Automatic RCC for qml.qrc"

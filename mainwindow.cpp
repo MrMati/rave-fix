@@ -20,7 +20,7 @@ MainWindow::MainWindow(QWidget *parent): QMainWindow(parent), ui(new Ui::MainWin
         player->setSource(QUrl::fromUserInput(last_played_song));
     }
 
-    audioOutput->setVolume(last_vol / 10);
+    audioOutput->setVolume(last_vol / 100.0);
     ui->volumeSlider->setValue(last_vol);
     ui->volume->setText(QString::number(last_vol));
 

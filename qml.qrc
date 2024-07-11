@@ -3,5 +3,6 @@
         <file>main.qml</file>
         <file>PlayButton.qml</file>
         <file>resources/images/play_black.png</file>
+        <file>resources/images/pause_black.png</file>
     </qresource>
 </RCC>

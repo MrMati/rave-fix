@@ -11,7 +11,8 @@
 	[
 		"C:/Users/adria/Desktop/Adrian/projects/Qt/rave/PlayButton.qml",
 		"C:/Users/adria/Desktop/Adrian/projects/Qt/rave/main.qml",
-		"C:/Users/adria/Desktop/Adrian/projects/Qt/rave/resources/images/play_black.png"
+		"C:/Users/adria/Desktop/Adrian/projects/Qt/rave/resources/images/play_black.png",
+		"C:/Users/adria/Desktop/Adrian/projects/Qt/rave/resources/images/pause_black.png"
 	],
 	"LOCK_FILE" : "C:/Users/adria/Desktop/Adrian/projects/Qt/rave/build/Desktop_Qt_6_7_0_MinGW_64_bit-Release/CMakeFiles/rave_autogen.dir/AutoRcc_qml_EWIEGA46WW_Lock.lock",
 	"MULTI_CONFIG" : false,
