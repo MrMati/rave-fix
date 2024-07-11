@@ -1,8 +1,21 @@
 <RCC>
     <qresource prefix="/">
         <file>main.qml</file>
-        <file>PlayButton.qml</file>
-        <file>resources/images/play_black.png</file>
+        <file>resources/PlayButton.qml</file>
+        <file>resources/Home.qml</file>
+        <file>resources/Player.qml</file>
+        <file>resources/images/heart_pink_fill.png</file>
+        <file>resources/images/heart_black_empty.png</file>
+        <file>resources/images/sound_dark.png</file>
+        <file>resources/images/more_dark2.png</file>
+        <file>resources/images/more_dark.png</file>
+        <file>resources/SongPanel.qml</file>
+        <file>resources/images/home_dark.png</file>
+        <file>resources/images/next_prev_dark.png</file>
+        <file>resources/images/pause_dark.png</file>
+        <file>resources/images/play_dark.png</file>
+        <file>resources/images/play_dark2.png</file>
         <file>resources/images/pause_black.png</file>
+        <file>resources/images/play_black.png</file>
     </qresource>
 </RCC>

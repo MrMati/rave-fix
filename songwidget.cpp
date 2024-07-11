@@ -9,7 +9,7 @@ SongWidget::SongWidget(QString name, QString artist, QString genre, QUrl fileUrl
     genreLabel = new QLabel(genre);
 
     playButton = new QQuickWidget(this);
-    playButton->setSource(QUrl(QStringLiteral("qrc:/PlayButton.qml")));
+    playButton->setSource(QUrl(QStringLiteral("qrc:/resources/PlayButton.qml")));
     playButton->setResizeMode(QQuickWidget::SizeRootObjectToView);
 
     connect(playButton, &QQuickWidget::statusChanged, this, [this](QQuickWidget::Status status){

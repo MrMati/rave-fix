@@ -77,10 +77,23 @@ rave_autogen/timestamp: CMakeFiles/rave.dir/compiler_depend.ts
 
 rave_autogen/EWIEGA46WW/qrc_qml.cpp: C:/Users/adria/Desktop/Adrian/projects/Qt/rave/qml.qrc
 rave_autogen/EWIEGA46WW/qrc_qml.cpp: CMakeFiles/rave_autogen.dir/AutoRcc_qml_EWIEGA46WW_Info.json
-rave_autogen/EWIEGA46WW/qrc_qml.cpp: C:/Users/adria/Desktop/Adrian/projects/Qt/rave/PlayButton.qml
 rave_autogen/EWIEGA46WW/qrc_qml.cpp: C:/Users/adria/Desktop/Adrian/projects/Qt/rave/main.qml
+rave_autogen/EWIEGA46WW/qrc_qml.cpp: C:/Users/adria/Desktop/Adrian/projects/Qt/rave/resources/SongPanel.qml
+rave_autogen/EWIEGA46WW/qrc_qml.cpp: C:/Users/adria/Desktop/Adrian/projects/Qt/rave/resources/Home.qml
+rave_autogen/EWIEGA46WW/qrc_qml.cpp: C:/Users/adria/Desktop/Adrian/projects/Qt/rave/resources/PlayButton.qml
+rave_autogen/EWIEGA46WW/qrc_qml.cpp: C:/Users/adria/Desktop/Adrian/projects/Qt/rave/resources/Player.qml
+rave_autogen/EWIEGA46WW/qrc_qml.cpp: C:/Users/adria/Desktop/Adrian/projects/Qt/rave/resources/images/play_dark2.png
 rave_autogen/EWIEGA46WW/qrc_qml.cpp: C:/Users/adria/Desktop/Adrian/projects/Qt/rave/resources/images/play_black.png
+rave_autogen/EWIEGA46WW/qrc_qml.cpp: C:/Users/adria/Desktop/Adrian/projects/Qt/rave/resources/images/more_dark2.png
+rave_autogen/EWIEGA46WW/qrc_qml.cpp: C:/Users/adria/Desktop/Adrian/projects/Qt/rave/resources/images/sound_dark.png
+rave_autogen/EWIEGA46WW/qrc_qml.cpp: C:/Users/adria/Desktop/Adrian/projects/Qt/rave/resources/images/heart_black_empty.png
+rave_autogen/EWIEGA46WW/qrc_qml.cpp: C:/Users/adria/Desktop/Adrian/projects/Qt/rave/resources/images/pause_dark.png
 rave_autogen/EWIEGA46WW/qrc_qml.cpp: C:/Users/adria/Desktop/Adrian/projects/Qt/rave/resources/images/pause_black.png
+rave_autogen/EWIEGA46WW/qrc_qml.cpp: C:/Users/adria/Desktop/Adrian/projects/Qt/rave/resources/images/next_prev_dark.png
+rave_autogen/EWIEGA46WW/qrc_qml.cpp: C:/Users/adria/Desktop/Adrian/projects/Qt/rave/resources/images/heart_pink_fill.png
+rave_autogen/EWIEGA46WW/qrc_qml.cpp: C:/Users/adria/Desktop/Adrian/projects/Qt/rave/resources/images/more_dark.png
+rave_autogen/EWIEGA46WW/qrc_qml.cpp: C:/Users/adria/Desktop/Adrian/projects/Qt/rave/resources/images/play_dark.png
+rave_autogen/EWIEGA46WW/qrc_qml.cpp: C:/Users/adria/Desktop/Adrian/projects/Qt/rave/resources/images/home_dark.png
 rave_autogen/EWIEGA46WW/qrc_qml.cpp: C:/Qt/6.7.0/mingw_64/./bin/rcc.exe
 rave_autogen/EWIEGA46WW/qrc_qml.cpp: C:/Qt/6.7.0/mingw_64/./bin/rcc.exe
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=C:\Users\adria\Desktop\Adrian\projects\Qt\rave\build\Desktop_Qt_6_7_0_MinGW_64_bit-Release\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Automatic RCC for qml.qrc"

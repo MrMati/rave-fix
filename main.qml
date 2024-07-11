@@ -1,40 +1,18 @@
 import QtQuick 2.15
 import QtQuick.Controls 2.15
+import "resources"
 
-ApplicationWindow {
+ApplicationWindow{
     visible: true
-    width: 640
-    height: 480
-    title: qsTr("Hello World")
+    width: 820
+    height: 600
+    title: qsTr("Rave")
 
-    Rectangle {
-        width: parent.width
-        height: parent.height
-        color: "lightgrey"
+    // Home{
+    //     id: home_screen
+    // }
 
-        Column {
-            anchors.centerIn: parent
-
-            Text {
-                id: title
-                text: qsTr("Music Player")
-                font.pointSize: 24
-            }
-
-            Button {
-                text: qsTr("Play")
-                onClicked: mainWindow.play()
-            }
-
-            Button {
-                text: qsTr("Pause")
-                onClicked: mainWindow.pause()
-            }
-
-            Button {
-                text: qsTr("Stop")
-                onClicked: mainWindow.stop()
-            }
-        }
+    Player{
+        id: player_screen
     }
 }

@@ -30,7 +30,9 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         songwidget.h songwidget.cpp
         main.qml
         qml.qrc
-        PlayButton.qml
+        resources/PlayButton.qml
+        resources/Home.qml
+        resources/Player.qml
     )
 else()
     if(ANDROID)

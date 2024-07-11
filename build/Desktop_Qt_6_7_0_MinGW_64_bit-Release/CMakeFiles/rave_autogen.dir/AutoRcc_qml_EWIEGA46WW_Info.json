@@ -9,10 +9,23 @@
 	"INCLUDE_DIR" : "C:/Users/adria/Desktop/Adrian/projects/Qt/rave/build/Desktop_Qt_6_7_0_MinGW_64_bit-Release/rave_autogen/include",
 	"INPUTS" : 
 	[
-		"C:/Users/adria/Desktop/Adrian/projects/Qt/rave/PlayButton.qml",
 		"C:/Users/adria/Desktop/Adrian/projects/Qt/rave/main.qml",
+		"C:/Users/adria/Desktop/Adrian/projects/Qt/rave/resources/SongPanel.qml",
+		"C:/Users/adria/Desktop/Adrian/projects/Qt/rave/resources/Home.qml",
+		"C:/Users/adria/Desktop/Adrian/projects/Qt/rave/resources/PlayButton.qml",
+		"C:/Users/adria/Desktop/Adrian/projects/Qt/rave/resources/Player.qml",
+		"C:/Users/adria/Desktop/Adrian/projects/Qt/rave/resources/images/play_dark2.png",
 		"C:/Users/adria/Desktop/Adrian/projects/Qt/rave/resources/images/play_black.png",
-		"C:/Users/adria/Desktop/Adrian/projects/Qt/rave/resources/images/pause_black.png"
+		"C:/Users/adria/Desktop/Adrian/projects/Qt/rave/resources/images/more_dark2.png",
+		"C:/Users/adria/Desktop/Adrian/projects/Qt/rave/resources/images/sound_dark.png",
+		"C:/Users/adria/Desktop/Adrian/projects/Qt/rave/resources/images/heart_black_empty.png",
+		"C:/Users/adria/Desktop/Adrian/projects/Qt/rave/resources/images/pause_dark.png",
+		"C:/Users/adria/Desktop/Adrian/projects/Qt/rave/resources/images/pause_black.png",
+		"C:/Users/adria/Desktop/Adrian/projects/Qt/rave/resources/images/next_prev_dark.png",
+		"C:/Users/adria/Desktop/Adrian/projects/Qt/rave/resources/images/heart_pink_fill.png",
+		"C:/Users/adria/Desktop/Adrian/projects/Qt/rave/resources/images/more_dark.png",
+		"C:/Users/adria/Desktop/Adrian/projects/Qt/rave/resources/images/play_dark.png",
+		"C:/Users/adria/Desktop/Adrian/projects/Qt/rave/resources/images/home_dark.png"
 	],
 	"LOCK_FILE" : "C:/Users/adria/Desktop/Adrian/projects/Qt/rave/build/Desktop_Qt_6_7_0_MinGW_64_bit-Release/CMakeFiles/rave_autogen.dir/AutoRcc_qml_EWIEGA46WW_Lock.lock",
 	"MULTI_CONFIG" : false,
