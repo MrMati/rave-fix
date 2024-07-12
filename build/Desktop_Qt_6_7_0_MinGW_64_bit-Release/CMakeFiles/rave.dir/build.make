@@ -88,10 +88,12 @@ rave_autogen/EWIEGA46WW/qrc_qml.cpp: C:/Users/adria/Desktop/Adrian/projects/Qt/r
 rave_autogen/EWIEGA46WW/qrc_qml.cpp: C:/Users/adria/Desktop/Adrian/projects/Qt/rave/resources/images/sound_dark.png
 rave_autogen/EWIEGA46WW/qrc_qml.cpp: C:/Users/adria/Desktop/Adrian/projects/Qt/rave/resources/images/heart_black_empty.png
 rave_autogen/EWIEGA46WW/qrc_qml.cpp: C:/Users/adria/Desktop/Adrian/projects/Qt/rave/resources/images/pause_dark.png
+rave_autogen/EWIEGA46WW/qrc_qml.cpp: C:/Users/adria/Desktop/Adrian/projects/Qt/rave/resources/images/mute_dark.png
 rave_autogen/EWIEGA46WW/qrc_qml.cpp: C:/Users/adria/Desktop/Adrian/projects/Qt/rave/resources/images/pause_black.png
 rave_autogen/EWIEGA46WW/qrc_qml.cpp: C:/Users/adria/Desktop/Adrian/projects/Qt/rave/resources/images/next_prev_dark.png
 rave_autogen/EWIEGA46WW/qrc_qml.cpp: C:/Users/adria/Desktop/Adrian/projects/Qt/rave/resources/images/heart_pink_fill.png
 rave_autogen/EWIEGA46WW/qrc_qml.cpp: C:/Users/adria/Desktop/Adrian/projects/Qt/rave/resources/images/more_dark.png
+rave_autogen/EWIEGA46WW/qrc_qml.cpp: C:/Users/adria/Desktop/Adrian/projects/Qt/rave/resources/images/vol_dark.png
 rave_autogen/EWIEGA46WW/qrc_qml.cpp: C:/Users/adria/Desktop/Adrian/projects/Qt/rave/resources/images/play_dark.png
 rave_autogen/EWIEGA46WW/qrc_qml.cpp: C:/Users/adria/Desktop/Adrian/projects/Qt/rave/resources/images/home_dark.png
 rave_autogen/EWIEGA46WW/qrc_qml.cpp: C:/Qt/6.7.0/mingw_64/./bin/rcc.exe

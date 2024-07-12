@@ -899,9 +899,10 @@ C:/Users/adria/Desktop/Adrian/projects/Qt/rave/mainwindow.h
  mdp:C:/Users/adria/Desktop/Adrian/projects/Qt/rave/build/Desktop_Qt_6_7_0_MinGW_64_bit-Release/rave_autogen/moc_predefs.h
  mdp:C:/Users/adria/Desktop/Adrian/projects/Qt/rave/mainwindow.h
  mdp:C:/Users/adria/Desktop/Adrian/projects/Qt/rave/songs.h
-C:/Users/adria/Desktop/Adrian/projects/Qt/rave/songs.h
 C:/Users/adria/Desktop/Adrian/projects/Qt/rave/songwidget.cpp
 C:/Users/adria/Desktop/Adrian/projects/Qt/rave/main.cpp
+C:/Users/adria/Desktop/Adrian/projects/Qt/rave/songs.h
+C:/Users/adria/Desktop/Adrian/projects/Qt/rave/songs.cpp
 C:/Users/adria/Desktop/Adrian/projects/Qt/rave/songwidget.h
  mmc:Q_OBJECT
  mdp:C:/Qt/6.7.0/mingw_64/include/QtCore/QEvent
@@ -1343,7 +1344,6 @@ C:/Users/adria/Desktop/Adrian/projects/Qt/rave/songwidget.h
  mdp:C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/wchar.h
  mdp:C:/Users/adria/Desktop/Adrian/projects/Qt/rave/build/Desktop_Qt_6_7_0_MinGW_64_bit-Release/rave_autogen/moc_predefs.h
  mdp:C:/Users/adria/Desktop/Adrian/projects/Qt/rave/songwidget.h
-C:/Users/adria/Desktop/Adrian/projects/Qt/rave/songs.cpp
 C:/Users/adria/Desktop/Adrian/projects/Qt/rave/customslider.cpp
 C:/Users/adria/Desktop/Adrian/projects/Qt/rave/mainwindow.cpp
  uic:ui_mainwindow.h
