@@ -8,6 +8,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/rave.dir/main.cpp.obj.d"
   "CMakeFiles/rave.dir/mainwindow.cpp.obj"
   "CMakeFiles/rave.dir/mainwindow.cpp.obj.d"
+  "CMakeFiles/rave.dir/player.cpp.obj"
+  "CMakeFiles/rave.dir/player.cpp.obj.d"
   "CMakeFiles/rave.dir/rave_autogen/EWIEGA46WW/qrc_qml.cpp.obj"
   "CMakeFiles/rave.dir/rave_autogen/EWIEGA46WW/qrc_qml.cpp.obj.d"
   "CMakeFiles/rave.dir/rave_autogen/mocs_compilation.cpp.obj"

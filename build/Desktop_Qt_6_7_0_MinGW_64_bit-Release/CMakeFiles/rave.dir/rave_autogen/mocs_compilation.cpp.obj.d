@@ -543,6 +543,8 @@ CMakeFiles/rave.dir/rave_autogen/mocs_compilation.cpp.obj: \
  C:/Qt/6.7.0/mingw_64/include/QtGui/qtextformat.h \
  C:/Qt/6.7.0/mingw_64/include/QtGui/qpen.h \
  C:/Qt/6.7.0/mingw_64/include/QtGui/qtextoption.h \
+ C:\Users\adria\Desktop\Adrian\projects\Qt\rave\build\Desktop_Qt_6_7_0_MinGW_64_bit-Release\rave_autogen\EWIEGA46WW/moc_player.cpp \
+ C:/Users/adria/Desktop/Adrian/projects/Qt/rave/player.h \
  C:\Users\adria\Desktop\Adrian\projects\Qt\rave\build\Desktop_Qt_6_7_0_MinGW_64_bit-Release\rave_autogen\EWIEGA46WW/moc_songwidget.cpp \
  C:/Users/adria/Desktop/Adrian/projects/Qt/rave/songwidget.h \
  C:/Qt/6.7.0/mingw_64/include/QtWidgets/QPushButton \

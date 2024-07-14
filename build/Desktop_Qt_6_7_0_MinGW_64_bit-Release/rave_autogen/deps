@@ -1321,6 +1321,8 @@ rave_autogen/timestamp: \
 	C:/Users/adria/Desktop/Adrian/projects/Qt/rave/main.cpp \
 	C:/Users/adria/Desktop/Adrian/projects/Qt/rave/mainwindow.cpp \
 	C:/Users/adria/Desktop/Adrian/projects/Qt/rave/mainwindow.h \
+	C:/Users/adria/Desktop/Adrian/projects/Qt/rave/player.cpp \
+	C:/Users/adria/Desktop/Adrian/projects/Qt/rave/player.h \
 	C:/Users/adria/Desktop/Adrian/projects/Qt/rave/qml.qrc \
 	C:/Users/adria/Desktop/Adrian/projects/Qt/rave/songs.cpp \
 	C:/Users/adria/Desktop/Adrian/projects/Qt/rave/songs.h \

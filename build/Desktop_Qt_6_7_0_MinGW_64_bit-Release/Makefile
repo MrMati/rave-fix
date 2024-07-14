@@ -284,6 +284,30 @@ mainwindow.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\rave.dir\build.make CMakeFiles/rave.dir/mainwindow.cpp.s
 .PHONY : mainwindow.cpp.s
 
+player.obj: player.cpp.obj
+.PHONY : player.obj
+
+# target to build an object file
+player.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\rave.dir\build.make CMakeFiles/rave.dir/player.cpp.obj
+.PHONY : player.cpp.obj
+
+player.i: player.cpp.i
+.PHONY : player.i
+
+# target to preprocess a source file
+player.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\rave.dir\build.make CMakeFiles/rave.dir/player.cpp.i
+.PHONY : player.cpp.i
+
+player.s: player.cpp.s
+.PHONY : player.s
+
+# target to generate assembly for a file
+player.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\rave.dir\build.make CMakeFiles/rave.dir/player.cpp.s
+.PHONY : player.cpp.s
+
 rave_autogen/EWIEGA46WW/qrc_qml.obj: rave_autogen/EWIEGA46WW/qrc_qml.cpp.obj
 .PHONY : rave_autogen/EWIEGA46WW/qrc_qml.obj
 
@@ -405,6 +429,9 @@ help:
 	@echo ... mainwindow.obj
 	@echo ... mainwindow.i
 	@echo ... mainwindow.s
+	@echo ... player.obj
+	@echo ... player.i
+	@echo ... player.s
 	@echo ... rave_autogen/EWIEGA46WW/qrc_qml.obj
 	@echo ... rave_autogen/EWIEGA46WW/qrc_qml.i
 	@echo ... rave_autogen/EWIEGA46WW/qrc_qml.s

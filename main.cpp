@@ -2,18 +2,31 @@
 #include <QQmlApplicationEngine>
 #include <QQmlContext>
 #include <QQuickWidget>
-#include "customslider.h"
+#include "player.h"
+#include "mainwindow.h"
 
 int main(int argc, char *argv[])
 {
-    QApplication a(argc, argv);
+    // QApplication a(argc, argv);
+    // QQmlApplicationEngine engine;
+    // // MainWindow w;
+    // // engine.rootContext()->setContextProperty("mainWindow", &w);
+    // engine.load(QUrl(QStringLiteral("qrc:/main.qml")));
+    // // w.show();
+    // return a.exec();
+
+    QGuiApplication app(argc, argv);
+
     QQmlApplicationEngine engine;
-    // MainWindow w;
-    qmlRegisterType<CustomSlider>("CustomSlider", 1, 0, "CustomSlider");
-    // engine.rootContext()->setContextProperty("mainWindow", &w);
+    Player player;
+
+    engine.rootContext()->setContextProperty("player", &player);
     engine.load(QUrl(QStringLiteral("qrc:/main.qml")));
-    // w.show();
-    return a.exec();
+
+    if (engine.rootObjects().isEmpty())
+        return -1;
+
+    return app.exec();
 }
 
 /* to add:

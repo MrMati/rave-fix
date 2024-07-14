@@ -1168,6 +1168,12 @@
 			null
 		],
 		[
+			"C:/Users/adria/Desktop/Adrian/projects/Qt/rave/player.h",
+			"MU",
+			"EWIEGA46WW/moc_player.cpp",
+			null
+		],
+		[
 			"C:/Users/adria/Desktop/Adrian/projects/Qt/rave/songs.h",
 			"MU",
 			"EWIEGA46WW/moc_songs.cpp",
@@ -1278,6 +1284,11 @@
 		[ "C:/Users/adria/Desktop/Adrian/projects/Qt/rave/main.cpp", "MU", null ],
 		[
 			"C:/Users/adria/Desktop/Adrian/projects/Qt/rave/mainwindow.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/adria/Desktop/Adrian/projects/Qt/rave/player.cpp",
 			"MU",
 			null
 		],

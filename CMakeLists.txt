@@ -33,6 +33,7 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         resources/PlayButton.qml
         resources/Home.qml
         resources/Player.qml
+        player.h player.cpp
     )
 else()
     if(ANDROID)
