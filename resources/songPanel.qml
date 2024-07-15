@@ -7,6 +7,8 @@ Rectangle {
     anchors.horizontalCenter: parent.horizontalCenter
     property bool liked: false
     property bool played: false
+    property string songTitle: titleText.text
+    property string songAuthor: authorText.text
 
     Text {
         id: titleText
@@ -18,7 +20,7 @@ Rectangle {
         }
         height: parent.height
         width: 300
-        text: player.title
+        text: "holderr"
     }
 
     Text {
@@ -30,7 +32,7 @@ Rectangle {
         }
         height: parent.height
         width: 300
-        text: player.author
+        text: "holderr"
     }
 
     Image {

@@ -41,17 +41,17 @@ MainWindow::MainWindow(QWidget *parent): QMainWindow(parent), ui(new Ui::MainWin
 
     ui->stackedWidget->setCurrentIndex(0);
 
-    songListWidget = new QListWidget(this);
-    for(const Song *song : songs.getLibrary()){
-        QListWidgetItem *item = new QListWidgetItem(songListWidget);
-        SongWidget *songWidget = new SongWidget(QString::fromStdString(song->name),
-                                                QString::fromStdString(song->artist.at(0)),
-                                                song->file_url);
-        connect(songWidget, &SongWidget::playClicked, this, &MainWindow::onPlaySong);
-        connect(songWidget, &SongWidget::pauseClicked, this, &MainWindow::onPauseSong);
-        item->setSizeHint(songWidget->sizeHint());
-        songListWidget->setItemWidget(item, songWidget);
-    }
+    // songListWidget = new QListWidget(this);
+    // for(const Song *song : songs.getLibrary()){
+    //     QListWidgetItem *item = new QListWidgetItem(songListWidget);
+    //     SongWidget *songWidget = new SongWidget(QString::fromStdString(song->name),
+    //                                             QString::fromStdString(song->artist.at(0)),
+    //                                             song->file_url);
+    //     connect(songWidget, &SongWidget::playClicked, this, &MainWindow::onPlaySong);
+    //     connect(songWidget, &SongWidget::pauseClicked, this, &MainWindow::onPauseSong);
+    //     item->setSizeHint(songWidget->sizeHint());
+    //     songListWidget->setItemWidget(item, songWidget);
+    // }
 
     QVBoxLayout* homeLayout = qobject_cast<QVBoxLayout*>(ui->home->layout());
     if(!homeLayout){

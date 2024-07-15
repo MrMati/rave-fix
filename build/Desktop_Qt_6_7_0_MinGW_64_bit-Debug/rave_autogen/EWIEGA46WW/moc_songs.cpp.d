@@ -1,16 +1,14 @@
 C:/Users/adria/Desktop/Adrian/projects/Qt/rave/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/rave_autogen/EWIEGA46WW/moc_songs.cpp: C:/Users/adria/Desktop/Adrian/projects/Qt/rave/songs.h \
   C:/Users/adria/Desktop/Adrian/projects/Qt/rave/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/rave_autogen/moc_predefs.h \
+  C:/Qt/6.7.0/mingw_64/include/QtCore/QAbstractListModel \
   C:/Qt/6.7.0/mingw_64/include/QtCore/QDir \
-  C:/Qt/6.7.0/mingw_64/include/QtCore/QFileInfo \
   C:/Qt/6.7.0/mingw_64/include/QtCore/QFileInfoList \
   C:/Qt/6.7.0/mingw_64/include/QtCore/QObject \
-  C:/Qt/6.7.0/mingw_64/include/QtCore/QString \
-  C:/Qt/6.7.0/mingw_64/include/QtCore/QUrl \
-  C:/Qt/6.7.0/mingw_64/include/QtCore/QVariant \
   C:/Qt/6.7.0/mingw_64/include/QtCore/q20functional.h \
   C:/Qt/6.7.0/mingw_64/include/QtCore/q20memory.h \
   C:/Qt/6.7.0/mingw_64/include/QtCore/q20type_traits.h \
   C:/Qt/6.7.0/mingw_64/include/QtCore/q23utility.h \
+  C:/Qt/6.7.0/mingw_64/include/QtCore/qabstractitemmodel.h \
   C:/Qt/6.7.0/mingw_64/include/QtCore/qalgorithms.h \
   C:/Qt/6.7.0/mingw_64/include/QtCore/qanystringview.h \
   C:/Qt/6.7.0/mingw_64/include/QtCore/qarraydata.h \
@@ -132,11 +130,9 @@ C:/Users/adria/Desktop/Adrian/projects/Qt/rave/build/Desktop_Qt_6_7_0_MinGW_64_b
   C:/Qt/6.7.0/mingw_64/include/QtGui/qtgui-config.h \
   C:/Qt/6.7.0/mingw_64/include/QtGui/qtguiexports.h \
   C:/Qt/6.7.0/mingw_64/include/QtGui/qtguiglobal.h \
-  C:/Qt/6.7.0/mingw_64/include/QtMultimedia/QMediaMetaData \
   C:/Qt/6.7.0/mingw_64/include/QtMultimedia/QMediaPlayer \
   C:/Qt/6.7.0/mingw_64/include/QtMultimedia/qaudio.h \
   C:/Qt/6.7.0/mingw_64/include/QtMultimedia/qmediaenumdebug.h \
-  C:/Qt/6.7.0/mingw_64/include/QtMultimedia/qmediametadata.h \
   C:/Qt/6.7.0/mingw_64/include/QtMultimedia/qmediaplayer.h \
   C:/Qt/6.7.0/mingw_64/include/QtMultimedia/qtaudio.h \
   C:/Qt/6.7.0/mingw_64/include/QtMultimedia/qtmultimedia-config.h \

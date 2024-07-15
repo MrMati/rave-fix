@@ -4,6 +4,7 @@
 #include <QQuickWidget>
 #include "player.h"
 #include "mainwindow.h"
+#include "songs.h"
 
 int main(int argc, char *argv[])
 {
@@ -19,8 +20,10 @@ int main(int argc, char *argv[])
 
     QQmlApplicationEngine engine;
     Player player;
+    Songs songs;
 
     engine.rootContext()->setContextProperty("player", &player);
+    engine.rootContext()->setContextProperty("songs", &songs);
     engine.load(QUrl(QStringLiteral("qrc:/main.qml")));
 
     if (engine.rootObjects().isEmpty())

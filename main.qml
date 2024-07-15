@@ -8,23 +8,19 @@ ApplicationWindow{
     height: 600
     title: qsTr("Rave")
 
-    // StackView{
-    //     id: stackView
-    //     anchors.fill: parent
-    //     initialItem: homeComponent
+    StackView{
+        id: stackView
+        anchors.fill: parent
+        initialItem: homeComponent
 
-    //     Component{
-    //         id: homeComponent
-    //         Home{}
-    //     }
+        Component{
+            id: homeComponent
+            Home{}
+        }
 
-    //     Component{
-    //         id: playerComponent
-    //         Player{}
-    //     }
-    // }
-
-    SongPanel{
-        id: p
+        Component{
+            id: playerComponent
+            Player{}
+        }
     }
 }

@@ -330,7 +330,7 @@ Item{
             }
         }
 
-        Text{// when longer than limit then it slides autmoatically back and forth
+        Text{
             id: songName
             width: 100
             height: 20
@@ -355,3 +355,6 @@ Item{
         }
     }
 }
+
+
+// when screens changed, play button goes back to initial
