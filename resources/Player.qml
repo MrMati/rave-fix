@@ -9,6 +9,7 @@ Item{
     property bool liked: false
     property bool played: false
     property bool sound: true
+    property int previousVolume: 30
 
     Rectangle{
         id: dropAreaContainer
@@ -61,6 +62,9 @@ Item{
                 onPressed: home.opacity = 0.7
                 onReleased: home.opacity = 1.0
                 onCanceled: home.opacity = 1.0
+                onClicked:{
+                    stackView.pop();
+                }
             }
         }
 
@@ -72,22 +76,27 @@ Item{
             anchors.top: more1.bottom
             anchors.margins: 10
             fillMode: Image.PreserveAspectFit
-            source: "qrc:/resources/images/vol_dark.png"
+            source: player.volume === 0 ? "qrc:/resources/images/mute_dark.png" : "qrc:/resources/images/vol_dark.png"
 
             MouseArea{
-                id: volumeButton
-                anchors.fill: parent
-                onClicked:{
-                    sound = !sound
-                    if(sound){
-                        volume.source = "qrc:/resources/images/vol_dark.png"
-                    }else{
-                        volume.source = "qrc:/resources/images/mute_dark.png"
+                    id: volumeButton
+                    anchors.fill: parent
+                    onClicked:{
+                        if(player.volume === 0){
+                            volume.source = "qrc:/resources/images/vol_dark.png";
+                            player.setVolume(previousVolume);
+                            sliderVol.value = previousVolume;
+                        }else{
+                            previousVolume = sliderVol.value;
+                            volume.source = "qrc:/resources/images/mute_dark.png";
+                            player.setVolume(0);
+                            sliderVol.value = 0;
+                        }
+                        sound = !sound;
                     }
-                }
-                onPressed: volume.opacity = 0.7
-                onReleased: volume.opacity = 1.0
-                onCanceled: volume.opacity = 1.0
+                    onPressed: volume.opacity = 0.7
+                    onReleased: volume.opacity = 1.0
+                    onCanceled: volume.opacity = 1.0
             }
         }
 
@@ -125,16 +134,16 @@ Item{
             }
 
             onValueChanged:{
-                player.setVolume(value);
-                console.log(value)
-                if(value === 0){
-                    volume.source = "qrc:/resources/images/mute_dark.png";
-                    sound = false;
-                }else{
-                    volume.source = "qrc:/resources/images/vol_dark.png";
-                    sound = true;
+                    player.setVolume(value);
+                    if(value === 0){
+                        volume.source = "qrc:/resources/images/mute_dark.png";
+                        sound = false;
+                    }else{
+                        volume.source = "qrc:/resources/images/vol_dark.png";
+                        sound = true;
+                        previousVolume = value;
+                    }
                 }
-            }
         }
 
         Text{
@@ -330,7 +339,7 @@ Item{
             anchors.bottom: parent.bottom
             anchors.left: parent.left
             anchors.margins: 20
-            text: "Music Name"
+            text: player.title
         }
 
         Text{
@@ -342,7 +351,7 @@ Item{
             anchors.bottom: parent.bottom
             anchors.right: parent.right
             anchors.margins: 20
-            text: "Music Authors"
+            text: player.author
         }
     }
 }

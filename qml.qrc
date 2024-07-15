@@ -19,5 +19,6 @@
         <file>resources/images/play_black.png</file>
         <file>resources/images/vol_dark.png</file>
         <file>resources/images/mute_dark.png</file>
+        <file>resources/images/more_settings_dark.png</file>
     </qresource>
 </RCC>

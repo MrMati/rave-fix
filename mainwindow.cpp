@@ -46,7 +46,6 @@ MainWindow::MainWindow(QWidget *parent): QMainWindow(parent), ui(new Ui::MainWin
         QListWidgetItem *item = new QListWidgetItem(songListWidget);
         SongWidget *songWidget = new SongWidget(QString::fromStdString(song->name),
                                                 QString::fromStdString(song->artist.at(0)),
-                                                QString::fromStdString(song->genre),
                                                 song->file_url);
         connect(songWidget, &SongWidget::playClicked, this, &MainWindow::onPlaySong);
         connect(songWidget, &SongWidget::pauseClicked, this, &MainWindow::onPauseSong);

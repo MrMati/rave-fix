@@ -1,6 +1,7 @@
 C:/Users/adria/Desktop/Adrian/projects/Qt/rave/build/Desktop_Qt_6_7_0_MinGW_64_bit-Release/rave_autogen/EWIEGA46WW/moc_player.cpp: C:/Users/adria/Desktop/Adrian/projects/Qt/rave/player.h \
   C:/Users/adria/Desktop/Adrian/projects/Qt/rave/build/Desktop_Qt_6_7_0_MinGW_64_bit-Release/rave_autogen/moc_predefs.h \
   C:/Qt/6.7.0/mingw_64/include/QtCore/QObject \
+  C:/Qt/6.7.0/mingw_64/include/QtCore/QSettings \
   C:/Qt/6.7.0/mingw_64/include/QtCore/q20functional.h \
   C:/Qt/6.7.0/mingw_64/include/QtCore/q20memory.h \
   C:/Qt/6.7.0/mingw_64/include/QtCore/q20type_traits.h \
@@ -70,6 +71,7 @@ C:/Users/adria/Desktop/Adrian/projects/Qt/rave/build/Desktop_Qt_6_7_0_MinGW_64_b
   C:/Qt/6.7.0/mingw_64/include/QtCore/qscopedpointer.h \
   C:/Qt/6.7.0/mingw_64/include/QtCore/qscopeguard.h \
   C:/Qt/6.7.0/mingw_64/include/QtCore/qset.h \
+  C:/Qt/6.7.0/mingw_64/include/QtCore/qsettings.h \
   C:/Qt/6.7.0/mingw_64/include/QtCore/qshareddata.h \
   C:/Qt/6.7.0/mingw_64/include/QtCore/qshareddata_impl.h \
   C:/Qt/6.7.0/mingw_64/include/QtCore/qsharedpointer.h \

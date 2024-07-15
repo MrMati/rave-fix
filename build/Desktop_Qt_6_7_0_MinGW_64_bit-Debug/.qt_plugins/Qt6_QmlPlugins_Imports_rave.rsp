@@ -1,0 +1,9 @@
+-rootPath
+C:/Users/adria/Desktop/Adrian/projects/Qt/rave
+-cmake-output
+-output-file
+C:/Users/adria/Desktop/Adrian/projects/Qt/rave/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/.qt_plugins/Qt6_QmlPlugins_Imports_rave.cmake
+-importPath
+C:/Users/adria/Desktop/Adrian/projects/Qt/rave/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug
+-importPath
+C:/Qt/6.7.0/mingw_64/./qml

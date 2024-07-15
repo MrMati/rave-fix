@@ -339,4 +339,6 @@ CMakeFiles/rave.dir/player.cpp.obj: \
  C:/Qt/6.7.0/mingw_64/include/QtMultimedia/qtaudio.h \
  C:/Qt/6.7.0/mingw_64/include/QtMultimedia/qaudio.h \
  C:/Qt/6.7.0/mingw_64/include/QtMultimedia/QAudioOutput \
- C:/Qt/6.7.0/mingw_64/include/QtMultimedia/qaudiooutput.h
+ C:/Qt/6.7.0/mingw_64/include/QtMultimedia/qaudiooutput.h \
+ C:/Qt/6.7.0/mingw_64/include/QtCore/QSettings \
+ C:/Qt/6.7.0/mingw_64/include/QtCore/qsettings.h

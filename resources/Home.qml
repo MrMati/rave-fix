@@ -6,6 +6,7 @@ Item{
     height: parent.height
     property bool open_tab: false
 
+
     Rectangle {
         id: container
         anchors.fill: parent
@@ -41,7 +42,7 @@ Item{
         }
 
         Image{
-            id: player
+            id: goToPlayer
             width: 50
             height: 50
             anchors.verticalCenter: more1.verticalCenter
@@ -50,11 +51,14 @@ Item{
             fillMode: Image.PreserveAspectFit
             source: "qrc:/resources/images/sound_dark.png"
             MouseArea{
-                id: playerButton
+                id: goToPlayerButton
                 anchors.fill: parent
-                onPressed: player.opacity = 0.7
-                onReleased: player.opacity = 1.0
-                onCanceled: player.opacity = 1.0
+                onPressed: goToPlayer.opacity = 0.7
+                onReleased: goToPlayer.opacity = 1.0
+                onCanceled: goToPlayer.opacity = 1.0
+                onClicked:{
+                    stackView.push(playerComponent);
+                }
             }
         }
     }

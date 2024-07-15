@@ -75,11 +75,38 @@ rave_autogen/timestamp: CMakeFiles/rave.dir/compiler_depend.ts
 	"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autogen C:/Users/adria/Desktop/Adrian/projects/Qt/rave/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/CMakeFiles/rave_autogen.dir/AutogenInfo.json Debug
 	"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/adria/Desktop/Adrian/projects/Qt/rave/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/rave_autogen/timestamp
 
+rave_autogen/EWIEGA46WW/qrc_qml.cpp: C:/Users/adria/Desktop/Adrian/projects/Qt/rave/qml.qrc
+rave_autogen/EWIEGA46WW/qrc_qml.cpp: CMakeFiles/rave_autogen.dir/AutoRcc_qml_EWIEGA46WW_Info.json
+rave_autogen/EWIEGA46WW/qrc_qml.cpp: C:/Users/adria/Desktop/Adrian/projects/Qt/rave/main.qml
+rave_autogen/EWIEGA46WW/qrc_qml.cpp: C:/Users/adria/Desktop/Adrian/projects/Qt/rave/resources/SongPanel.qml
+rave_autogen/EWIEGA46WW/qrc_qml.cpp: C:/Users/adria/Desktop/Adrian/projects/Qt/rave/resources/Home.qml
+rave_autogen/EWIEGA46WW/qrc_qml.cpp: C:/Users/adria/Desktop/Adrian/projects/Qt/rave/resources/PlayButton.qml
+rave_autogen/EWIEGA46WW/qrc_qml.cpp: C:/Users/adria/Desktop/Adrian/projects/Qt/rave/resources/Player.qml
+rave_autogen/EWIEGA46WW/qrc_qml.cpp: C:/Users/adria/Desktop/Adrian/projects/Qt/rave/resources/images/play_dark2.png
+rave_autogen/EWIEGA46WW/qrc_qml.cpp: C:/Users/adria/Desktop/Adrian/projects/Qt/rave/resources/images/play_black.png
+rave_autogen/EWIEGA46WW/qrc_qml.cpp: C:/Users/adria/Desktop/Adrian/projects/Qt/rave/resources/images/more_dark2.png
+rave_autogen/EWIEGA46WW/qrc_qml.cpp: C:/Users/adria/Desktop/Adrian/projects/Qt/rave/resources/images/sound_dark.png
+rave_autogen/EWIEGA46WW/qrc_qml.cpp: C:/Users/adria/Desktop/Adrian/projects/Qt/rave/resources/images/heart_black_empty.png
+rave_autogen/EWIEGA46WW/qrc_qml.cpp: C:/Users/adria/Desktop/Adrian/projects/Qt/rave/resources/images/more_settings_dark.png
+rave_autogen/EWIEGA46WW/qrc_qml.cpp: C:/Users/adria/Desktop/Adrian/projects/Qt/rave/resources/images/pause_dark.png
+rave_autogen/EWIEGA46WW/qrc_qml.cpp: C:/Users/adria/Desktop/Adrian/projects/Qt/rave/resources/images/mute_dark.png
+rave_autogen/EWIEGA46WW/qrc_qml.cpp: C:/Users/adria/Desktop/Adrian/projects/Qt/rave/resources/images/pause_black.png
+rave_autogen/EWIEGA46WW/qrc_qml.cpp: C:/Users/adria/Desktop/Adrian/projects/Qt/rave/resources/images/next_prev_dark.png
+rave_autogen/EWIEGA46WW/qrc_qml.cpp: C:/Users/adria/Desktop/Adrian/projects/Qt/rave/resources/images/heart_pink_fill.png
+rave_autogen/EWIEGA46WW/qrc_qml.cpp: C:/Users/adria/Desktop/Adrian/projects/Qt/rave/resources/images/more_dark.png
+rave_autogen/EWIEGA46WW/qrc_qml.cpp: C:/Users/adria/Desktop/Adrian/projects/Qt/rave/resources/images/vol_dark.png
+rave_autogen/EWIEGA46WW/qrc_qml.cpp: C:/Users/adria/Desktop/Adrian/projects/Qt/rave/resources/images/play_dark.png
+rave_autogen/EWIEGA46WW/qrc_qml.cpp: C:/Users/adria/Desktop/Adrian/projects/Qt/rave/resources/images/home_dark.png
+rave_autogen/EWIEGA46WW/qrc_qml.cpp: C:/Qt/6.7.0/mingw_64/./bin/rcc.exe
+rave_autogen/EWIEGA46WW/qrc_qml.cpp: C:/Qt/6.7.0/mingw_64/./bin/rcc.exe
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=C:\Users\adria\Desktop\Adrian\projects\Qt\rave\build\Desktop_Qt_6_7_0_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Automatic RCC for qml.qrc"
+	"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autorcc C:/Users/adria/Desktop/Adrian/projects/Qt/rave/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/CMakeFiles/rave_autogen.dir/AutoRcc_qml_EWIEGA46WW_Info.json Debug
+
 CMakeFiles/rave.dir/rave_autogen/mocs_compilation.cpp.obj: CMakeFiles/rave.dir/flags.make
 CMakeFiles/rave.dir/rave_autogen/mocs_compilation.cpp.obj: CMakeFiles/rave.dir/includes_CXX.rsp
 CMakeFiles/rave.dir/rave_autogen/mocs_compilation.cpp.obj: rave_autogen/mocs_compilation.cpp
 CMakeFiles/rave.dir/rave_autogen/mocs_compilation.cpp.obj: CMakeFiles/rave.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\adria\Desktop\Adrian\projects\Qt\rave\build\Desktop_Qt_6_7_0_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/rave.dir/rave_autogen/mocs_compilation.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\adria\Desktop\Adrian\projects\Qt\rave\build\Desktop_Qt_6_7_0_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/rave.dir/rave_autogen/mocs_compilation.cpp.obj"
 	C:\Qt\Tools\mingw1120_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/rave.dir/rave_autogen/mocs_compilation.cpp.obj -MF CMakeFiles\rave.dir\rave_autogen\mocs_compilation.cpp.obj.d -o CMakeFiles\rave.dir\rave_autogen\mocs_compilation.cpp.obj -c C:\Users\adria\Desktop\Adrian\projects\Qt\rave\build\Desktop_Qt_6_7_0_MinGW_64_bit-Debug\rave_autogen\mocs_compilation.cpp
 
 CMakeFiles/rave.dir/rave_autogen/mocs_compilation.cpp.i: cmake_force
@@ -94,7 +121,7 @@ CMakeFiles/rave.dir/main.cpp.obj: CMakeFiles/rave.dir/flags.make
 CMakeFiles/rave.dir/main.cpp.obj: CMakeFiles/rave.dir/includes_CXX.rsp
 CMakeFiles/rave.dir/main.cpp.obj: C:/Users/adria/Desktop/Adrian/projects/Qt/rave/main.cpp
 CMakeFiles/rave.dir/main.cpp.obj: CMakeFiles/rave.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\adria\Desktop\Adrian\projects\Qt\rave\build\Desktop_Qt_6_7_0_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/rave.dir/main.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\adria\Desktop\Adrian\projects\Qt\rave\build\Desktop_Qt_6_7_0_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/rave.dir/main.cpp.obj"
 	C:\Qt\Tools\mingw1120_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/rave.dir/main.cpp.obj -MF CMakeFiles\rave.dir\main.cpp.obj.d -o CMakeFiles\rave.dir\main.cpp.obj -c C:\Users\adria\Desktop\Adrian\projects\Qt\rave\main.cpp
 
 CMakeFiles/rave.dir/main.cpp.i: cmake_force
@@ -109,7 +136,7 @@ CMakeFiles/rave.dir/mainwindow.cpp.obj: CMakeFiles/rave.dir/flags.make
 CMakeFiles/rave.dir/mainwindow.cpp.obj: CMakeFiles/rave.dir/includes_CXX.rsp
 CMakeFiles/rave.dir/mainwindow.cpp.obj: C:/Users/adria/Desktop/Adrian/projects/Qt/rave/mainwindow.cpp
 CMakeFiles/rave.dir/mainwindow.cpp.obj: CMakeFiles/rave.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\adria\Desktop\Adrian\projects\Qt\rave\build\Desktop_Qt_6_7_0_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/rave.dir/mainwindow.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\adria\Desktop\Adrian\projects\Qt\rave\build\Desktop_Qt_6_7_0_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/rave.dir/mainwindow.cpp.obj"
 	C:\Qt\Tools\mingw1120_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/rave.dir/mainwindow.cpp.obj -MF CMakeFiles\rave.dir\mainwindow.cpp.obj.d -o CMakeFiles\rave.dir\mainwindow.cpp.obj -c C:\Users\adria\Desktop\Adrian\projects\Qt\rave\mainwindow.cpp
 
 CMakeFiles/rave.dir/mainwindow.cpp.i: cmake_force
@@ -124,7 +151,7 @@ CMakeFiles/rave.dir/customslider.cpp.obj: CMakeFiles/rave.dir/flags.make
 CMakeFiles/rave.dir/customslider.cpp.obj: CMakeFiles/rave.dir/includes_CXX.rsp
 CMakeFiles/rave.dir/customslider.cpp.obj: C:/Users/adria/Desktop/Adrian/projects/Qt/rave/customslider.cpp
 CMakeFiles/rave.dir/customslider.cpp.obj: CMakeFiles/rave.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\adria\Desktop\Adrian\projects\Qt\rave\build\Desktop_Qt_6_7_0_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/rave.dir/customslider.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\adria\Desktop\Adrian\projects\Qt\rave\build\Desktop_Qt_6_7_0_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/rave.dir/customslider.cpp.obj"
 	C:\Qt\Tools\mingw1120_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/rave.dir/customslider.cpp.obj -MF CMakeFiles\rave.dir\customslider.cpp.obj.d -o CMakeFiles\rave.dir\customslider.cpp.obj -c C:\Users\adria\Desktop\Adrian\projects\Qt\rave\customslider.cpp
 
 CMakeFiles/rave.dir/customslider.cpp.i: cmake_force
@@ -139,7 +166,7 @@ CMakeFiles/rave.dir/songs.cpp.obj: CMakeFiles/rave.dir/flags.make
 CMakeFiles/rave.dir/songs.cpp.obj: CMakeFiles/rave.dir/includes_CXX.rsp
 CMakeFiles/rave.dir/songs.cpp.obj: C:/Users/adria/Desktop/Adrian/projects/Qt/rave/songs.cpp
 CMakeFiles/rave.dir/songs.cpp.obj: CMakeFiles/rave.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\adria\Desktop\Adrian\projects\Qt\rave\build\Desktop_Qt_6_7_0_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/rave.dir/songs.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\adria\Desktop\Adrian\projects\Qt\rave\build\Desktop_Qt_6_7_0_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/rave.dir/songs.cpp.obj"
 	C:\Qt\Tools\mingw1120_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/rave.dir/songs.cpp.obj -MF CMakeFiles\rave.dir\songs.cpp.obj.d -o CMakeFiles\rave.dir\songs.cpp.obj -c C:\Users\adria\Desktop\Adrian\projects\Qt\rave\songs.cpp
 
 CMakeFiles/rave.dir/songs.cpp.i: cmake_force
@@ -150,13 +177,61 @@ CMakeFiles/rave.dir/songs.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/rave.dir/songs.cpp.s"
 	C:\Qt\Tools\mingw1120_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\adria\Desktop\Adrian\projects\Qt\rave\songs.cpp -o CMakeFiles\rave.dir\songs.cpp.s
 
+CMakeFiles/rave.dir/songwidget.cpp.obj: CMakeFiles/rave.dir/flags.make
+CMakeFiles/rave.dir/songwidget.cpp.obj: CMakeFiles/rave.dir/includes_CXX.rsp
+CMakeFiles/rave.dir/songwidget.cpp.obj: C:/Users/adria/Desktop/Adrian/projects/Qt/rave/songwidget.cpp
+CMakeFiles/rave.dir/songwidget.cpp.obj: CMakeFiles/rave.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\adria\Desktop\Adrian\projects\Qt\rave\build\Desktop_Qt_6_7_0_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/rave.dir/songwidget.cpp.obj"
+	C:\Qt\Tools\mingw1120_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/rave.dir/songwidget.cpp.obj -MF CMakeFiles\rave.dir\songwidget.cpp.obj.d -o CMakeFiles\rave.dir\songwidget.cpp.obj -c C:\Users\adria\Desktop\Adrian\projects\Qt\rave\songwidget.cpp
+
+CMakeFiles/rave.dir/songwidget.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/rave.dir/songwidget.cpp.i"
+	C:\Qt\Tools\mingw1120_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\adria\Desktop\Adrian\projects\Qt\rave\songwidget.cpp > CMakeFiles\rave.dir\songwidget.cpp.i
+
+CMakeFiles/rave.dir/songwidget.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/rave.dir/songwidget.cpp.s"
+	C:\Qt\Tools\mingw1120_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\adria\Desktop\Adrian\projects\Qt\rave\songwidget.cpp -o CMakeFiles\rave.dir\songwidget.cpp.s
+
+CMakeFiles/rave.dir/player.cpp.obj: CMakeFiles/rave.dir/flags.make
+CMakeFiles/rave.dir/player.cpp.obj: CMakeFiles/rave.dir/includes_CXX.rsp
+CMakeFiles/rave.dir/player.cpp.obj: C:/Users/adria/Desktop/Adrian/projects/Qt/rave/player.cpp
+CMakeFiles/rave.dir/player.cpp.obj: CMakeFiles/rave.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\adria\Desktop\Adrian\projects\Qt\rave\build\Desktop_Qt_6_7_0_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/rave.dir/player.cpp.obj"
+	C:\Qt\Tools\mingw1120_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/rave.dir/player.cpp.obj -MF CMakeFiles\rave.dir\player.cpp.obj.d -o CMakeFiles\rave.dir\player.cpp.obj -c C:\Users\adria\Desktop\Adrian\projects\Qt\rave\player.cpp
+
+CMakeFiles/rave.dir/player.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/rave.dir/player.cpp.i"
+	C:\Qt\Tools\mingw1120_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\adria\Desktop\Adrian\projects\Qt\rave\player.cpp > CMakeFiles\rave.dir\player.cpp.i
+
+CMakeFiles/rave.dir/player.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/rave.dir/player.cpp.s"
+	C:\Qt\Tools\mingw1120_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\adria\Desktop\Adrian\projects\Qt\rave\player.cpp -o CMakeFiles\rave.dir\player.cpp.s
+
+CMakeFiles/rave.dir/rave_autogen/EWIEGA46WW/qrc_qml.cpp.obj: CMakeFiles/rave.dir/flags.make
+CMakeFiles/rave.dir/rave_autogen/EWIEGA46WW/qrc_qml.cpp.obj: CMakeFiles/rave.dir/includes_CXX.rsp
+CMakeFiles/rave.dir/rave_autogen/EWIEGA46WW/qrc_qml.cpp.obj: rave_autogen/EWIEGA46WW/qrc_qml.cpp
+CMakeFiles/rave.dir/rave_autogen/EWIEGA46WW/qrc_qml.cpp.obj: CMakeFiles/rave.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\adria\Desktop\Adrian\projects\Qt\rave\build\Desktop_Qt_6_7_0_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/rave.dir/rave_autogen/EWIEGA46WW/qrc_qml.cpp.obj"
+	C:\Qt\Tools\mingw1120_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/rave.dir/rave_autogen/EWIEGA46WW/qrc_qml.cpp.obj -MF CMakeFiles\rave.dir\rave_autogen\EWIEGA46WW\qrc_qml.cpp.obj.d -o CMakeFiles\rave.dir\rave_autogen\EWIEGA46WW\qrc_qml.cpp.obj -c C:\Users\adria\Desktop\Adrian\projects\Qt\rave\build\Desktop_Qt_6_7_0_MinGW_64_bit-Debug\rave_autogen\EWIEGA46WW\qrc_qml.cpp
+
+CMakeFiles/rave.dir/rave_autogen/EWIEGA46WW/qrc_qml.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/rave.dir/rave_autogen/EWIEGA46WW/qrc_qml.cpp.i"
+	C:\Qt\Tools\mingw1120_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\adria\Desktop\Adrian\projects\Qt\rave\build\Desktop_Qt_6_7_0_MinGW_64_bit-Debug\rave_autogen\EWIEGA46WW\qrc_qml.cpp > CMakeFiles\rave.dir\rave_autogen\EWIEGA46WW\qrc_qml.cpp.i
+
+CMakeFiles/rave.dir/rave_autogen/EWIEGA46WW/qrc_qml.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/rave.dir/rave_autogen/EWIEGA46WW/qrc_qml.cpp.s"
+	C:\Qt\Tools\mingw1120_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\adria\Desktop\Adrian\projects\Qt\rave\build\Desktop_Qt_6_7_0_MinGW_64_bit-Debug\rave_autogen\EWIEGA46WW\qrc_qml.cpp -o CMakeFiles\rave.dir\rave_autogen\EWIEGA46WW\qrc_qml.cpp.s
+
 # Object files for target rave
 rave_OBJECTS = \
 "CMakeFiles/rave.dir/rave_autogen/mocs_compilation.cpp.obj" \
 "CMakeFiles/rave.dir/main.cpp.obj" \
 "CMakeFiles/rave.dir/mainwindow.cpp.obj" \
 "CMakeFiles/rave.dir/customslider.cpp.obj" \
-"CMakeFiles/rave.dir/songs.cpp.obj"
+"CMakeFiles/rave.dir/songs.cpp.obj" \
+"CMakeFiles/rave.dir/songwidget.cpp.obj" \
+"CMakeFiles/rave.dir/player.cpp.obj" \
+"CMakeFiles/rave.dir/rave_autogen/EWIEGA46WW/qrc_qml.cpp.obj"
 
 # External object files for target rave
 rave_EXTERNAL_OBJECTS =
@@ -166,17 +241,26 @@ rave.exe: CMakeFiles/rave.dir/main.cpp.obj
 rave.exe: CMakeFiles/rave.dir/mainwindow.cpp.obj
 rave.exe: CMakeFiles/rave.dir/customslider.cpp.obj
 rave.exe: CMakeFiles/rave.dir/songs.cpp.obj
+rave.exe: CMakeFiles/rave.dir/songwidget.cpp.obj
+rave.exe: CMakeFiles/rave.dir/player.cpp.obj
+rave.exe: CMakeFiles/rave.dir/rave_autogen/EWIEGA46WW/qrc_qml.cpp.obj
 rave.exe: CMakeFiles/rave.dir/build.make
-rave.exe: C:/Qt/6.7.0/mingw_64/lib/libQt6Widgets.a
 rave.exe: C:/Qt/6.7.0/mingw_64/lib/libQt6Multimedia.a
-rave.exe: C:/Qt/6.7.0/mingw_64/lib/libQt6Gui.a
+rave.exe: C:/Qt/6.7.0/mingw_64/lib/libQt6QuickWidgets.a
+rave.exe: C:/Qt/6.7.0/mingw_64/lib/libQt6Quick.a
+rave.exe: C:/Qt/6.7.0/mingw_64/lib/libQt6QmlModels.a
+rave.exe: C:/Qt/6.7.0/mingw_64/lib/libQt6Qml.a
 rave.exe: C:/Qt/6.7.0/mingw_64/lib/libQt6Network.a
+rave.exe: C:/Qt/6.7.0/mingw_64/lib/libQt6QmlBuiltins.a
+rave.exe: C:/Qt/6.7.0/mingw_64/lib/libQt6OpenGL.a
+rave.exe: C:/Qt/6.7.0/mingw_64/lib/libQt6Widgets.a
+rave.exe: C:/Qt/6.7.0/mingw_64/lib/libQt6Gui.a
 rave.exe: C:/Qt/6.7.0/mingw_64/lib/libQt6Core.a
 rave.exe: C:/Qt/6.7.0/mingw_64/lib/libQt6EntryPoint.a
 rave.exe: CMakeFiles/rave.dir/linkLibs.rsp
 rave.exe: CMakeFiles/rave.dir/objects1.rsp
 rave.exe: CMakeFiles/rave.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\adria\Desktop\Adrian\projects\Qt\rave\build\Desktop_Qt_6_7_0_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable rave.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\adria\Desktop\Adrian\projects\Qt\rave\build\Desktop_Qt_6_7_0_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable rave.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\rave.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -187,6 +271,7 @@ CMakeFiles/rave.dir/clean:
 	$(CMAKE_COMMAND) -P CMakeFiles\rave.dir\cmake_clean.cmake
 .PHONY : CMakeFiles/rave.dir/clean
 
+CMakeFiles/rave.dir/depend: rave_autogen/EWIEGA46WW/qrc_qml.cpp
 CMakeFiles/rave.dir/depend: rave_autogen/timestamp
 	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\adria\Desktop\Adrian\projects\Qt\rave C:\Users\adria\Desktop\Adrian\projects\Qt\rave C:\Users\adria\Desktop\Adrian\projects\Qt\rave\build\Desktop_Qt_6_7_0_MinGW_64_bit-Debug C:\Users\adria\Desktop\Adrian\projects\Qt\rave\build\Desktop_Qt_6_7_0_MinGW_64_bit-Debug C:\Users\adria\Desktop\Adrian\projects\Qt\rave\build\Desktop_Qt_6_7_0_MinGW_64_bit-Debug\CMakeFiles\rave.dir\DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/rave.dir/depend

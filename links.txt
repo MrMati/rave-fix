@@ -23,3 +23,6 @@ https://www.flaticon.com/free-icon/next_3874931?term=next+song&page=1&position=7
 <a href="https://www.flaticon.com/free-icons/triangle" title="triangle icons">Triangle icons created by nawicon - Flaticon</a>
 
 <a href="https://www.flaticon.com/free-icons/speaker-off" title="speaker off icons">Speaker off icons created by th studio - Flaticon</a>
+
+
+<a href="https://www.flaticon.com/free-icons/context-menu" title="context menu icons">Context menu icons created by kyleware - Flaticon</a>

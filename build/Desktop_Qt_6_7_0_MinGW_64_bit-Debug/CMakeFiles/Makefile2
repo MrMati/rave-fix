@@ -71,6 +71,7 @@ preinstall:
 
 # The main recursive "clean" target.
 clean: CMakeFiles/rave.dir/clean
+clean: CMakeFiles/rave_qmlimportscan.dir/clean
 clean: CMakeFiles/rave_autogen_timestamp_deps.dir/clean
 clean: CMakeFiles/rave_autogen.dir/clean
 .PHONY : clean
@@ -79,16 +80,17 @@ clean: CMakeFiles/rave_autogen.dir/clean
 # Target rules for target CMakeFiles/rave.dir
 
 # All Build rule for target.
-CMakeFiles/rave.dir/all: CMakeFiles/rave_autogen_timestamp_deps.dir/all
+CMakeFiles/rave.dir/all: CMakeFiles/rave_qmlimportscan.dir/all
 CMakeFiles/rave.dir/all: CMakeFiles/rave_autogen.dir/all
+CMakeFiles/rave.dir/all: CMakeFiles/rave_autogen_timestamp_deps.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\rave.dir\build.make CMakeFiles/rave.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\rave.dir\build.make CMakeFiles/rave.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\adria\Desktop\Adrian\projects\Qt\rave\build\Desktop_Qt_6_7_0_MinGW_64_bit-Debug\CMakeFiles --progress-num=1,2,3,4,5,6,7 "Built target rave"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\adria\Desktop\Adrian\projects\Qt\rave\build\Desktop_Qt_6_7_0_MinGW_64_bit-Debug\CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11 "Built target rave"
 .PHONY : CMakeFiles/rave.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/rave.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\adria\Desktop\Adrian\projects\Qt\rave\build\Desktop_Qt_6_7_0_MinGW_64_bit-Debug\CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\adria\Desktop\Adrian\projects\Qt\rave\build\Desktop_Qt_6_7_0_MinGW_64_bit-Debug\CMakeFiles 13
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/rave.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\adria\Desktop\Adrian\projects\Qt\rave\build\Desktop_Qt_6_7_0_MinGW_64_bit-Debug\CMakeFiles 0
 .PHONY : CMakeFiles/rave.dir/rule
@@ -103,10 +105,36 @@ CMakeFiles/rave.dir/clean:
 .PHONY : CMakeFiles/rave.dir/clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/rave_qmlimportscan.dir
+
+# All Build rule for target.
+CMakeFiles/rave_qmlimportscan.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\rave_qmlimportscan.dir\build.make CMakeFiles/rave_qmlimportscan.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\rave_qmlimportscan.dir\build.make CMakeFiles/rave_qmlimportscan.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\adria\Desktop\Adrian\projects\Qt\rave\build\Desktop_Qt_6_7_0_MinGW_64_bit-Debug\CMakeFiles --progress-num=13 "Built target rave_qmlimportscan"
+.PHONY : CMakeFiles/rave_qmlimportscan.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/rave_qmlimportscan.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\adria\Desktop\Adrian\projects\Qt\rave\build\Desktop_Qt_6_7_0_MinGW_64_bit-Debug\CMakeFiles 1
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/rave_qmlimportscan.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\adria\Desktop\Adrian\projects\Qt\rave\build\Desktop_Qt_6_7_0_MinGW_64_bit-Debug\CMakeFiles 0
+.PHONY : CMakeFiles/rave_qmlimportscan.dir/rule
+
+# Convenience name for target.
+rave_qmlimportscan: CMakeFiles/rave_qmlimportscan.dir/rule
+.PHONY : rave_qmlimportscan
+
+# clean rule for target.
+CMakeFiles/rave_qmlimportscan.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\rave_qmlimportscan.dir\build.make CMakeFiles/rave_qmlimportscan.dir/clean
+.PHONY : CMakeFiles/rave_qmlimportscan.dir/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/rave_autogen_timestamp_deps.dir
 
 # All Build rule for target.
-CMakeFiles/rave_autogen_timestamp_deps.dir/all:
+CMakeFiles/rave_autogen_timestamp_deps.dir/all: CMakeFiles/rave_qmlimportscan.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\rave_autogen_timestamp_deps.dir\build.make CMakeFiles/rave_autogen_timestamp_deps.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\rave_autogen_timestamp_deps.dir\build.make CMakeFiles/rave_autogen_timestamp_deps.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\adria\Desktop\Adrian\projects\Qt\rave\build\Desktop_Qt_6_7_0_MinGW_64_bit-Debug\CMakeFiles --progress-num= "Built target rave_autogen_timestamp_deps"
@@ -114,7 +142,7 @@ CMakeFiles/rave_autogen_timestamp_deps.dir/all:
 
 # Build rule for subdir invocation for target.
 CMakeFiles/rave_autogen_timestamp_deps.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\adria\Desktop\Adrian\projects\Qt\rave\build\Desktop_Qt_6_7_0_MinGW_64_bit-Debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\adria\Desktop\Adrian\projects\Qt\rave\build\Desktop_Qt_6_7_0_MinGW_64_bit-Debug\CMakeFiles 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/rave_autogen_timestamp_deps.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\adria\Desktop\Adrian\projects\Qt\rave\build\Desktop_Qt_6_7_0_MinGW_64_bit-Debug\CMakeFiles 0
 .PHONY : CMakeFiles/rave_autogen_timestamp_deps.dir/rule
@@ -135,12 +163,12 @@ CMakeFiles/rave_autogen_timestamp_deps.dir/clean:
 CMakeFiles/rave_autogen.dir/all: CMakeFiles/rave_autogen_timestamp_deps.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\rave_autogen.dir\build.make CMakeFiles/rave_autogen.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\rave_autogen.dir\build.make CMakeFiles/rave_autogen.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\adria\Desktop\Adrian\projects\Qt\rave\build\Desktop_Qt_6_7_0_MinGW_64_bit-Debug\CMakeFiles --progress-num=8 "Built target rave_autogen"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\adria\Desktop\Adrian\projects\Qt\rave\build\Desktop_Qt_6_7_0_MinGW_64_bit-Debug\CMakeFiles --progress-num=12 "Built target rave_autogen"
 .PHONY : CMakeFiles/rave_autogen.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/rave_autogen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\adria\Desktop\Adrian\projects\Qt\rave\build\Desktop_Qt_6_7_0_MinGW_64_bit-Debug\CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\adria\Desktop\Adrian\projects\Qt\rave\build\Desktop_Qt_6_7_0_MinGW_64_bit-Debug\CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/rave_autogen.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\adria\Desktop\Adrian\projects\Qt\rave\build\Desktop_Qt_6_7_0_MinGW_64_bit-Debug\CMakeFiles 0
 .PHONY : CMakeFiles/rave_autogen.dir/rule

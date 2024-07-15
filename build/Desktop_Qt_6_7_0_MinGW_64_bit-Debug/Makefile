@@ -174,6 +174,19 @@ rave/fast:
 .PHONY : rave/fast
 
 #=============================================================================
+# Target rules for targets named rave_qmlimportscan
+
+# Build rule for target.
+rave_qmlimportscan: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 rave_qmlimportscan
+.PHONY : rave_qmlimportscan
+
+# fast build rule for target.
+rave_qmlimportscan/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\rave_qmlimportscan.dir\build.make CMakeFiles/rave_qmlimportscan.dir/build
+.PHONY : rave_qmlimportscan/fast
+
+#=============================================================================
 # Target rules for targets named rave_autogen_timestamp_deps
 
 # Build rule for target.
@@ -271,6 +284,54 @@ mainwindow.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\rave.dir\build.make CMakeFiles/rave.dir/mainwindow.cpp.s
 .PHONY : mainwindow.cpp.s
 
+player.obj: player.cpp.obj
+.PHONY : player.obj
+
+# target to build an object file
+player.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\rave.dir\build.make CMakeFiles/rave.dir/player.cpp.obj
+.PHONY : player.cpp.obj
+
+player.i: player.cpp.i
+.PHONY : player.i
+
+# target to preprocess a source file
+player.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\rave.dir\build.make CMakeFiles/rave.dir/player.cpp.i
+.PHONY : player.cpp.i
+
+player.s: player.cpp.s
+.PHONY : player.s
+
+# target to generate assembly for a file
+player.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\rave.dir\build.make CMakeFiles/rave.dir/player.cpp.s
+.PHONY : player.cpp.s
+
+rave_autogen/EWIEGA46WW/qrc_qml.obj: rave_autogen/EWIEGA46WW/qrc_qml.cpp.obj
+.PHONY : rave_autogen/EWIEGA46WW/qrc_qml.obj
+
+# target to build an object file
+rave_autogen/EWIEGA46WW/qrc_qml.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\rave.dir\build.make CMakeFiles/rave.dir/rave_autogen/EWIEGA46WW/qrc_qml.cpp.obj
+.PHONY : rave_autogen/EWIEGA46WW/qrc_qml.cpp.obj
+
+rave_autogen/EWIEGA46WW/qrc_qml.i: rave_autogen/EWIEGA46WW/qrc_qml.cpp.i
+.PHONY : rave_autogen/EWIEGA46WW/qrc_qml.i
+
+# target to preprocess a source file
+rave_autogen/EWIEGA46WW/qrc_qml.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\rave.dir\build.make CMakeFiles/rave.dir/rave_autogen/EWIEGA46WW/qrc_qml.cpp.i
+.PHONY : rave_autogen/EWIEGA46WW/qrc_qml.cpp.i
+
+rave_autogen/EWIEGA46WW/qrc_qml.s: rave_autogen/EWIEGA46WW/qrc_qml.cpp.s
+.PHONY : rave_autogen/EWIEGA46WW/qrc_qml.s
+
+# target to generate assembly for a file
+rave_autogen/EWIEGA46WW/qrc_qml.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\rave.dir\build.make CMakeFiles/rave.dir/rave_autogen/EWIEGA46WW/qrc_qml.cpp.s
+.PHONY : rave_autogen/EWIEGA46WW/qrc_qml.cpp.s
+
 rave_autogen/mocs_compilation.obj: rave_autogen/mocs_compilation.cpp.obj
 .PHONY : rave_autogen/mocs_compilation.obj
 
@@ -319,6 +380,30 @@ songs.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\rave.dir\build.make CMakeFiles/rave.dir/songs.cpp.s
 .PHONY : songs.cpp.s
 
+songwidget.obj: songwidget.cpp.obj
+.PHONY : songwidget.obj
+
+# target to build an object file
+songwidget.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\rave.dir\build.make CMakeFiles/rave.dir/songwidget.cpp.obj
+.PHONY : songwidget.cpp.obj
+
+songwidget.i: songwidget.cpp.i
+.PHONY : songwidget.i
+
+# target to preprocess a source file
+songwidget.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\rave.dir\build.make CMakeFiles/rave.dir/songwidget.cpp.i
+.PHONY : songwidget.cpp.i
+
+songwidget.s: songwidget.cpp.s
+.PHONY : songwidget.s
+
+# target to generate assembly for a file
+songwidget.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\rave.dir\build.make CMakeFiles/rave.dir/songwidget.cpp.s
+.PHONY : songwidget.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -333,6 +418,7 @@ help:
 	@echo ... rebuild_cache
 	@echo ... rave_autogen
 	@echo ... rave_autogen_timestamp_deps
+	@echo ... rave_qmlimportscan
 	@echo ... rave
 	@echo ... customslider.obj
 	@echo ... customslider.i
@@ -343,12 +429,21 @@ help:
 	@echo ... mainwindow.obj
 	@echo ... mainwindow.i
 	@echo ... mainwindow.s
+	@echo ... player.obj
+	@echo ... player.i
+	@echo ... player.s
+	@echo ... rave_autogen/EWIEGA46WW/qrc_qml.obj
+	@echo ... rave_autogen/EWIEGA46WW/qrc_qml.i
+	@echo ... rave_autogen/EWIEGA46WW/qrc_qml.s
 	@echo ... rave_autogen/mocs_compilation.obj
 	@echo ... rave_autogen/mocs_compilation.i
 	@echo ... rave_autogen/mocs_compilation.s
 	@echo ... songs.obj
 	@echo ... songs.i
 	@echo ... songs.s
+	@echo ... songwidget.obj
+	@echo ... songwidget.i
+	@echo ... songwidget.s
 .PHONY : help
 
 

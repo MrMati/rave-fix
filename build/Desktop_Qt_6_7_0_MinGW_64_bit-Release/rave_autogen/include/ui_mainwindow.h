@@ -20,6 +20,8 @@
 #include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
 
+class CustomSlider;
+
 
 QT_BEGIN_NAMESPACE
 

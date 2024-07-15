@@ -15,10 +15,12 @@
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QMenuBar>
 #include <QtWidgets/QPushButton>
-#include <QtWidgets/QSlider>
 #include <QtWidgets/QStackedWidget>
 #include <QtWidgets/QStatusBar>
+#include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
+
+class CustomSlider;
 
 QT_BEGIN_NAMESPACE
 
@@ -26,16 +28,18 @@ class Ui_MainWindow
 {
 public:
     QWidget *centralwidget;
+    QVBoxLayout *verticalLayout;
     QStackedWidget *stackedWidget;
     QWidget *player;
+    QVBoxLayout *verticalLayout_2;
     QPushButton *homeScreen;
-    QSlider *timeSlider;
-    QPushButton *stopButton;
-    QPushButton *pauseButton;
-    QPushButton *playButton;
-    QSlider *volumeSlider;
-    QLabel *timer;
+    CustomSlider *volumeSlider;
     QLabel *volume;
+    QPushButton *playButton;
+    QPushButton *pauseButton;
+    QPushButton *stopButton;
+    QLabel *timer;
+    CustomSlider *timeSlider;
     QWidget *home;
     QPushButton *playerButton;
     QMenuBar *menubar;
@@ -48,37 +52,56 @@ public:
         MainWindow->resize(800, 600);
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName("centralwidget");
+        verticalLayout = new QVBoxLayout(centralwidget);
+        verticalLayout->setObjectName("verticalLayout");
         stackedWidget = new QStackedWidget(centralwidget);
         stackedWidget->setObjectName("stackedWidget");
-        stackedWidget->setGeometry(QRect(0, 0, 801, 571));
         player = new QWidget();
         player->setObjectName("player");
+        verticalLayout_2 = new QVBoxLayout(player);
+        verticalLayout_2->setObjectName("verticalLayout_2");
         homeScreen = new QPushButton(player);
         homeScreen->setObjectName("homeScreen");
-        homeScreen->setGeometry(QRect(10, 10, 93, 29));
-        timeSlider = new QSlider(player);
-        timeSlider->setObjectName("timeSlider");
-        timeSlider->setGeometry(QRect(20, 500, 631, 22));
-        timeSlider->setOrientation(Qt::Horizontal);
-        stopButton = new QPushButton(player);
-        stopButton->setObjectName("stopButton");
-        stopButton->setGeometry(QRect(560, 430, 93, 29));
-        pauseButton = new QPushButton(player);
-        pauseButton->setObjectName("pauseButton");
-        pauseButton->setGeometry(QRect(460, 430, 93, 29));
-        playButton = new QPushButton(player);
-        playButton->setObjectName("playButton");
-        playButton->setGeometry(QRect(360, 430, 93, 29));
-        volumeSlider = new QSlider(player);
+
+        verticalLayout_2->addWidget(homeScreen);
+
+        volumeSlider = new CustomSlider(player);
         volumeSlider->setObjectName("volumeSlider");
-        volumeSlider->setGeometry(QRect(40, 260, 22, 160));
         volumeSlider->setOrientation(Qt::Vertical);
-        timer = new QLabel(player);
-        timer->setObjectName("timer");
-        timer->setGeometry(QRect(700, 500, 63, 20));
+
+        verticalLayout_2->addWidget(volumeSlider);
+
         volume = new QLabel(player);
         volume->setObjectName("volume");
-        volume->setGeometry(QRect(40, 430, 63, 20));
+
+        verticalLayout_2->addWidget(volume);
+
+        playButton = new QPushButton(player);
+        playButton->setObjectName("playButton");
+
+        verticalLayout_2->addWidget(playButton);
+
+        pauseButton = new QPushButton(player);
+        pauseButton->setObjectName("pauseButton");
+
+        verticalLayout_2->addWidget(pauseButton);
+
+        stopButton = new QPushButton(player);
+        stopButton->setObjectName("stopButton");
+
+        verticalLayout_2->addWidget(stopButton);
+
+        timer = new QLabel(player);
+        timer->setObjectName("timer");
+
+        verticalLayout_2->addWidget(timer);
+
+        timeSlider = new CustomSlider(player);
+        timeSlider->setObjectName("timeSlider");
+        timeSlider->setOrientation(Qt::Horizontal);
+
+        verticalLayout_2->addWidget(timeSlider);
+
         stackedWidget->addWidget(player);
         home = new QWidget();
         home->setObjectName("home");
@@ -86,6 +109,9 @@ public:
         playerButton->setObjectName("playerButton");
         playerButton->setGeometry(QRect(10, 10, 93, 29));
         stackedWidget->addWidget(home);
+
+        verticalLayout->addWidget(stackedWidget);
+
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName("menubar");
@@ -97,7 +123,7 @@ public:
 
         retranslateUi(MainWindow);
 
-        stackedWidget->setCurrentIndex(1);
+        stackedWidget->setCurrentIndex(0);
 
 
         QMetaObject::connectSlotsByName(MainWindow);
@@ -107,11 +133,11 @@ public:
     {
         MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "MainWindow", nullptr));
         homeScreen->setText(QCoreApplication::translate("MainWindow", "Home", nullptr));
-        stopButton->setText(QCoreApplication::translate("MainWindow", "Stop", nullptr));
-        pauseButton->setText(QCoreApplication::translate("MainWindow", "Pause", nullptr));
-        playButton->setText(QCoreApplication::translate("MainWindow", "Play", nullptr));
-        timer->setText(QCoreApplication::translate("MainWindow", "00:00", nullptr));
         volume->setText(QCoreApplication::translate("MainWindow", "0", nullptr));
+        playButton->setText(QCoreApplication::translate("MainWindow", "Play", nullptr));
+        pauseButton->setText(QCoreApplication::translate("MainWindow", "Pause", nullptr));
+        stopButton->setText(QCoreApplication::translate("MainWindow", "Stop", nullptr));
+        timer->setText(QCoreApplication::translate("MainWindow", "00:00", nullptr));
         playerButton->setText(QCoreApplication::translate("MainWindow", "Player", nullptr));
     } // retranslateUi
 

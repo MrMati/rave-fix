@@ -465,6 +465,8 @@ CMakeFiles/rave.dir/main.cpp.obj: \
  C:/Qt/6.7.0/mingw_64/include/QtMultimedia/qaudio.h \
  C:/Qt/6.7.0/mingw_64/include/QtMultimedia/QAudioOutput \
  C:/Qt/6.7.0/mingw_64/include/QtMultimedia/qaudiooutput.h \
+ C:/Qt/6.7.0/mingw_64/include/QtCore/QSettings \
+ C:/Qt/6.7.0/mingw_64/include/QtCore/qsettings.h \
  C:\Users\adria\Desktop\Adrian\projects\Qt\rave\mainwindow.h \
  C:/Qt/6.7.0/mingw_64/include/QtWidgets/QMainWindow \
  C:/Qt/6.7.0/mingw_64/include/QtWidgets/qmainwindow.h \
@@ -514,8 +516,6 @@ CMakeFiles/rave.dir/main.cpp.obj: \
  C:/Qt/6.7.0/mingw_64/include/QtWidgets/qstyle.h \
  C:/Qt/6.7.0/mingw_64/include/QtWidgets/qtabbar.h \
  C:/Qt/6.7.0/mingw_64/include/QtWidgets/qrubberband.h \
- C:/Qt/6.7.0/mingw_64/include/QtCore/QSettings \
- C:/Qt/6.7.0/mingw_64/include/QtCore/qsettings.h \
  C:/Qt/6.7.0/mingw_64/include/QtQuick/QQuickItem \
  C:/Qt/6.7.0/mingw_64/include/QtQuick/qquickitem.h \
  C:/Qt/6.7.0/mingw_64/include/QtQml/qqmlcomponent.h \

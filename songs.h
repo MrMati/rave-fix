@@ -8,7 +8,10 @@
 #include <QDir>
 #include <QFileInfoList>
 #include <QFileInfo>
-#include <iostream>
+#include <QMediaPlayer>
+#include <QMediaMetaData>
+#include <QObject>
+#include <QVariant>
 
 struct FileInfo{
     QString name;
@@ -19,20 +22,25 @@ struct FileInfo{
 struct Song{
     std::string name;
     std::vector<std::string> artist;
-    std::string genre;
     QUrl file_url;
 };
 
-class Songs{
+class Songs: public QObject{
+    Q_OBJECT
+
     public:
         Songs();
         std::vector<Song*> getLibrary();
 
+    private slots:
+        void onMediaLoaded(QMediaPlayer::MediaStatus status);
+
     private:
         std::vector<Song*> library;
+        std::vector<QUrl> pendingUrls;
+        QMediaPlayer player_temp;
         void loadSongsFromDirectory(QString directoryPath);
         void addSong(QString filePath);
 };
 
 #endif // SONGS_H
-// uploading file directly from app, needed all data to provide, dragging into box
