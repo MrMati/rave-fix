@@ -7,7 +7,7 @@ Item{
     height: parent.height
     property bool open_tab: false
     property bool liked: false
-    property bool played: false
+    property bool played: player.isPlaying
     property bool sound: true
     property int previousVolume: 30
 
@@ -192,13 +192,13 @@ Item{
             anchors.horizontalCenter: parent.horizontalCenter
             anchors.margins: 30
             fillMode: Image.PreserveAspectFit
-            source: "qrc:/resources/images/play_dark.png"
+            source: played ? "qrc:/resources/images/pause_dark.png" : "qrc:/resources/images/play_dark.png"
 
             MouseArea{
                 id: playButton
                 anchors.fill: parent
                 onClicked:{
-                    played = !played
+                    played = !played;
                     if(played){
                         play.source = "qrc:/resources/images/pause_dark.png"
                     }else{

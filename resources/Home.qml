@@ -1,13 +1,13 @@
 import QtQuick 2.15
 import QtQuick.Controls 2.15
 
-Item {
+Item{
     id: home_s
     width: parent.width
     height: parent.height
     property bool open_tab: false
 
-    Rectangle {
+    Rectangle{
         id: container
         anchors.fill: parent
         width: parent.width
@@ -15,7 +15,7 @@ Item {
         color: "#444444"
 
 
-        Image {
+        Image{
             id: more1
             width: 50
             height: 50
@@ -25,10 +25,10 @@ Item {
             fillMode: Image.PreserveAspectFit
             source: "qrc:/resources/images/more_dark.png"
 
-            MouseArea {
+            MouseArea{
                 id: moreButton1
                 anchors.fill: parent
-                onClicked: {
+                onClicked:{
                     open_tab = !open_tab
                     more1.source = open_tab ? "qrc:/resources/images/more_dark2.png" : "qrc:/resources/images/more_dark.png"
                 }
@@ -38,28 +38,31 @@ Item {
             }
         }
 
-        Image {
+        Image{
             id: goToPlayer
             width: 50
             height: 50
-            anchors.verticalCenter: more1.verticalCenter
-            anchors.left: more1.right
-            anchors.margins: 5
+            anchors{
+                verticalCenter: more1.verticalCenter
+                left: more1.right
+                margins: 5
+            }
             fillMode: Image.PreserveAspectFit
             source: "qrc:/resources/images/sound_dark.png"
+
             MouseArea {
                 id: goToPlayerButton
                 anchors.fill: parent
                 onPressed: goToPlayer.opacity = 0.7
                 onReleased: goToPlayer.opacity = 1.0
                 onCanceled: goToPlayer.opacity = 1.0
-                onClicked: {
+                onClicked:{
                     stackView.push(playerComponent)
                 }
             }
         }
 
-        ListView {
+        ListView{
             id: songListView
             anchors.top: goToPlayer.bottom
             anchors.horizontalCenter: parent.horizontalCenter
@@ -67,26 +70,25 @@ Item {
             spacing: 1
             width: parent.width * 0.95
 
-            height: parent.height - goToPlayer.height - more1.height // Adjust as needed
-            clip: true  // Clip content that exceeds boundaries
+            height: parent.height - goToPlayer.height - more1.height
+            clip: true
             model: songs.songList
 
-            delegate: Rectangle {
+            delegate: Rectangle{
                 id: songP
                 height: 45
                 width: songListView.width
-                anchors.horizontalCenter: parent.horizontalCenter
                 color: "#555555"
                 property bool liked: false
                 property bool played: false
                 property string songTitle: model.name
                 property string songAuthor: model.artist
 
-                Text {
+                Text{
                     id: titleText
                     font.pixelSize: 15
                     color: "#F0F0F0"
-                    anchors {
+                    anchors{
                         left: parent.left
                         margins: 10
                     }
@@ -96,11 +98,11 @@ Item {
                     text: songTitle
                 }
 
-                Text {
+                Text{
                     id: authorText
                     font.pixelSize: 15
                     color: "#F0F0F0"
-                    anchors {
+                    anchors{
                         left: titleText.right
                         leftMargin: 10
                     }
@@ -110,11 +112,11 @@ Item {
                     text: songAuthor
                 }
 
-                Image {
+                Image{
                     id: heartImg
                     height: parent.height - 3
                     width: parent.height - 3
-                    anchors {
+                    anchors{
                         verticalCenter: parent.verticalCenter
                         right: playPauseImg.left
                         rightMargin: 15
@@ -122,10 +124,10 @@ Item {
                     fillMode: Image.PreserveAspectFit
                     source: "qrc:/resources/images/heart_black_empty.png"
 
-                    MouseArea {
+                    MouseArea{
                         id: heartButton
                         anchors.fill: parent
-                        onClicked: {
+                        onClicked:{
                             liked = !liked
                             heartImg.source = liked ? "qrc:/resources/images/heart_pink_fill.png" : "qrc:/resources/images/heart_black_empty.png"
                         }
@@ -135,23 +137,25 @@ Item {
                     }
                 }
 
-                Image {
+                Image{
                     id: playPauseImg
                     height: parent.height - 3
                     width: parent.height - 3
-                    anchors {
+                    anchors{
                         verticalCenter: parent.verticalCenter
                         right: moreImg.left
                     }
                     fillMode: Image.PreserveAspectFit
                     source: "qrc:/resources/images/play_dark2.png"
 
-                    MouseArea {
+                    MouseArea{
                         id: playButton
                         anchors.fill: parent
-                        onClicked: {
+                        onClicked:{
                             played = !played
                             playPauseImg.source = played ? "qrc:/resources/images/pause_dark2.png" : "qrc:/resources/images/play_dark2.png"
+                            player.setSource(model.fileUrl)
+                            player.playPause()
                         }
                         onPressed: playPauseImg.opacity = 0.7
                         onReleased: playPauseImg.opacity = 1.0
@@ -159,11 +163,11 @@ Item {
                     }
                 }
 
-                Image {
+                Image{
                     id: moreImg
                     height: parent.height - 3
                     width: parent.height - 3
-                    anchors {
+                    anchors{
                         verticalCenter: parent.verticalCenter
                         right: parent.right
                     }
@@ -175,7 +179,7 @@ Item {
                         angle: 90
                     }
 
-                    MouseArea {
+                    MouseArea{
                         id: moreImgButton
                         anchors.fill: parent
                         onPressed: moreImg.opacity = 0.7

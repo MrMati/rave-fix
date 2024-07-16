@@ -15,23 +15,30 @@ class Player: public QObject{
     Q_PROPERTY(int volume READ volume WRITE setVolume NOTIFY volumeChanged)
     Q_PROPERTY(QString title READ title NOTIFY titleChanged)
     Q_PROPERTY(QString author READ author NOTIFY authorChanged)
+    Q_PROPERTY(QUrl currentSongUrl READ currentSongUrl NOTIFY currentSongUrlChanged)
+    Q_PROPERTY(bool isPlaying READ isPlaying NOTIFY playbackStateChanged)
 
 public:
     explicit Player(QObject *parent = nullptr);
-    void setSource(const QString &source);
     qint64 position() const;
     qint64 duration() const;
     Q_INVOKABLE int volume() const;
     Q_INVOKABLE void setVolume(int volume);
     QString title() const;
     QString author() const;
+    Q_INVOKABLE void setSource(const QUrl &source);
+    QUrl currentSongUrl() const;
+    void currentSongUrlChanged(const QUrl &url);
+    bool isPlaying() const;
 
+    void saveLastSong(const QUrl &song);
 signals:
     void positionChanged(qint64 position);
     void durationChanged(qint64 duration);
     void volumeChanged(int volume);
     void titleChanged(const QString &title);
     void authorChanged(const QString &author);
+    void playbackStateChanged();
 
 public slots:
     void playPause();
@@ -42,8 +49,10 @@ private:
     QMediaPlayer *player;
     QAudioOutput *audioOutput;
     int previousVolume;
+    QUrl previousSong;
     QString m_title;
     QString m_author;
+    QUrl m_currentSongUrl;
 
 private slots:
     void updateDuration(qint64 duration);

@@ -3,11 +3,12 @@
 Player::Player(QObject *parent): QObject(parent), previousVolume(30){
     QSettings settings("AL", "Rave");
     int last_vol = settings.value("last_vol", 30).toInt();
-
+    QUrl last_song = settings.value("last_song").toUrl();
     player = new QMediaPlayer(this);
     audioOutput = new QAudioOutput(this);
     player->setAudioOutput(audioOutput);
-    player->setSource(QUrl::fromLocalFile("C:/Users/adria/Desktop/Adrian/music/Blessed & Possessed.mp3"));
+    setSource(last_song);
+    // player->setSource(QUrl::fromLocalFile("C:/Users/adria/Desktop/Adrian/music/Blessed & Possessed.mp3"));
     if(last_vol == 0){
         setVolume(0);
         previousVolume = 30;
@@ -27,10 +28,16 @@ void Player::playPause(){
     }
 }
 
-void Player::setSource(const QString &source){
-    player->setSource(QUrl::fromLocalFile(source));
+void Player::setSource(const QUrl &source)
+{
+    player->setSource(source);
+    saveLastSong(source);
 }
 
+void Player::saveLastSong(const QUrl &song) {
+    QSettings settings("AL", "Rave");
+    settings.setValue("last_song", song.toString());
+}
 
 qint64 Player::position() const{
     return player->position();
@@ -84,4 +91,12 @@ void Player::updateMetaData() {
     m_author = player->metaData().value(QMediaMetaData::ContributingArtist).toString();
     emit titleChanged(m_title);
     emit authorChanged(m_author);
+}
+
+bool Player::isPlaying() const {
+    return player->playbackState() == QMediaPlayer::PlayingState;
+}
+
+QUrl Player::currentSongUrl() const {
+    return m_currentSongUrl;
 }

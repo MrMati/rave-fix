@@ -1,26 +1,25 @@
 import QtQuick 2.15
 
-Rectangle {
+Rectangle{
     width: 50
     height: 50
+    property bool playing: false
 
-    property bool playing: false // To track play/pause state
-
-    Image {
+    Image{
         id: playImage
         source: "qrc:/resources/images/play_black.png"
         anchors.fill: parent
         fillMode: Image.PreserveAspectFit
     }
 
-    MouseArea {
+    MouseArea{
         anchors.fill: parent
         onClicked: {
             playing = !playing
-            if (playing) {
+            if(playing){
                 playClicked()
                 playImage.source = "qrc:/resources/images/pause_black.png"
-            } else {
+            }else{
                 pauseClicked()
                 playImage.source = "qrc:/resources/images/play_black.png"
             }
@@ -31,7 +30,7 @@ Rectangle {
     signal playClicked()
     signal pauseClicked()
 
-    function resetPlayButton() {
+    function resetPlayButton(){
         playing = false
         playImage.source = "qrc:/resources/images/play_black.png"
     }

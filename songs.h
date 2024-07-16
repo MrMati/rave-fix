@@ -32,6 +32,7 @@ signals:
     void nameChanged();
     void artistChanged();
     void fileUrlChanged();
+    void playClicked(QUrl fileUrl);
 
 private:
     QString m_name;
