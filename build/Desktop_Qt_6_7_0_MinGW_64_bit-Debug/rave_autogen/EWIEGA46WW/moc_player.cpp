@@ -48,6 +48,8 @@ constexpr auto qt_meta_stringdata_CLASSPlayerENDCLASS = QtMocHelpers::stringData
     "authorChanged",
     "author",
     "playbackStateChanged",
+    "currentSongUrlChanged",
+    "url",
     "playPause",
     "setPosition",
     "updateDuration",
@@ -56,7 +58,7 @@ constexpr auto qt_meta_stringdata_CLASSPlayerENDCLASS = QtMocHelpers::stringData
     "setVolume",
     "setSource",
     "source",
-    "currentSongUrlChanged",
+    "playAndPause",
     "currentSongUrl",
     "isPlaying"
 );
@@ -71,32 +73,34 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSPlayerENDCLASS[] = {
       12,       // revision
        0,       // classname
        0,    0, // classinfo
-      14,   14, // methods
-       7,  132, // properties
+      16,   14, // methods
+       7,  148, // properties
        0,    0, // enums/sets
        0,    0, // constructors
        0,       // flags
-       6,       // signalCount
+       7,       // signalCount
 
  // signals: name, argc, parameters, tag, flags, initial metatype offsets
-       1,    1,   98,    2, 0x06,    8 /* Public */,
-       4,    1,  101,    2, 0x06,   10 /* Public */,
-       6,    1,  104,    2, 0x06,   12 /* Public */,
-       8,    1,  107,    2, 0x06,   14 /* Public */,
-      10,    1,  110,    2, 0x06,   16 /* Public */,
-      12,    0,  113,    2, 0x06,   18 /* Public */,
+       1,    1,  110,    2, 0x06,    8 /* Public */,
+       4,    1,  113,    2, 0x06,   10 /* Public */,
+       6,    1,  116,    2, 0x06,   12 /* Public */,
+       8,    1,  119,    2, 0x06,   14 /* Public */,
+      10,    1,  122,    2, 0x06,   16 /* Public */,
+      12,    0,  125,    2, 0x06,   18 /* Public */,
+      13,    1,  126,    2, 0x06,   19 /* Public */,
 
  // slots: name, argc, parameters, tag, flags, initial metatype offsets
-      13,    0,  114,    2, 0x0a,   19 /* Public */,
-      14,    1,  115,    2, 0x0a,   20 /* Public */,
-      15,    1,  118,    2, 0x08,   22 /* Private */,
-      16,    1,  121,    2, 0x08,   24 /* Private */,
-      17,    0,  124,    2, 0x08,   26 /* Private */,
+      15,    0,  129,    2, 0x0a,   21 /* Public */,
+      16,    1,  130,    2, 0x0a,   22 /* Public */,
+      17,    1,  133,    2, 0x08,   24 /* Private */,
+      18,    1,  136,    2, 0x08,   26 /* Private */,
+      19,    0,  139,    2, 0x08,   28 /* Private */,
 
  // methods: name, argc, parameters, tag, flags, initial metatype offsets
-       7,    0,  125,    2, 0x102,   27 /* Public | MethodIsConst  */,
-      18,    1,  126,    2, 0x02,   28 /* Public */,
-      19,    1,  129,    2, 0x02,   30 /* Public */,
+       7,    0,  140,    2, 0x102,   29 /* Public | MethodIsConst  */,
+      20,    1,  141,    2, 0x02,   30 /* Public */,
+      21,    1,  144,    2, 0x02,   32 /* Public */,
+      23,    0,  147,    2, 0x02,   34 /* Public */,
 
  // signals: parameters
     QMetaType::Void, QMetaType::LongLong,    3,
@@ -105,6 +109,7 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSPlayerENDCLASS[] = {
     QMetaType::Void, QMetaType::QString,    9,
     QMetaType::Void, QMetaType::QString,   11,
     QMetaType::Void,
+    QMetaType::Void, QMetaType::QUrl,   14,
 
  // slots: parameters
     QMetaType::Void,
@@ -116,7 +121,8 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSPlayerENDCLASS[] = {
  // methods: parameters
     QMetaType::Int,
     QMetaType::Void, QMetaType::Int,    7,
-    QMetaType::Void, QMetaType::QUrl,   20,
+    QMetaType::Void, QMetaType::QUrl,   22,
+    QMetaType::Void,
 
  // properties: name, type, flags
        3, QMetaType::LongLong, 0x00015001, uint(0), 0,
@@ -124,8 +130,8 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSPlayerENDCLASS[] = {
        7, QMetaType::Int, 0x00015103, uint(2), 0,
        9, QMetaType::QString, 0x00015001, uint(3), 0,
       11, QMetaType::QString, 0x00015001, uint(4), 0,
-      22, QMetaType::QUrl, 0x00015001, uint(1879048213), 0,
-      23, QMetaType::Bool, 0x00015001, uint(5), 0,
+      24, QMetaType::QUrl, 0x00015001, uint(6), 0,
+      25, QMetaType::Bool, 0x00015001, uint(5), 0,
 
        0        // eod
 };
@@ -170,6 +176,9 @@ Q_CONSTINIT const QMetaObject Player::staticMetaObject = { {
         QtPrivate::TypeAndForceComplete<const QString &, std::false_type>,
         // method 'playbackStateChanged'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'currentSongUrlChanged'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        QtPrivate::TypeAndForceComplete<const QUrl &, std::false_type>,
         // method 'playPause'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'setPosition'
@@ -190,7 +199,9 @@ Q_CONSTINIT const QMetaObject Player::staticMetaObject = { {
         QtPrivate::TypeAndForceComplete<int, std::false_type>,
         // method 'setSource'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        QtPrivate::TypeAndForceComplete<const QUrl &, std::false_type>
+        QtPrivate::TypeAndForceComplete<const QUrl &, std::false_type>,
+        // method 'playAndPause'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>
     >,
     nullptr
 } };
@@ -207,15 +218,17 @@ void Player::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void
         case 3: _t->titleChanged((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
         case 4: _t->authorChanged((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
         case 5: _t->playbackStateChanged(); break;
-        case 6: _t->playPause(); break;
-        case 7: _t->setPosition((*reinterpret_cast< std::add_pointer_t<qint64>>(_a[1]))); break;
-        case 8: _t->updateDuration((*reinterpret_cast< std::add_pointer_t<qint64>>(_a[1]))); break;
-        case 9: _t->updatePosition((*reinterpret_cast< std::add_pointer_t<qint64>>(_a[1]))); break;
-        case 10: _t->updateMetaData(); break;
-        case 11: { int _r = _t->volume();
+        case 6: _t->currentSongUrlChanged((*reinterpret_cast< std::add_pointer_t<QUrl>>(_a[1]))); break;
+        case 7: _t->playPause(); break;
+        case 8: _t->setPosition((*reinterpret_cast< std::add_pointer_t<qint64>>(_a[1]))); break;
+        case 9: _t->updateDuration((*reinterpret_cast< std::add_pointer_t<qint64>>(_a[1]))); break;
+        case 10: _t->updatePosition((*reinterpret_cast< std::add_pointer_t<qint64>>(_a[1]))); break;
+        case 11: _t->updateMetaData(); break;
+        case 12: { int _r = _t->volume();
             if (_a[0]) *reinterpret_cast< int*>(_a[0]) = std::move(_r); }  break;
-        case 12: _t->setVolume((*reinterpret_cast< std::add_pointer_t<int>>(_a[1]))); break;
-        case 13: _t->setSource((*reinterpret_cast< std::add_pointer_t<QUrl>>(_a[1]))); break;
+        case 13: _t->setVolume((*reinterpret_cast< std::add_pointer_t<int>>(_a[1]))); break;
+        case 14: _t->setSource((*reinterpret_cast< std::add_pointer_t<QUrl>>(_a[1]))); break;
+        case 15: _t->playAndPause(); break;
         default: ;
         }
     } else if (_c == QMetaObject::IndexOfMethod) {
@@ -259,6 +272,13 @@ void Player::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void
             using _t = void (Player::*)();
             if (_t _q_method = &Player::playbackStateChanged; *reinterpret_cast<_t *>(_a[1]) == _q_method) {
                 *result = 5;
+                return;
+            }
+        }
+        {
+            using _t = void (Player::*)(const QUrl & );
+            if (_t _q_method = &Player::currentSongUrlChanged; *reinterpret_cast<_t *>(_a[1]) == _q_method) {
+                *result = 6;
                 return;
             }
         }
@@ -308,13 +328,13 @@ int Player::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 14)
+        if (_id < 16)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 14;
+        _id -= 16;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 14)
+        if (_id < 16)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 14;
+        _id -= 16;
     }else if (_c == QMetaObject::ReadProperty || _c == QMetaObject::WriteProperty
             || _c == QMetaObject::ResetProperty || _c == QMetaObject::BindableProperty
             || _c == QMetaObject::RegisterPropertyMetaType) {
@@ -364,10 +384,11 @@ void Player::playbackStateChanged()
 {
     QMetaObject::activate(this, &staticMetaObject, 5, nullptr);
 }
-namespace CheckNotifySignalValidity_CLASSPlayerENDCLASS {
-template<typename T> using has_nullary_currentSongUrlChanged = decltype(std::declval<T>().currentSongUrlChanged());
-template<typename T> using has_unary_currentSongUrlChanged = decltype(std::declval<T>().currentSongUrlChanged(std::declval<QUrl>()));
-static_assert(qxp::is_detected_v<has_nullary_currentSongUrlChanged, Player> || qxp::is_detected_v<has_unary_currentSongUrlChanged, Player>,
-              "NOTIFY signal currentSongUrlChanged does not exist in class (or is private in its parent)");
+
+// SIGNAL 6
+void Player::currentSongUrlChanged(const QUrl & _t1)
+{
+    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t1))) };
+    QMetaObject::activate(this, &staticMetaObject, 6, _a);
 }
 QT_WARNING_POP

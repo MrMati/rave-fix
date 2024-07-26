@@ -137,25 +137,29 @@ Item{
                     }
                 }
 
-                Image{
+                Image {
                     id: playPauseImg
                     height: parent.height - 3
                     width: parent.height - 3
-                    anchors{
+                    anchors {
                         verticalCenter: parent.verticalCenter
                         right: moreImg.left
                     }
                     fillMode: Image.PreserveAspectFit
-                    source: "qrc:/resources/images/play_dark2.png"
+                    source: (player.currentSongUrl === model.fileUrl) ? (player.isPlaying ? "qrc:/resources/images/pause_dark2.png" : "qrc:/resources/images/play_dark2.png") : "qrc:/resources/images/play_dark2.png"
 
-                    MouseArea{
+                    MouseArea {
                         id: playButton
                         anchors.fill: parent
-                        onClicked:{
+                        onClicked: {
+                            if (player.currentSongUrl === model.fileUrl) {
+                                player.playPause()
+                            } else {
+                                player.setSource(model.fileUrl)
+                                player.playPause()
+                            }
                             played = !played
                             playPauseImg.source = played ? "qrc:/resources/images/pause_dark2.png" : "qrc:/resources/images/play_dark2.png"
-                            player.setSource(model.fileUrl)
-                            player.playPause()
                         }
                         onPressed: playPauseImg.opacity = 0.7
                         onReleased: playPauseImg.opacity = 1.0

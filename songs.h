@@ -38,6 +38,7 @@ private:
     QString m_name;
     QStringList m_artist;
     QUrl m_fileUrl;
+    bool liked;
 };
 
 class Songs : public QObject {

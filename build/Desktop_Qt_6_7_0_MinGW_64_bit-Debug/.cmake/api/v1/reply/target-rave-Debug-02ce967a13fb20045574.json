@@ -770,15 +770,15 @@
 	"dependencies" : 
 	[
 		{
-			"backtrace" : 93,
-			"id" : "rave_qmlimportscan::@6890427a1f51a3e7e1df"
+			"id" : "rave_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
 		},
 		{
 			"backtrace" : 0,
 			"id" : "rave_autogen::@6890427a1f51a3e7e1df"
 		},
 		{
-			"id" : "rave_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
+			"backtrace" : 93,
+			"id" : "rave_qmlimportscan::@6890427a1f51a3e7e1df"
 		}
 	],
 	"id" : "rave::@6890427a1f51a3e7e1df",

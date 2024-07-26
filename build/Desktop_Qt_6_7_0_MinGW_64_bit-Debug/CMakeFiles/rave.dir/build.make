@@ -78,7 +78,6 @@ rave_autogen/timestamp: CMakeFiles/rave.dir/compiler_depend.ts
 rave_autogen/EWIEGA46WW/qrc_qml.cpp: C:/Users/adria/Desktop/Adrian/projects/Qt/rave/qml.qrc
 rave_autogen/EWIEGA46WW/qrc_qml.cpp: CMakeFiles/rave_autogen.dir/AutoRcc_qml_EWIEGA46WW_Info.json
 rave_autogen/EWIEGA46WW/qrc_qml.cpp: C:/Users/adria/Desktop/Adrian/projects/Qt/rave/main.qml
-rave_autogen/EWIEGA46WW/qrc_qml.cpp: C:/Users/adria/Desktop/Adrian/projects/Qt/rave/resources/SongPanel.qml
 rave_autogen/EWIEGA46WW/qrc_qml.cpp: C:/Users/adria/Desktop/Adrian/projects/Qt/rave/resources/Home.qml
 rave_autogen/EWIEGA46WW/qrc_qml.cpp: C:/Users/adria/Desktop/Adrian/projects/Qt/rave/resources/PlayButton.qml
 rave_autogen/EWIEGA46WW/qrc_qml.cpp: C:/Users/adria/Desktop/Adrian/projects/Qt/rave/resources/Player.qml

@@ -28,8 +28,9 @@ public:
     QString author() const;
     Q_INVOKABLE void setSource(const QUrl &source);
     QUrl currentSongUrl() const;
-    void currentSongUrlChanged(const QUrl &url);
+
     bool isPlaying() const;
+    Q_INVOKABLE void playAndPause();
 
     void saveLastSong(const QUrl &song);
 signals:
@@ -39,6 +40,7 @@ signals:
     void titleChanged(const QString &title);
     void authorChanged(const QString &author);
     void playbackStateChanged();
+    void currentSongUrlChanged(const QUrl &url);
 
 public slots:
     void playPause();
