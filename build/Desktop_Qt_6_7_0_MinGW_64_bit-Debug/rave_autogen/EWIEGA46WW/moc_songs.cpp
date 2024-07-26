@@ -41,10 +41,12 @@ constexpr auto qt_meta_stringdata_CLASSSongENDCLASS = QtMocHelpers::stringData(
     "",
     "artistChanged",
     "fileUrlChanged",
+    "likedChanged",
     "playClicked",
     "fileUrl",
     "name",
-    "artist"
+    "artist",
+    "liked"
 );
 #else  // !QT_MOC_HAS_STRINGDATA
 #error "qtmochelpers.h not found or too old."
@@ -57,29 +59,32 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSSongENDCLASS[] = {
       12,       // revision
        0,       // classname
        0,    0, // classinfo
-       4,   14, // methods
-       3,   44, // properties
+       5,   14, // methods
+       4,   51, // properties
        0,    0, // enums/sets
        0,    0, // constructors
        0,       // flags
-       4,       // signalCount
+       5,       // signalCount
 
  // signals: name, argc, parameters, tag, flags, initial metatype offsets
-       1,    0,   38,    2, 0x06,    4 /* Public */,
-       3,    0,   39,    2, 0x06,    5 /* Public */,
-       4,    0,   40,    2, 0x06,    6 /* Public */,
-       5,    1,   41,    2, 0x06,    7 /* Public */,
+       1,    0,   44,    2, 0x06,    5 /* Public */,
+       3,    0,   45,    2, 0x06,    6 /* Public */,
+       4,    0,   46,    2, 0x06,    7 /* Public */,
+       5,    0,   47,    2, 0x06,    8 /* Public */,
+       6,    1,   48,    2, 0x06,    9 /* Public */,
 
  // signals: parameters
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
-    QMetaType::Void, QMetaType::QUrl,    6,
+    QMetaType::Void,
+    QMetaType::Void, QMetaType::QUrl,    7,
 
  // properties: name, type, flags
-       7, QMetaType::QString, 0x00015001, uint(0), 0,
-       8, QMetaType::QStringList, 0x00015001, uint(1), 0,
-       6, QMetaType::QUrl, 0x00015001, uint(2), 0,
+       8, QMetaType::QString, 0x00015001, uint(0), 0,
+       9, QMetaType::QStringList, 0x00015001, uint(1), 0,
+       7, QMetaType::QUrl, 0x00015001, uint(2), 0,
+      10, QMetaType::Bool, 0x00015103, uint(3), 0,
 
        0        // eod
 };
@@ -97,6 +102,8 @@ Q_CONSTINIT const QMetaObject Song::staticMetaObject = { {
         QtPrivate::TypeAndForceComplete<QStringList, std::true_type>,
         // property 'fileUrl'
         QtPrivate::TypeAndForceComplete<QUrl, std::true_type>,
+        // property 'liked'
+        QtPrivate::TypeAndForceComplete<bool, std::true_type>,
         // Q_OBJECT / Q_GADGET
         QtPrivate::TypeAndForceComplete<Song, std::true_type>,
         // method 'nameChanged'
@@ -104,6 +111,8 @@ Q_CONSTINIT const QMetaObject Song::staticMetaObject = { {
         // method 'artistChanged'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'fileUrlChanged'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'likedChanged'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'playClicked'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
@@ -121,7 +130,8 @@ void Song::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void *
         case 0: _t->nameChanged(); break;
         case 1: _t->artistChanged(); break;
         case 2: _t->fileUrlChanged(); break;
-        case 3: _t->playClicked((*reinterpret_cast< std::add_pointer_t<QUrl>>(_a[1]))); break;
+        case 3: _t->likedChanged(); break;
+        case 4: _t->playClicked((*reinterpret_cast< std::add_pointer_t<QUrl>>(_a[1]))); break;
         default: ;
         }
     } else if (_c == QMetaObject::IndexOfMethod) {
@@ -148,9 +158,16 @@ void Song::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void *
             }
         }
         {
+            using _t = void (Song::*)();
+            if (_t _q_method = &Song::likedChanged; *reinterpret_cast<_t *>(_a[1]) == _q_method) {
+                *result = 3;
+                return;
+            }
+        }
+        {
             using _t = void (Song::*)(QUrl );
             if (_t _q_method = &Song::playClicked; *reinterpret_cast<_t *>(_a[1]) == _q_method) {
-                *result = 3;
+                *result = 4;
                 return;
             }
         }
@@ -162,9 +179,17 @@ void Song::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void *
         case 0: *reinterpret_cast< QString*>(_v) = _t->getName(); break;
         case 1: *reinterpret_cast< QStringList*>(_v) = _t->getArtist(); break;
         case 2: *reinterpret_cast< QUrl*>(_v) = _t->getFileUrl(); break;
+        case 3: *reinterpret_cast< bool*>(_v) = _t->isLiked(); break;
         default: break;
         }
     } else if (_c == QMetaObject::WriteProperty) {
+        auto *_t = static_cast<Song *>(_o);
+        (void)_t;
+        void *_v = _a[0];
+        switch (_id) {
+        case 3: _t->setLiked(*reinterpret_cast< bool*>(_v)); break;
+        default: break;
+        }
     } else if (_c == QMetaObject::ResetProperty) {
     } else if (_c == QMetaObject::BindableProperty) {
     }
@@ -189,18 +214,18 @@ int Song::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 4)
+        if (_id < 5)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 4;
+        _id -= 5;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 4)
+        if (_id < 5)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 4;
+        _id -= 5;
     }else if (_c == QMetaObject::ReadProperty || _c == QMetaObject::WriteProperty
             || _c == QMetaObject::ResetProperty || _c == QMetaObject::BindableProperty
             || _c == QMetaObject::RegisterPropertyMetaType) {
         qt_static_metacall(this, _c, _id, _a);
-        _id -= 3;
+        _id -= 4;
     }
     return _id;
 }
@@ -224,10 +249,16 @@ void Song::fileUrlChanged()
 }
 
 // SIGNAL 3
+void Song::likedChanged()
+{
+    QMetaObject::activate(this, &staticMetaObject, 3, nullptr);
+}
+
+// SIGNAL 4
 void Song::playClicked(QUrl _t1)
 {
     void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t1))) };
-    QMetaObject::activate(this, &staticMetaObject, 3, _a);
+    QMetaObject::activate(this, &staticMetaObject, 4, _a);
 }
 namespace {
 
@@ -237,6 +268,7 @@ constexpr auto qt_meta_stringdata_CLASSSongsENDCLASS = QtMocHelpers::stringData(
     "Songs",
     "songListChanged",
     "",
+    "saveLiked",
     "onMediaLoaded",
     "QMediaPlayer::MediaStatus",
     "status",
@@ -244,6 +276,7 @@ constexpr auto qt_meta_stringdata_CLASSSongsENDCLASS = QtMocHelpers::stringData(
     "QList<QObject*>",
     "loadSongsFromDirectory",
     "directoryPath",
+    "saveLikedFromQML",
     "songList"
 );
 #else  // !QT_MOC_HAS_STRINGDATA
@@ -257,35 +290,39 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSSongsENDCLASS[] = {
       12,       // revision
        0,       // classname
        0,    0, // classinfo
-       4,   14, // methods
-       1,   46, // properties
+       6,   14, // methods
+       1,   60, // properties
        0,    0, // enums/sets
        0,    0, // constructors
        0,       // flags
        1,       // signalCount
 
  // signals: name, argc, parameters, tag, flags, initial metatype offsets
-       1,    0,   38,    2, 0x06,    2 /* Public */,
+       1,    0,   50,    2, 0x06,    2 /* Public */,
 
  // slots: name, argc, parameters, tag, flags, initial metatype offsets
-       3,    1,   39,    2, 0x08,    3 /* Private */,
+       3,    0,   51,    2, 0x0a,    3 /* Public */,
+       4,    1,   52,    2, 0x08,    4 /* Private */,
 
  // methods: name, argc, parameters, tag, flags, initial metatype offsets
-       6,    0,   42,    2, 0x102,    5 /* Public | MethodIsConst  */,
-       8,    1,   43,    2, 0x02,    6 /* Public */,
+       7,    0,   55,    2, 0x102,    6 /* Public | MethodIsConst  */,
+       9,    1,   56,    2, 0x02,    7 /* Public */,
+      11,    0,   59,    2, 0x02,    9 /* Public */,
 
  // signals: parameters
     QMetaType::Void,
 
  // slots: parameters
-    QMetaType::Void, 0x80000000 | 4,    5,
+    QMetaType::Void,
+    QMetaType::Void, 0x80000000 | 5,    6,
 
  // methods: parameters
-    0x80000000 | 7,
-    QMetaType::Void, QMetaType::QString,    9,
+    0x80000000 | 8,
+    QMetaType::Void, QMetaType::QString,   10,
+    QMetaType::Void,
 
  // properties: name, type, flags
-      10, 0x80000000 | 7, 0x00015009, uint(0), 0,
+      12, 0x80000000 | 8, 0x00015009, uint(0), 0,
 
        0        // eod
 };
@@ -303,6 +340,8 @@ Q_CONSTINIT const QMetaObject Songs::staticMetaObject = { {
         QtPrivate::TypeAndForceComplete<Songs, std::true_type>,
         // method 'songListChanged'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'saveLiked'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'onMediaLoaded'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         QtPrivate::TypeAndForceComplete<QMediaPlayer::MediaStatus, std::false_type>,
@@ -310,7 +349,9 @@ Q_CONSTINIT const QMetaObject Songs::staticMetaObject = { {
         QtPrivate::TypeAndForceComplete<QList<QObject*>, std::false_type>,
         // method 'loadSongsFromDirectory'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        QtPrivate::TypeAndForceComplete<QString, std::false_type>
+        QtPrivate::TypeAndForceComplete<QString, std::false_type>,
+        // method 'saveLikedFromQML'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>
     >,
     nullptr
 } };
@@ -322,10 +363,12 @@ void Songs::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void 
         (void)_t;
         switch (_id) {
         case 0: _t->songListChanged(); break;
-        case 1: _t->onMediaLoaded((*reinterpret_cast< std::add_pointer_t<QMediaPlayer::MediaStatus>>(_a[1]))); break;
-        case 2: { QList<QObject*> _r = _t->getSongList();
+        case 1: _t->saveLiked(); break;
+        case 2: _t->onMediaLoaded((*reinterpret_cast< std::add_pointer_t<QMediaPlayer::MediaStatus>>(_a[1]))); break;
+        case 3: { QList<QObject*> _r = _t->getSongList();
             if (_a[0]) *reinterpret_cast< QList<QObject*>*>(_a[0]) = std::move(_r); }  break;
-        case 3: _t->loadSongsFromDirectory((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
+        case 4: _t->loadSongsFromDirectory((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
+        case 5: _t->saveLikedFromQML(); break;
         default: ;
         }
     } else if (_c == QMetaObject::IndexOfMethod) {
@@ -376,13 +419,13 @@ int Songs::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 4)
+        if (_id < 6)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 4;
+        _id -= 6;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 4)
+        if (_id < 6)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 4;
+        _id -= 6;
     }else if (_c == QMetaObject::ReadProperty || _c == QMetaObject::WriteProperty
             || _c == QMetaObject::ResetProperty || _c == QMetaObject::BindableProperty
             || _c == QMetaObject::RegisterPropertyMetaType) {

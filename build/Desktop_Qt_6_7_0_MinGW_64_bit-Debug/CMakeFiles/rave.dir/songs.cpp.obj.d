@@ -382,6 +382,8 @@ CMakeFiles/rave.dir/songs.cpp.obj: \
  C:/Qt/6.7.0/mingw_64/include/QtCore/qfileinfo.h \
  C:/Qt/6.7.0/mingw_64/include/QtCore/QAbstractListModel \
  C:/Qt/6.7.0/mingw_64/include/QtCore/qabstractitemmodel.h \
+ C:/Qt/6.7.0/mingw_64/include/QtCore/QSettings \
+ C:/Qt/6.7.0/mingw_64/include/QtCore/qsettings.h \
  C:/Qt/6.7.0/mingw_64/include/QtCore/QDebug \
  C:/Qt/6.7.0/mingw_64/include/QtCore/qdebug.h \
  C:/Qt/6.7.0/mingw_64/include/QtMultimedia/QMediaMetaData \

@@ -7,6 +7,7 @@
 #include <QAudioOutput>
 #include <QSettings>
 #include <QMediaMetaData>
+#include "songs.h"
 
 class Player: public QObject{
     Q_OBJECT
@@ -17,6 +18,7 @@ class Player: public QObject{
     Q_PROPERTY(QString author READ author NOTIFY authorChanged)
     Q_PROPERTY(QUrl currentSongUrl READ currentSongUrl NOTIFY currentSongUrlChanged)
     Q_PROPERTY(bool isPlaying READ isPlaying NOTIFY playbackStateChanged)
+
 
 public:
     explicit Player(QObject *parent = nullptr);

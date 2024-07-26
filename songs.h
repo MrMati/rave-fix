@@ -6,6 +6,7 @@
 #include <QDir>
 #include <QFileInfoList>
 #include <QAbstractListModel>
+#include <QSettings>
 #include <vector>
 
 class Song : public QObject {
@@ -13,6 +14,7 @@ class Song : public QObject {
     Q_PROPERTY(QString name READ getName NOTIFY nameChanged)
     Q_PROPERTY(QStringList artist READ getArtist NOTIFY artistChanged)
     Q_PROPERTY(QUrl fileUrl READ getFileUrl NOTIFY fileUrlChanged)
+    Q_PROPERTY(bool liked READ isLiked WRITE setLiked NOTIFY likedChanged)
 
 public:
     explicit Song(QObject *parent = nullptr);
@@ -26,19 +28,25 @@ public:
     QUrl getFileUrl() const;
     void setFileUrl(const QUrl &fileUrl);
 
+    bool isLiked() const;
+    void setLiked(bool liked);
+
     friend class Songs;
 
 signals:
     void nameChanged();
     void artistChanged();
     void fileUrlChanged();
+    void likedChanged();
     void playClicked(QUrl fileUrl);
 
 private:
+
+
     QString m_name;
     QStringList m_artist;
     QUrl m_fileUrl;
-    bool liked;
+    bool m_liked = false;
 };
 
 class Songs : public QObject {
@@ -50,19 +58,26 @@ public:
     std::vector<Song*> getLibrary();
     Q_INVOKABLE QList<QObject*> getSongList() const;
     Q_INVOKABLE void loadSongsFromDirectory(QString directoryPath);
+    Q_INVOKABLE void saveLikedFromQML();
 
 signals:
     void songListChanged();
+
+public slots:
+    void saveLiked();
+
 
 private slots:
     void onMediaLoaded(QMediaPlayer::MediaStatus status);
 
 private:
+    void loadLiked();
     void addSong(QString filePath);
     std::vector<Song*> library;
     QList<QObject*> songList;
     QMediaPlayer player_temp;
     std::vector<QUrl> pendingUrls;
+    QSettings settings;
 };
 
 #endif // SONGS_H

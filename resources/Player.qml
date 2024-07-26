@@ -6,7 +6,6 @@ Item{
     width: parent.width
     height: parent.height
     property bool open_tab: false
-    property bool liked: false
     property bool played: player.isPlaying
     property bool sound: true
     property int previousVolume: 30
@@ -165,6 +164,7 @@ Item{
             anchors.right: parent.right
             anchors.margins: 10
             fillMode: Image.PreserveAspectFit
+            property bool liked: false
             source: "qrc:/resources/images/heart_black_empty.png"
 
             MouseArea{

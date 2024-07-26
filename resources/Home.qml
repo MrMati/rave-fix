@@ -79,7 +79,7 @@ Item{
                 height: 45
                 width: songListView.width
                 color: "#555555"
-                property bool liked: false
+                property bool liked: model.liked
                 property bool played: false
                 property string songTitle: model.name
                 property string songAuthor: model.artist
@@ -122,14 +122,16 @@ Item{
                         rightMargin: 15
                     }
                     fillMode: Image.PreserveAspectFit
-                    source: "qrc:/resources/images/heart_black_empty.png"
+                    source: liked ? "qrc:/resources/images/heart_pink_fill.png" : "qrc:/resources/images/heart_black_empty.png"
 
                     MouseArea{
                         id: heartButton
                         anchors.fill: parent
                         onClicked:{
                             liked = !liked
+                            model.liked = liked
                             heartImg.source = liked ? "qrc:/resources/images/heart_pink_fill.png" : "qrc:/resources/images/heart_black_empty.png"
+                            songs.saveLikedFromQML()
                         }
                         onPressed: heartImg.opacity = 0.7
                         onReleased: heartImg.opacity = 1.0

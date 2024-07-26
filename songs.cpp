@@ -37,6 +37,17 @@ void Song::setFileUrl(const QUrl &fileUrl) {
     }
 }
 
+bool Song::isLiked() const {
+    return m_liked;
+}
+
+void Song::setLiked(bool liked) {
+    if (m_liked != liked) {
+        m_liked = liked;
+        emit likedChanged();
+    }
+}
+
 Songs::Songs() {
     connect(&player_temp, &QMediaPlayer::mediaStatusChanged, this, &Songs::onMediaLoaded);
     QUrl path = QUrl::fromLocalFile("C:/Users/adria/Desktop/Adrian/music");
@@ -84,8 +95,10 @@ void Songs::onMediaLoaded(QMediaPlayer::MediaStatus status) {
 
         QVariant artistData = player_temp.metaData().value(QMediaMetaData::ContributingArtist);
         if (artistData.isValid()) {
-            song->setArtist(artistData.toString().split(";")); // Assuming artists are separated by semicolons
+            song->setArtist(artistData.toString().split("/")); // Assuming artists are separated by semicolons
         }
+
+        connect(song, &Song::likedChanged, this, &Songs::saveLiked);
 
         library.push_back(song);
         songList.append(song);
@@ -97,4 +110,26 @@ void Songs::onMediaLoaded(QMediaPlayer::MediaStatus status) {
             player_temp.setSource(pendingUrls.front());
         }
     }
+    loadLiked();
+}
+
+void Songs::loadLiked() {
+    QSettings settings("AL", "Rave");
+    for (Song* song : library) {
+        QString key = song->getFileUrl().toString();
+        bool liked = settings.value(key, false).toBool(); // Default to false if not set
+        song->setLiked(liked);
+    }
+}
+
+void Songs::saveLiked() {
+    QSettings settings("AL", "Rave");
+    for (Song* song : library) {
+        QString key = song->getFileUrl().toString();
+        settings.setValue(key, song->isLiked());
+    }
+}
+
+void Songs::saveLikedFromQML() {
+    saveLiked();
 }
