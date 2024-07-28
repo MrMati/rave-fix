@@ -15,11 +15,11 @@ void Song::setName(const QString &name) {
     }
 }
 
-QStringList Song::getArtist() const {
+QString Song::getArtist() const {
     return m_artist;
 }
 
-void Song::setArtist(const QStringList &artist) {
+void Song::setArtist(const QString &artist) {
     if (artist != m_artist) {
         m_artist = artist;
         emit artistChanged();
@@ -95,7 +95,7 @@ void Songs::onMediaLoaded(QMediaPlayer::MediaStatus status) {
 
         QVariant artistData = player_temp.metaData().value(QMediaMetaData::ContributingArtist);
         if (artistData.isValid()) {
-            song->setArtist(artistData.toString().split("/")); // Assuming artists are separated by semicolons
+            song->setArtist(artistData.toString());
         }
 
         connect(song, &Song::likedChanged, this, &Songs::saveLiked);

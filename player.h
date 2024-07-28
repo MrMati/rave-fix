@@ -18,7 +18,7 @@ class Player: public QObject{
     Q_PROPERTY(QString author READ author NOTIFY authorChanged)
     Q_PROPERTY(QUrl currentSongUrl READ currentSongUrl NOTIFY currentSongUrlChanged)
     Q_PROPERTY(bool isPlaying READ isPlaying NOTIFY playbackStateChanged)
-
+    Q_PROPERTY(bool currentSongLiked READ isCurrentSongLiked WRITE setCurrentSongLiked NOTIFY currentSongLikedChanged)
 
 public:
     explicit Player(QObject *parent = nullptr);
@@ -30,6 +30,8 @@ public:
     QString author() const;
     Q_INVOKABLE void setSource(const QUrl &source);
     QUrl currentSongUrl() const;
+    bool isCurrentSongLiked() const;
+    void setCurrentSongLiked(bool liked);
 
     bool isPlaying() const;
     Q_INVOKABLE void playAndPause();
@@ -43,6 +45,8 @@ signals:
     void authorChanged(const QString &author);
     void playbackStateChanged();
     void currentSongUrlChanged(const QUrl &url);
+    void currentSongLikedChanged(bool liked);
+
 
 public slots:
     void playPause();
@@ -57,6 +61,7 @@ private:
     QString m_title;
     QString m_author;
     QUrl m_currentSongUrl;
+    Songs *songs;
 
 private slots:
     void updateDuration(qint64 duration);

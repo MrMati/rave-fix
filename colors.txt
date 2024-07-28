@@ -2,3 +2,4 @@ main green: #1DB954
 secondary green: #66BB6A
 text: #F0F0F0
 background: #444444
+secondary background: #555555

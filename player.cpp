@@ -17,6 +17,8 @@ Player::Player(QObject *parent): QObject(parent), previousVolume(30){
     connect(player, &QMediaPlayer::durationChanged, this, &Player::updateDuration);
     connect(player, &QMediaPlayer::positionChanged, this, &Player::updatePosition);
     connect(player, &QMediaPlayer::metaDataChanged, this, &Player::updateMetaData);
+
+    songs = new Songs();
 }
 
 void Player::playPause(){
@@ -33,6 +35,28 @@ void Player::setSource(const QUrl &source) {
         m_currentSongUrl = source;
         player->setSource(source);
         emit currentSongUrlChanged(m_currentSongUrl);
+        bool liked = isCurrentSongLiked();
+        emit currentSongLikedChanged(liked);
+    }
+}
+
+bool Player::isCurrentSongLiked() const {
+    // Find the song in the Songs library
+    for (Song* song : songs->getLibrary()) {
+        if (song->getFileUrl() == m_currentSongUrl) {
+            return song->isLiked();
+        }
+    }
+    return false;
+}
+
+void Player::setCurrentSongLiked(bool liked) {
+    // Find the song in the Songs library and update like status
+    for (Song* song : songs->getLibrary()) {
+        if (song->getFileUrl() == m_currentSongUrl) {
+            song->setLiked(liked);
+            break;
+        }
     }
 }
 

@@ -1,8 +1,8 @@
 C:/Users/adria/Desktop/Adrian/projects/Qt/rave/build/Desktop_Qt_6_7_0_MinGW_64_bit-Release/rave_autogen/EWIEGA46WW/moc_mainwindow.cpp: C:/Users/adria/Desktop/Adrian/projects/Qt/rave/mainwindow.h \
   C:/Users/adria/Desktop/Adrian/projects/Qt/rave/build/Desktop_Qt_6_7_0_MinGW_64_bit-Release/rave_autogen/moc_predefs.h \
+  C:/Qt/6.7.0/mingw_64/include/QtCore/QAbstractListModel \
   C:/Qt/6.7.0/mingw_64/include/QtCore/QDebug \
   C:/Qt/6.7.0/mingw_64/include/QtCore/QDir \
-  C:/Qt/6.7.0/mingw_64/include/QtCore/QFileInfo \
   C:/Qt/6.7.0/mingw_64/include/QtCore/QFileInfoList \
   C:/Qt/6.7.0/mingw_64/include/QtCore/QList \
   C:/Qt/6.7.0/mingw_64/include/QtCore/QObject \
@@ -10,9 +10,7 @@ C:/Users/adria/Desktop/Adrian/projects/Qt/rave/build/Desktop_Qt_6_7_0_MinGW_64_b
   C:/Qt/6.7.0/mingw_64/include/QtCore/QSettings \
   C:/Qt/6.7.0/mingw_64/include/QtCore/QSize \
   C:/Qt/6.7.0/mingw_64/include/QtCore/QSizeF \
-  C:/Qt/6.7.0/mingw_64/include/QtCore/QString \
   C:/Qt/6.7.0/mingw_64/include/QtCore/QTimer \
-  C:/Qt/6.7.0/mingw_64/include/QtCore/QUrl \
   C:/Qt/6.7.0/mingw_64/include/QtCore/q20functional.h \
   C:/Qt/6.7.0/mingw_64/include/QtCore/q20memory.h \
   C:/Qt/6.7.0/mingw_64/include/QtCore/q20type_traits.h \

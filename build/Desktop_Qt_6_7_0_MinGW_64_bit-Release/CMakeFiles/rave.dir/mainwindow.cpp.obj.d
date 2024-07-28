@@ -496,10 +496,7 @@ CMakeFiles/rave.dir/mainwindow.cpp.obj: \
  C:/Qt/6.7.0/mingw_64/include/QtGui/qaccessible.h \
  C:/Qt/6.7.0/mingw_64/include/QtGui/qaccessible_base.h \
  C:\Users\adria\Desktop\Adrian\projects\Qt\rave\songs.h \
- C:/Qt/6.7.0/mingw_64/include/QtCore/QUrl \
- C:/Qt/6.7.0/mingw_64/include/QtCore/qurl.h \
- C:/Qt/6.7.0/mingw_64/include/QtCore/QString \
- C:/Qt/6.7.0/mingw_64/include/QtCore/qstring.h \
+ C:/Qt/6.7.0/mingw_64/include/QtCore/QObject \
  C:/Qt/6.7.0/mingw_64/include/QtCore/QDir \
  C:/Qt/6.7.0/mingw_64/include/QtCore/qdir.h \
  C:/Qt/6.7.0/mingw_64/include/QtCore/qfile.h \
@@ -524,9 +521,9 @@ CMakeFiles/rave.dir/mainwindow.cpp.obj: \
  C:/Qt/6.7.0/mingw_64/include/QtCore/qfileinfo.h \
  C:/Qt/6.7.0/mingw_64/include/QtCore/QFileInfoList \
  C:/Qt/6.7.0/mingw_64/include/QtCore/qfileinfo.h \
- C:/Qt/6.7.0/mingw_64/include/QtCore/QFileInfo \
+ C:/Qt/6.7.0/mingw_64/include/QtCore/QAbstractListModel \
+ C:/Qt/6.7.0/mingw_64/include/QtCore/qabstractitemmodel.h \
  C:\Users\adria\Desktop\Adrian\projects\Qt\rave\customslider.h \
- C:/Qt/6.7.0/mingw_64/include/QtCore/QObject \
  C:/Qt/6.7.0/mingw_64/include/QtWidgets/QWidget \
  C:/Qt/6.7.0/mingw_64/include/QtWidgets/qwidget.h \
  C:/Qt/6.7.0/mingw_64/include/QtWidgets/QSlider \
@@ -546,6 +543,8 @@ CMakeFiles/rave.dir/mainwindow.cpp.obj: \
  C:/Qt/6.7.0/mingw_64/include/QtWidgets/qlayoutitem.h \
  C:/Qt/6.7.0/mingw_64/include/QtWidgets/qboxlayout.h \
  C:/Qt/6.7.0/mingw_64/include/QtWidgets/qgridlayout.h \
+ C:/Qt/6.7.0/mingw_64/include/QtCore/QUrl \
+ C:/Qt/6.7.0/mingw_64/include/QtCore/qurl.h \
  C:/Qt/6.7.0/mingw_64/include/QtQuickWidgets/QQuickWidget \
  C:/Qt/6.7.0/mingw_64/include/QtQuickWidgets/qquickwidget.h \
  C:/Qt/6.7.0/mingw_64/include/QtQuick/qquickwindow.h \

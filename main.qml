@@ -22,5 +22,10 @@ ApplicationWindow{
             id: playerComponent
             Player{}
         }
+
+        Component{
+            id: playlistsComponent
+            Playlists{}
+        }
     }
 }

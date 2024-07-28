@@ -11,38 +11,18 @@ Item{
     property int previousVolume: 30
 
     Rectangle{
-        id: dropAreaContainer
+        id: container
         anchors.fill: parent
         width: parent.width
         height: parent.height
         color: "#444444"
 
 
-        Image{
+        MoreButton {
             id: more1
-            width: 45
-            height: 45
             anchors.top: parent.top
             anchors.left: parent.left
             anchors.margins: 10
-            fillMode: Image.PreserveAspectFit
-            source: "qrc:/resources/images/more_dark.png"
-
-            MouseArea{
-                id: moreButton1
-                anchors.fill: parent
-                onClicked:{
-                    open_tab = !open_tab
-                    if(open_tab){
-                        more1.source = "qrc:/resources/images/more_dark2.png"
-                    }else{
-                        more1.source = "qrc:/resources/images/more_dark.png"
-                    }
-                }
-                onPressed: more1.opacity = 0.7
-                onReleased: more1.opacity = 1.0
-                onCanceled: more1.opacity = 1.0
-            }
         }
 
         Image{
@@ -164,14 +144,15 @@ Item{
             anchors.right: parent.right
             anchors.margins: 10
             fillMode: Image.PreserveAspectFit
-            property bool liked: false
-            source: "qrc:/resources/images/heart_black_empty.png"
+            property bool liked: player.currentSongLiked
+            source: liked ? "qrc:/resources/images/heart_pink_fill.png" : "qrc:/resources/images/heart_black_empty.png"
 
             MouseArea{
                 id: heartButton
                 anchors.fill: parent
                 onClicked:{
                     liked = !liked
+                    player.currentSongLiked = liked
                     if(liked){
                         heart.source = "qrc:/resources/images/heart_pink_fill.png"
                     }else{
@@ -358,3 +339,4 @@ Item{
 
 
 // when screens changed, play button goes back to initial
+// too long texts have to scroll automatically, also in home

@@ -31,10 +31,10 @@ rave_autogen/timestamp: \
 	C:/Program\ Files/CMake/share/cmake-3.29/Modules/Platform/Windows-windres.cmake \
 	C:/Program\ Files/CMake/share/cmake-3.29/Modules/Platform/Windows.cmake \
 	C:/Program\ Files/CMake/share/cmake-3.29/Modules/Platform/WindowsPaths.cmake \
+	C:/Qt/6.7.0/mingw_64/include/QtCore/QAbstractListModel \
 	C:/Qt/6.7.0/mingw_64/include/QtCore/QDebug \
 	C:/Qt/6.7.0/mingw_64/include/QtCore/QDir \
 	C:/Qt/6.7.0/mingw_64/include/QtCore/QEvent \
-	C:/Qt/6.7.0/mingw_64/include/QtCore/QFileInfo \
 	C:/Qt/6.7.0/mingw_64/include/QtCore/QFileInfoList \
 	C:/Qt/6.7.0/mingw_64/include/QtCore/QList \
 	C:/Qt/6.7.0/mingw_64/include/QtCore/QMargins \
@@ -44,7 +44,6 @@ rave_autogen/timestamp: \
 	C:/Qt/6.7.0/mingw_64/include/QtCore/QSettings \
 	C:/Qt/6.7.0/mingw_64/include/QtCore/QSize \
 	C:/Qt/6.7.0/mingw_64/include/QtCore/QSizeF \
-	C:/Qt/6.7.0/mingw_64/include/QtCore/QString \
 	C:/Qt/6.7.0/mingw_64/include/QtCore/QTimer \
 	C:/Qt/6.7.0/mingw_64/include/QtCore/QUrl \
 	C:/Qt/6.7.0/mingw_64/include/QtCore/q20functional.h \
@@ -246,10 +245,12 @@ rave_autogen/timestamp: \
 	C:/Qt/6.7.0/mingw_64/include/QtGui/qwindowdefs.h \
 	C:/Qt/6.7.0/mingw_64/include/QtGui/qwindowdefs_win.h \
 	C:/Qt/6.7.0/mingw_64/include/QtMultimedia/QAudioOutput \
+	C:/Qt/6.7.0/mingw_64/include/QtMultimedia/QMediaMetaData \
 	C:/Qt/6.7.0/mingw_64/include/QtMultimedia/QMediaPlayer \
 	C:/Qt/6.7.0/mingw_64/include/QtMultimedia/qaudio.h \
 	C:/Qt/6.7.0/mingw_64/include/QtMultimedia/qaudiooutput.h \
 	C:/Qt/6.7.0/mingw_64/include/QtMultimedia/qmediaenumdebug.h \
+	C:/Qt/6.7.0/mingw_64/include/QtMultimedia/qmediametadata.h \
 	C:/Qt/6.7.0/mingw_64/include/QtMultimedia/qmediaplayer.h \
 	C:/Qt/6.7.0/mingw_64/include/QtMultimedia/qtaudio.h \
 	C:/Qt/6.7.0/mingw_64/include/QtMultimedia/qtmultimedia-config.h \

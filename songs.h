@@ -12,7 +12,7 @@
 class Song : public QObject {
     Q_OBJECT
     Q_PROPERTY(QString name READ getName NOTIFY nameChanged)
-    Q_PROPERTY(QStringList artist READ getArtist NOTIFY artistChanged)
+    Q_PROPERTY(QString artist READ getArtist NOTIFY artistChanged)
     Q_PROPERTY(QUrl fileUrl READ getFileUrl NOTIFY fileUrlChanged)
     Q_PROPERTY(bool liked READ isLiked WRITE setLiked NOTIFY likedChanged)
 
@@ -22,8 +22,8 @@ public:
     QString getName() const;
     void setName(const QString &name);
 
-    QStringList getArtist() const;
-    void setArtist(const QStringList &artist);
+    QString getArtist() const;
+    void setArtist(const QString &artist);
 
     QUrl getFileUrl() const;
     void setFileUrl(const QUrl &fileUrl);
@@ -44,7 +44,7 @@ private:
 
 
     QString m_name;
-    QStringList m_artist;
+    QString m_artist;
     QUrl m_fileUrl;
     bool m_liked = false;
 };

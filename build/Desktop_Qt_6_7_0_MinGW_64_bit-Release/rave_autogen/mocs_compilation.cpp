@@ -2,4 +2,5 @@
 #include "EWIEGA46WW/moc_customslider.cpp"
 #include "EWIEGA46WW/moc_mainwindow.cpp"
 #include "EWIEGA46WW/moc_player.cpp"
+#include "EWIEGA46WW/moc_songs.cpp"
 #include "EWIEGA46WW/moc_songwidget.cpp"

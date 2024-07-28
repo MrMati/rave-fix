@@ -510,10 +510,6 @@ CMakeFiles/rave.dir/rave_autogen/mocs_compilation.cpp.obj: \
  C:/Qt/6.7.0/mingw_64/include/QtGui/qaccessible.h \
  C:/Qt/6.7.0/mingw_64/include/QtGui/qaccessible_base.h \
  C:/Users/adria/Desktop/Adrian/projects/Qt/rave/songs.h \
- C:/Qt/6.7.0/mingw_64/include/QtCore/QUrl \
- C:/Qt/6.7.0/mingw_64/include/QtCore/qurl.h \
- C:/Qt/6.7.0/mingw_64/include/QtCore/QString \
- C:/Qt/6.7.0/mingw_64/include/QtCore/qstring.h \
  C:/Qt/6.7.0/mingw_64/include/QtCore/QDir \
  C:/Qt/6.7.0/mingw_64/include/QtCore/qdir.h \
  C:/Qt/6.7.0/mingw_64/include/QtCore/qfile.h \
@@ -538,13 +534,18 @@ CMakeFiles/rave.dir/rave_autogen/mocs_compilation.cpp.obj: \
  C:/Qt/6.7.0/mingw_64/include/QtCore/qfileinfo.h \
  C:/Qt/6.7.0/mingw_64/include/QtCore/QFileInfoList \
  C:/Qt/6.7.0/mingw_64/include/QtCore/qfileinfo.h \
- C:/Qt/6.7.0/mingw_64/include/QtCore/QFileInfo \
+ C:/Qt/6.7.0/mingw_64/include/QtCore/QAbstractListModel \
+ C:/Qt/6.7.0/mingw_64/include/QtCore/qabstractitemmodel.h \
  C:/Qt/6.7.0/mingw_64/include/QtGui/qtextcursor.h \
  C:/Qt/6.7.0/mingw_64/include/QtGui/qtextformat.h \
  C:/Qt/6.7.0/mingw_64/include/QtGui/qpen.h \
  C:/Qt/6.7.0/mingw_64/include/QtGui/qtextoption.h \
  C:\Users\adria\Desktop\Adrian\projects\Qt\rave\build\Desktop_Qt_6_7_0_MinGW_64_bit-Release\rave_autogen\EWIEGA46WW/moc_player.cpp \
  C:/Users/adria/Desktop/Adrian/projects/Qt/rave/player.h \
+ C:/Qt/6.7.0/mingw_64/include/QtMultimedia/QMediaMetaData \
+ C:/Qt/6.7.0/mingw_64/include/QtMultimedia/qmediametadata.h \
+ C:\Users\adria\Desktop\Adrian\projects\Qt\rave\build\Desktop_Qt_6_7_0_MinGW_64_bit-Release\rave_autogen\EWIEGA46WW/moc_songs.cpp \
+ C:/Users/adria/Desktop/Adrian/projects/Qt/rave/songs.h \
  C:\Users\adria\Desktop\Adrian\projects\Qt\rave\build\Desktop_Qt_6_7_0_MinGW_64_bit-Release\rave_autogen\EWIEGA46WW/moc_songwidget.cpp \
  C:/Users/adria/Desktop/Adrian/projects/Qt/rave/songwidget.h \
  C:/Qt/6.7.0/mingw_64/include/QtWidgets/QPushButton \
@@ -556,6 +557,8 @@ CMakeFiles/rave.dir/rave_autogen/mocs_compilation.cpp.obj: \
  C:/Qt/6.7.0/mingw_64/include/QtWidgets/qlayoutitem.h \
  C:/Qt/6.7.0/mingw_64/include/QtWidgets/qboxlayout.h \
  C:/Qt/6.7.0/mingw_64/include/QtWidgets/qgridlayout.h \
+ C:/Qt/6.7.0/mingw_64/include/QtCore/QUrl \
+ C:/Qt/6.7.0/mingw_64/include/QtCore/qurl.h \
  C:/Qt/6.7.0/mingw_64/include/QtQuickWidgets/QQuickWidget \
  C:/Qt/6.7.0/mingw_64/include/QtQuickWidgets/qquickwidget.h \
  C:/Qt/6.7.0/mingw_64/include/QtQuick/qquickwindow.h \

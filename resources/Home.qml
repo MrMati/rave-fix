@@ -15,36 +15,20 @@ Item{
         color: "#444444"
 
 
-        Image{
-            id: more1
-            width: 50
-            height: 50
+        MoreButton {
+            id: more2
             anchors.top: parent.top
             anchors.left: parent.left
             anchors.margins: 10
-            fillMode: Image.PreserveAspectFit
-            source: "qrc:/resources/images/more_dark.png"
-
-            MouseArea{
-                id: moreButton1
-                anchors.fill: parent
-                onClicked:{
-                    open_tab = !open_tab
-                    more1.source = open_tab ? "qrc:/resources/images/more_dark2.png" : "qrc:/resources/images/more_dark.png"
-                }
-                onPressed: more1.opacity = 0.7
-                onReleased: more1.opacity = 1.0
-                onCanceled: more1.opacity = 1.0
-            }
         }
 
         Image{
             id: goToPlayer
-            width: 50
-            height: 50
+            width: 45
+            height: 45
             anchors{
-                verticalCenter: more1.verticalCenter
-                left: more1.right
+                verticalCenter: more2.verticalCenter
+                left: more2.right
                 margins: 5
             }
             fillMode: Image.PreserveAspectFit
@@ -70,7 +54,7 @@ Item{
             spacing: 1
             width: parent.width * 0.95
 
-            height: parent.height - goToPlayer.height - more1.height
+            height: parent.height - goToPlayer.height - more2.height
             clip: true
             model: songs.songList
 
@@ -197,3 +181,6 @@ Item{
         }
     }
 }
+
+// likes and play buttons are not linked correctly
+// more button doesnt turn off popup
