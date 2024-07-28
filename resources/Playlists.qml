@@ -38,7 +38,7 @@ Item {
                 onReleased: goBack.opacity = 1.0
                 onCanceled: goBack.opacity = 1.0
                 onClicked:{
-                    // stackView.push(playerComponent)
+                    stackView.pop()
                 }
             }
         }

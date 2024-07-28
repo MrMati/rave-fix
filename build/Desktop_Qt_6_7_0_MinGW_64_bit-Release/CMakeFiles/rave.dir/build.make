@@ -79,6 +79,7 @@ rave_autogen/EWIEGA46WW/qrc_qml.cpp: C:/Users/adria/Desktop/Adrian/projects/Qt/r
 rave_autogen/EWIEGA46WW/qrc_qml.cpp: CMakeFiles/rave_autogen.dir/AutoRcc_qml_EWIEGA46WW_Info.json
 rave_autogen/EWIEGA46WW/qrc_qml.cpp: C:/Users/adria/Desktop/Adrian/projects/Qt/rave/main.qml
 rave_autogen/EWIEGA46WW/qrc_qml.cpp: C:/Users/adria/Desktop/Adrian/projects/Qt/rave/resources/Playlists.qml
+rave_autogen/EWIEGA46WW/qrc_qml.cpp: C:/Users/adria/Desktop/Adrian/projects/Qt/rave/resources/MoreButton.qml
 rave_autogen/EWIEGA46WW/qrc_qml.cpp: C:/Users/adria/Desktop/Adrian/projects/Qt/rave/resources/Home.qml
 rave_autogen/EWIEGA46WW/qrc_qml.cpp: C:/Users/adria/Desktop/Adrian/projects/Qt/rave/resources/PlayButton.qml
 rave_autogen/EWIEGA46WW/qrc_qml.cpp: C:/Users/adria/Desktop/Adrian/projects/Qt/rave/resources/Player.qml
@@ -88,6 +89,7 @@ rave_autogen/EWIEGA46WW/qrc_qml.cpp: C:/Users/adria/Desktop/Adrian/projects/Qt/r
 rave_autogen/EWIEGA46WW/qrc_qml.cpp: C:/Users/adria/Desktop/Adrian/projects/Qt/rave/resources/images/more_dark2.png
 rave_autogen/EWIEGA46WW/qrc_qml.cpp: C:/Users/adria/Desktop/Adrian/projects/Qt/rave/resources/images/sound_dark.png
 rave_autogen/EWIEGA46WW/qrc_qml.cpp: C:/Users/adria/Desktop/Adrian/projects/Qt/rave/resources/images/heart_black_empty.png
+rave_autogen/EWIEGA46WW/qrc_qml.cpp: C:/Users/adria/Desktop/Adrian/projects/Qt/rave/resources/images/back_dark.png
 rave_autogen/EWIEGA46WW/qrc_qml.cpp: C:/Users/adria/Desktop/Adrian/projects/Qt/rave/resources/images/more_settings_dark.png
 rave_autogen/EWIEGA46WW/qrc_qml.cpp: C:/Users/adria/Desktop/Adrian/projects/Qt/rave/resources/images/pause_dark2.png
 rave_autogen/EWIEGA46WW/qrc_qml.cpp: C:/Users/adria/Desktop/Adrian/projects/Qt/rave/resources/images/pause_dark.png

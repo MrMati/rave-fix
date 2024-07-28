@@ -5,7 +5,6 @@ Item{
     id: player_s
     width: parent.width
     height: parent.height
-    property bool open_tab: false
     property bool played: player.isPlaying
     property bool sound: true
     property int previousVolume: 30

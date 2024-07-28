@@ -12,20 +12,22 @@ ApplicationWindow{
         id: stackView
         anchors.fill: parent
         initialItem: homeComponent
+        property var currentComponent: homeComponent
+
 
         Component{
             id: homeComponent
-            Home{}
+            Home{objectName: "homeComponent"}
         }
 
         Component{
             id: playerComponent
-            Player{}
+            Player{objectName: "playerComponent"}
         }
 
         Component{
             id: playlistsComponent
-            Playlists{}
+            Playlists{objectName: "playlistsComponent"}
         }
     }
 }

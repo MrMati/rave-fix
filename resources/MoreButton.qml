@@ -12,7 +12,7 @@ Item {
         width: parent.width
         height: parent.height
         fillMode: Image.PreserveAspectFit
-        source: open_tab ? "qrc:/resources/images/more_dark2.png" : "qrc:/resources/images/more_dark.png"
+        source: "qrc:/resources/images/more_dark.png"
 
         MouseArea {
             id: moreButton
@@ -32,14 +32,14 @@ Item {
 
     Popup {
         id: popup
-        width: 200
-        height: 200
+        width: 190
+        height: 190
         closePolicy: Popup.CloseOnPressOutside
         x: more.x + more.width + 5
-        y: more2.y + more2.height + 5
+        y: more.y + more.height + 5
 
         onClosed: {
-            more1.source = "qrc:/resources/images/more_dark.png"
+            more.source = "qrc:/resources/images/more_dark.png"
             open_tab = false
         }
 
@@ -71,15 +71,65 @@ Item {
                     anchors.margins: 10
                     fillMode: Image.PreserveAspectFit
                     source: "qrc:/resources/images/list_dark2.png"
+                    opacity: playlistsButton.enabled ? 1.0 : 0.5
 
                     MouseArea{
                         id: playlistsButton
                         anchors.fill: parent
+                        enabled: stackView.currentItem.objectName !== "playlistsComponent"
                         onPressed: playlists.opacity = 0.7
                         onReleased: playlists.opacity = 1.0
                         onCanceled: playlists.opacity = 1.0
                         onClicked:{
-                            stackView.replace(playlistsComponent);
+                            stackView.push(playlistsComponent);
+                        }
+                    }
+                }
+
+                Image{
+                    id: playAnother
+                    width: 45
+                    height: 45
+                    anchors.left: playlists.right
+                    anchors.top: parent.top
+                    anchors.margins: 10
+                    fillMode: Image.PreserveAspectFit
+                    source: "qrc:/resources/images/sound_dark.png"
+                    opacity: playAnotherButton.enabled ? 1.0 : 0.5
+
+                    MouseArea{
+                        id: playAnotherButton
+                        anchors.fill: parent
+                        enabled: stackView.currentItem.objectName !== "playerComponent"
+                        onPressed: playAnother.opacity = 0.7
+                        onReleased: playAnother.opacity = 1.0
+                        onCanceled: playAnother.opacity = 1.0
+                        onClicked:{
+                            stackView.push(playerComponent);
+                        }
+                    }
+                }
+
+                Image{
+                    id: homeAnother
+                    width: 45
+                    height: 45
+                    anchors.left: playAnother.right
+                    anchors.top: parent.top
+                    anchors.margins: 10
+                    fillMode: Image.PreserveAspectFit
+                    source: "qrc:/resources/images/home_dark.png"
+                    opacity: homeAnotherButton.enabled ? 1.0 : 0.5
+
+                    MouseArea{
+                        id: homeAnotherButton
+                        anchors.fill: parent
+                        enabled: stackView.currentItem.objectName !== "homeComponent"
+                        onPressed: homeAnother.opacity = 0.7
+                        onReleased: homeAnother.opacity = 1.0
+                        onCanceled: homeAnother.opacity = 1.0
+                        onClicked:{
+                            stackView.push(homeComponent);
                         }
                     }
                 }
