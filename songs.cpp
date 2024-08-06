@@ -133,3 +133,7 @@ void Songs::saveLiked() {
 void Songs::saveLikedFromQML() {
     saveLiked();
 }
+
+int Songs::getSongCount() const {
+    return songList.size();
+}

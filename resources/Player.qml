@@ -179,11 +179,26 @@ Item{
                 anchors.fill: parent
                 onClicked:{
                     played = !played;
-                    if(played){
-                        play.source = "qrc:/resources/images/pause_dark.png"
-                    }else{
-                        play.source = "qrc:/resources/images/play_dark.png"
+                    play.source = played ? "qrc:/resources/images/pause_dark.png" : "qrc:/resources/images/play_dark.png";
+                    // console.log(player.currentSongUrl)
+                    if(homeComponent.list_view){
+                        console.log("found")}else{
+                        console.log("not")
                     }
+
+                    // for (var i = 0; i < homeComponent.song_count; ++i) {
+
+                    //     var item = homeComponent.list_view.contentItem.children[i]
+                    //     if(item){
+                    //         console.log("true")
+                    //     }
+
+                    //     if (item && item.objectName === player.currentSongUrl) {
+                    //         console.log("found")
+                    //         item.playPauseImg.source = player.isPlaying ? "qrc:/resources/images/pause_dark2.png" : "qrc:/resources/images/play_dark2.png";
+                    //         break;
+                    //     }
+
                     player.playPause()
                 }
                 onPressed: play.opacity = 0.7

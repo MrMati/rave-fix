@@ -59,6 +59,7 @@ public:
     Q_INVOKABLE QList<QObject*> getSongList() const;
     Q_INVOKABLE void loadSongsFromDirectory(QString directoryPath);
     Q_INVOKABLE void saveLikedFromQML();
+    Q_INVOKABLE int getSongCount() const;
 
 signals:
     void songListChanged();

@@ -7,13 +7,14 @@ ApplicationWindow{
     width: 820
     height: 600
     title: qsTr("Rave")
+    property alias homeComponent: homeComponent
+    property alias playerComponent: playerComponent
+    property alias playlistsComponent: playlistsComponent
 
     StackView{
         id: stackView
         anchors.fill: parent
         initialItem: homeComponent
-        property var currentComponent: homeComponent
-
 
         Component{
             id: homeComponent

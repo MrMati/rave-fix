@@ -74,7 +74,7 @@
 			{
 				"command" : 3,
 				"file" : 1,
-				"line" : 30,
+				"line" : 25,
 				"parent" : 0
 			},
 			{
@@ -98,25 +98,25 @@
 			{
 				"command" : 4,
 				"file" : 1,
-				"line" : 81,
+				"line" : 67,
 				"parent" : 0
 			},
 			{
 				"command" : 5,
 				"file" : 1,
-				"line" : 64,
+				"line" : 50,
 				"parent" : 0
 			},
 			{
 				"command" : 5,
 				"file" : 1,
-				"line" : 66,
+				"line" : 52,
 				"parent" : 0
 			},
 			{
 				"command" : 8,
 				"file" : 1,
-				"line" : 20,
+				"line" : 15,
 				"parent" : 0
 			},
 			{
@@ -200,13 +200,13 @@
 			{
 				"command" : 5,
 				"file" : 1,
-				"line" : 65,
+				"line" : 51,
 				"parent" : 0
 			},
 			{
 				"command" : 8,
 				"file" : 1,
-				"line" : 18,
+				"line" : 13,
 				"parent" : 0
 			},
 			{
@@ -290,7 +290,7 @@
 			{
 				"command" : 8,
 				"file" : 1,
-				"line" : 19,
+				"line" : 14,
 				"parent" : 0
 			},
 			{
@@ -534,7 +534,7 @@
 			{
 				"command" : 17,
 				"file" : 1,
-				"line" : 88,
+				"line" : 74,
 				"parent" : 0
 			},
 			{
@@ -581,7 +581,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-DQT_QML_DEBUG -O0 -g -g -std=gnu++17 -fdiagnostics-color=always"
+					"fragment" : "-DQT_QML_DEBUG -g -std=gnu++17 -fdiagnostics-color=always"
 				}
 			],
 			"defines" : 
@@ -757,22 +757,28 @@
 			"sourceIndexes" : 
 			[
 				0,
-				21
+				1,
+				2,
+				6,
+				8,
+				10,
+				17,
+				20
 			]
 		}
 	],
 	"dependencies" : 
 	[
 		{
-			"backtrace" : 93,
-			"id" : "rave_qmlimportscan::@6890427a1f51a3e7e1df"
-		},
-		{
 			"id" : "rave_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
 		},
 		{
 			"backtrace" : 0,
 			"id" : "rave_autogen::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 93,
+			"id" : "rave_qmlimportscan::@6890427a1f51a3e7e1df"
 		}
 	],
 	"id" : "rave::@6890427a1f51a3e7e1df",
@@ -795,7 +801,7 @@
 		"commandFragments" : 
 		[
 			{
-				"fragment" : "-DQT_QML_DEBUG -O0 -g -g",
+				"fragment" : "-DQT_QML_DEBUG -g",
 				"role" : "flags"
 			},
 			{
@@ -935,45 +941,44 @@
 				0,
 				1,
 				2,
-				3,
-				7,
-				9,
-				11,
-				18,
-				21
+				6,
+				8,
+				10,
+				17,
+				20
 			]
 		},
 		{
 			"name" : "Header Files",
 			"sourceIndexes" : 
 			[
-				4,
-				6,
-				8,
-				10,
-				17,
-				19
+				3,
+				5,
+				7,
+				9,
+				16,
+				18
 			]
 		},
 		{
 			"name" : "",
 			"sourceIndexes" : 
 			[
-				5,
+				4,
+				11,
 				12,
 				13,
 				14,
 				15,
-				16,
-				20
+				19
 			]
 		},
 		{
 			"name" : "CMake Rules",
 			"sourceIndexes" : 
 			[
-				22,
-				23
+				21,
+				22
 			]
 		}
 	],
@@ -982,22 +987,19 @@
 		{
 			"backtrace" : 0,
 			"compileGroupIndex" : 0,
-			"path" : "build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/CMakeFiles/rave.dir/Unity/unity_0_cxx.cxx",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 0,
 			"isGenerated" : true,
 			"path" : "build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/rave_autogen/mocs_compilation.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 4,
+			"compileGroupIndex" : 0,
 			"path" : "main.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 4,
+			"compileGroupIndex" : 0,
 			"path" : "mainwindow.cpp",
 			"sourceGroupIndex" : 0
 		},
@@ -1018,6 +1020,7 @@
 		},
 		{
 			"backtrace" : 4,
+			"compileGroupIndex" : 0,
 			"path" : "customslider.cpp",
 			"sourceGroupIndex" : 0
 		},
@@ -1028,6 +1031,7 @@
 		},
 		{
 			"backtrace" : 4,
+			"compileGroupIndex" : 0,
 			"path" : "songs.cpp",
 			"sourceGroupIndex" : 0
 		},
@@ -1038,6 +1042,7 @@
 		},
 		{
 			"backtrace" : 4,
+			"compileGroupIndex" : 0,
 			"path" : "songwidget.cpp",
 			"sourceGroupIndex" : 0
 		},
@@ -1073,6 +1078,7 @@
 		},
 		{
 			"backtrace" : 4,
+			"compileGroupIndex" : 0,
 			"path" : "player.cpp",
 			"sourceGroupIndex" : 0
 		},

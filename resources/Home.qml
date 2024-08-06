@@ -6,6 +6,8 @@ Item{
     width: parent.width
     height: parent.height
     property bool open_tab: false
+    property ListView list_view: songListView
+    property int song_count: 0
 
     Rectangle{
         id: container
@@ -58,6 +60,8 @@ Item{
             clip: true
             model: songs.songList
 
+
+
             delegate: Rectangle{
                 id: songP
                 height: 45
@@ -67,6 +71,8 @@ Item{
                 property bool played: false
                 property string songTitle: model.name
                 property string songAuthor: model.artist
+                property string songUrl: model.fileUrl
+                objectName: songUrl
 
                 Text{
                     id: titleText
@@ -177,6 +183,9 @@ Item{
                         onCanceled: moreImg.opacity = 1.0
                     }
                 }
+            }
+            onModelChanged: {
+                song_count = songs.getSongCount()
             }
         }
     }

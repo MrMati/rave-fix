@@ -277,6 +277,7 @@ constexpr auto qt_meta_stringdata_CLASSSongsENDCLASS = QtMocHelpers::stringData(
     "loadSongsFromDirectory",
     "directoryPath",
     "saveLikedFromQML",
+    "getSongCount",
     "songList"
 );
 #else  // !QT_MOC_HAS_STRINGDATA
@@ -290,24 +291,25 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSSongsENDCLASS[] = {
       12,       // revision
        0,       // classname
        0,    0, // classinfo
-       6,   14, // methods
-       1,   60, // properties
+       7,   14, // methods
+       1,   67, // properties
        0,    0, // enums/sets
        0,    0, // constructors
        0,       // flags
        1,       // signalCount
 
  // signals: name, argc, parameters, tag, flags, initial metatype offsets
-       1,    0,   50,    2, 0x06,    2 /* Public */,
+       1,    0,   56,    2, 0x06,    2 /* Public */,
 
  // slots: name, argc, parameters, tag, flags, initial metatype offsets
-       3,    0,   51,    2, 0x0a,    3 /* Public */,
-       4,    1,   52,    2, 0x08,    4 /* Private */,
+       3,    0,   57,    2, 0x0a,    3 /* Public */,
+       4,    1,   58,    2, 0x08,    4 /* Private */,
 
  // methods: name, argc, parameters, tag, flags, initial metatype offsets
-       7,    0,   55,    2, 0x102,    6 /* Public | MethodIsConst  */,
-       9,    1,   56,    2, 0x02,    7 /* Public */,
-      11,    0,   59,    2, 0x02,    9 /* Public */,
+       7,    0,   61,    2, 0x102,    6 /* Public | MethodIsConst  */,
+       9,    1,   62,    2, 0x02,    7 /* Public */,
+      11,    0,   65,    2, 0x02,    9 /* Public */,
+      12,    0,   66,    2, 0x102,   10 /* Public | MethodIsConst  */,
 
  // signals: parameters
     QMetaType::Void,
@@ -320,9 +322,10 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSSongsENDCLASS[] = {
     0x80000000 | 8,
     QMetaType::Void, QMetaType::QString,   10,
     QMetaType::Void,
+    QMetaType::Int,
 
  // properties: name, type, flags
-      12, 0x80000000 | 8, 0x00015009, uint(0), 0,
+      13, 0x80000000 | 8, 0x00015009, uint(0), 0,
 
        0        // eod
 };
@@ -351,7 +354,9 @@ Q_CONSTINIT const QMetaObject Songs::staticMetaObject = { {
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         QtPrivate::TypeAndForceComplete<QString, std::false_type>,
         // method 'saveLikedFromQML'
-        QtPrivate::TypeAndForceComplete<void, std::false_type>
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'getSongCount'
+        QtPrivate::TypeAndForceComplete<int, std::false_type>
     >,
     nullptr
 } };
@@ -369,6 +374,8 @@ void Songs::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void 
             if (_a[0]) *reinterpret_cast< QList<QObject*>*>(_a[0]) = std::move(_r); }  break;
         case 4: _t->loadSongsFromDirectory((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
         case 5: _t->saveLikedFromQML(); break;
+        case 6: { int _r = _t->getSongCount();
+            if (_a[0]) *reinterpret_cast< int*>(_a[0]) = std::move(_r); }  break;
         default: ;
         }
     } else if (_c == QMetaObject::IndexOfMethod) {
@@ -419,13 +426,13 @@ int Songs::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 6)
+        if (_id < 7)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 6;
+        _id -= 7;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 6)
+        if (_id < 7)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 6;
+        _id -= 7;
     }else if (_c == QMetaObject::ReadProperty || _c == QMetaObject::WriteProperty
             || _c == QMetaObject::ResetProperty || _c == QMetaObject::BindableProperty
             || _c == QMetaObject::RegisterPropertyMetaType) {
