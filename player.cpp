@@ -4,6 +4,7 @@ Player::Player(QObject *parent): QObject(parent), previousVolume(30){
     QSettings settings("AL", "Rave");
     int last_vol = settings.value("last_vol", 30).toInt();
     QUrl last_song = settings.value("last_song").toUrl();
+    songs = new Songs();
     player = new QMediaPlayer(this);
     audioOutput = new QAudioOutput(this);
     player->setAudioOutput(audioOutput);
@@ -17,8 +18,6 @@ Player::Player(QObject *parent): QObject(parent), previousVolume(30){
     connect(player, &QMediaPlayer::durationChanged, this, &Player::updateDuration);
     connect(player, &QMediaPlayer::positionChanged, this, &Player::updatePosition);
     connect(player, &QMediaPlayer::metaDataChanged, this, &Player::updateMetaData);
-
-    songs = new Songs();
 }
 
 void Player::playPause(){
