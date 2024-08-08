@@ -58,7 +58,7 @@ jobs:
         working-directory: ${{ runner.temp }}\build
         run:  |
               qt-cmake.bat -S ${{ env.SOURCE_DIR }} -B ${{ runner.temp }}\build
-              cmake --build ${{ runner.temp }}\build
+              cmake --build ${{ runner.temp }}\build --config Release -j4
               
       - name: Zip build
         working-directory: ${{ runner.temp }}
