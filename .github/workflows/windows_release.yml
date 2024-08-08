@@ -1,0 +1,84 @@
+name: Windows Release
+
+on:
+  push:
+    branches:
+      - 'main'
+      - 'ci'
+    tags:
+      - 'v*'
+  pull_request:
+    branches:
+    - 'main'
+    - 'ci'
+
+defaults:
+  run:
+    shell: cmd
+
+env:
+  SOURCE_DIR:   ${{ github.workspace }}
+  QT_VERSION:   6.7.2
+  ARTIFACT:     rave-build.zip
+
+jobs:
+  build:
+    runs-on:  windows-2019
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v2
+        with:
+          submodules: recursive
+
+      - name: Get all tags for correct version determination
+        working-directory:  ${{ github.workspace }}
+        run: |
+          git fetch --all --tags -f
+      - name: Install Qt
+        uses: jurplel/install-qt-action@v4
+        with:
+          version:      ${{ env.QT_VERSION }}
+          host:         windows
+          target:       desktop
+          arch:         win64_msvc2019_64
+          dir:          ${{ runner.temp }}
+          modules:      qtmultimedia 
+          setup-python: false
+
+      - name: Download JOM
+        uses: suisei-cn/actions-download-file@v1.6.0
+        with:
+          url:    http://download.qt.io/official_releases/jom/jom.zip
+          target: ${{ runner.temp }}\
+
+      - name: Unzip JOM
+        working-directory: ${{ runner.temp }}
+        run:  |
+              7z x jom.zip -ojom
+              
+      - name: Create build directory
+        run:  mkdir ${{ runner.temp }}\build
+
+      - name: Set up Visual Studio shell
+        uses: egor-tensin/vs-shell@v2
+        with:
+          arch: x64
+
+      - name: Build
+        working-directory: ${{ runner.temp }}\build
+        run:  |
+              qt-cmake.bat -S ${{ env.SOURCE_DIR }} -B ${{ runner.temp }}\build -G "NMake Makefiles JOM"
+              ${{ runner.temp }}\jom\jom -j2
+              
+      - name: Zip build
+        working-directory: ${{ runner.temp }}
+        run:  |
+              7z a rave-build.zip ${{ runner.temp }}\build\* -r
+              
+      - name: Save build artifact
+        uses: actions/upload-artifact@master
+        with:
+          name: ${{ env.ARTIFACT }}
+          path: ${{ runner.temp }}\${{ env.ARTIFACT }}
+              
