@@ -45,17 +45,6 @@ jobs:
           dir:          ${{ runner.temp }}
           modules:      qtmultimedia 
           setup-python: false
-
-      - name: Download JOM
-        uses: suisei-cn/actions-download-file@v1.6.0
-        with:
-          url:    http://download.qt.io/official_releases/jom/jom.zip
-          target: ${{ runner.temp }}\
-
-      - name: Unzip JOM
-        working-directory: ${{ runner.temp }}
-        run:  |
-              7z x jom.zip -ojom
               
       - name: Create build directory
         run:  mkdir ${{ runner.temp }}\build
@@ -68,8 +57,8 @@ jobs:
       - name: Build
         working-directory: ${{ runner.temp }}\build
         run:  |
-              qt-cmake.bat -S ${{ env.SOURCE_DIR }} -B ${{ runner.temp }}\build -G "NMake Makefiles JOM"
-              ${{ runner.temp }}\jom\jom -j2
+              qt-cmake.bat -S ${{ env.SOURCE_DIR }} -B ${{ runner.temp }}\build
+              cmake --build ${{ runner.temp }}\build
               
       - name: Zip build
         working-directory: ${{ runner.temp }}
