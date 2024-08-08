@@ -54,11 +54,13 @@ jobs:
         with:
           arch: x64
 
+      - name: Configure build
+        working-directory: ${{ runner.temp }}\build
+        run: qt-cmake.bat -S ${{ env.SOURCE_DIR }} -B ${{ runner.temp }}\build
+             
       - name: Build
         working-directory: ${{ runner.temp }}\build
-        run:  |
-              qt-cmake.bat -S ${{ env.SOURCE_DIR }} -B ${{ runner.temp }}\build
-              cmake --build ${{ runner.temp }}\build --config Release -j4
+        run: cmake --build . --config Release -j4              
               
       - name: Zip build
         working-directory: ${{ runner.temp }}
