@@ -25,5 +25,7 @@
         <file>resources/PlayButton.qml</file>
         <file>resources/MoreButton.qml</file>
         <file>resources/images/back_dark.png</file>
+        <file>resources/images/add_dark.png</file>
+        <file>resources/images/remove_dark.png</file>
     </qresource>
 </RCC>

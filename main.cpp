@@ -5,6 +5,7 @@
 #include "player.h"
 #include "mainwindow.h"
 #include "songs.h"
+#include "playlists.h"
 
 int main(int argc, char *argv[])
 {
@@ -21,9 +22,11 @@ int main(int argc, char *argv[])
     QQmlApplicationEngine engine;
     Player player;
     Songs songs;
+    Playlists playlists;
 
     engine.rootContext()->setContextProperty("player", &player);
     engine.rootContext()->setContextProperty("songs", &songs);
+    engine.rootContext()->setContextProperty("playlistsModel", &playlists);
     engine.load(QUrl(QStringLiteral("qrc:/main.qml")));
 
     if (engine.rootObjects().isEmpty())
@@ -33,7 +36,6 @@ int main(int argc, char *argv[])
 }
 
 /* to add:
-    - better listing - using qml not qwidget, also under the qwidgets there should be qml with colour
     - music queue
     - shuffling music
     - too long text should be automatically scrollable when hovered above it

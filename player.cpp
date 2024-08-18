@@ -40,7 +40,6 @@ void Player::setSource(const QUrl &source) {
 }
 
 bool Player::isCurrentSongLiked() const {
-    // Find the song in the Songs library
     for (Song* song : songs->getLibrary()) {
         if (song->getFileUrl() == m_currentSongUrl) {
             return song->isLiked();
@@ -50,7 +49,6 @@ bool Player::isCurrentSongLiked() const {
 }
 
 void Player::setCurrentSongLiked(bool liked) {
-    // Find the song in the Songs library and update like status
     for (Song* song : songs->getLibrary()) {
         if (song->getFileUrl() == m_currentSongUrl) {
             song->setLiked(liked);

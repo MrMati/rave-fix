@@ -36,6 +36,7 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         resources/Home.qml
         resources/Player.qml
         player.h player.cpp
+        playlists.h playlists.cpp
     )
 else()
     if(ANDROID)

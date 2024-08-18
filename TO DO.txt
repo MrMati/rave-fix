@@ -1,0 +1,9 @@
+-more panel doesn't disappear when clicked again
+-liked doesn't work in player
+- play button state and like are not linked correctly
+- add playlists creation and management
+- create queue
+- add scroll sidebar to list of songs
+- add sorting 
+- add searching
+- add text scrolling for too long texts
