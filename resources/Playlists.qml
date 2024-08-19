@@ -5,6 +5,8 @@ Item {
     id: playlists_s
     width: parent.width
     height: parent.height
+    property bool isRemoving: false
+    property string selectedPlaylist: ""
 
     Rectangle{
         id: container
@@ -87,7 +89,8 @@ Item {
                 onReleased: removePlaylist.opacity = 1.0
                 onCanceled: removePlaylist.opacity = 1.0
                 onClicked: {
-                    // to do
+                    playlists_s.isRemoving = !playlists_s.isRemoving
+                    playlistGridView.model = playlistsModel.getPlaylists()
                 }
             }
         }
@@ -211,8 +214,9 @@ Item {
                     id: playlist_p
                     width: playlistGridView.cellWidth - 5
                     height: playlistGridView.cellHeight - 5
-                    color: "#555555"
+                    color: playlists_s.isRemoving ? "#666666" : "#555555"
                     radius: 10
+                    property int playlistSizeN: playlistsModel.getPlaylistSize(modelData)
 
                     Text {
                         id: playlistName
@@ -223,12 +227,35 @@ Item {
                         anchors.horizontalCenter: parent.horizontalCenter
                         anchors.bottom: playlistSize.top
                         anchors.margins: 5
-
                     }
+
+                    // Item {
+                    //     id: playlistName
+                    //     property string text: modelData
+                    //     property string spacing: "      "
+                    //     property string combined: text + spacing
+                    //     property string display: combined.substring(step) + combined.substring(0, step)
+                    //     property int step: 0
+                    //     anchors.top: parent.top
+                    //     anchors.margins: 5
+
+                    //     Timer {
+                    //       interval: 200
+                    //       running: true
+                    //       repeat: true
+                    //       onTriggered: parent.step = (parent.step + 1) % parent.combined.length
+                    //     }
+
+                    //     Text {
+                    //       text: parent.display
+                    //       font.pixelSize: 16
+                    //       color: "#F0F0F0"
+                    //     }
+                    // }
 
                     Text{
                         id: playlistSize
-                        text: "size: to do"
+                        text: "Size: " + playlistSizeN
                         font.pixelSize: 16
                         color: "#F0F0F0"
                         anchors.centerIn: parent
@@ -238,12 +265,78 @@ Item {
                     MouseArea {
                         anchors.fill: parent
                         onClicked: {
-                            playlistContentsView.model = playlistsModel.getPlaylistContents(modelData)
+                            if (playlists_s.isRemoving) {
+                                playlists_s.selectedPlaylist = modelData;
+                                confirmDeletePopup.open();
+                            } else {
+                                playlistContentsView.model = playlistsModel.getPlaylistContents(modelData);
+                            }
                         }
                     }
                 }
                 width: parent.width
                 height: Math.ceil(model.count / 6) * cellHeight
+            }
+        }
+
+        Popup {
+            id: confirmDeletePopup
+            width: 300
+            height: 100
+            modal: true
+            focus: true
+            closePolicy: Popup.CloseOnPressOutside
+            x: (parent.width - width) / 2
+            y: (parent.height - height) / 2
+            background: Rectangle{
+                color: "#555555"
+                radius: 10
+                border.color: "#222222"
+                border.width: 2
+            }
+
+            Text{
+                text: "Are you sure you want to delete playlist\n" + selectedPlaylist
+                font.pixelSize: 16
+                color: "#F0F0F0"
+                horizontalAlignment: Text.AlignHCenter
+                anchors.centerIn: parent
+                width: parent.width - 20
+            }
+
+            Button {
+                id: confirmDeleteButton
+                text: "Delete"
+                anchors.top: parent.bottom
+                anchors.left: parent.left
+                anchors.leftMargin: 80
+                anchors.topMargin: 10
+                background: Rectangle {
+                    color: "#FF5555"
+                    radius: 10
+                }
+                onClicked: {
+                    playlistsModel.removePlaylist(playlists_s.selectedPlaylist);
+                    playlistGridView.model = playlistsModel.getPlaylists();
+                    confirmDeletePopup.close();
+                    playlists_s.isRemoving = false;
+                }
+            }
+
+            Button {
+                id: cancelDeleteButton
+                text: "Cancel"
+                anchors.top: parent.bottom
+                anchors.left: confirmDeleteButton.right
+                anchors.leftMargin: 50
+                anchors.topMargin: 10
+                background: Rectangle {
+                    color: "#777777"
+                    radius: 10
+                }
+                onClicked: {
+                    confirmDeletePopup.close();
+                }
             }
         }
 

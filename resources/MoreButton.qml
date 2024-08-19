@@ -7,6 +7,7 @@ Item {
     height: 45
     property bool open_tab: false
 
+
     Image {
         id: more
         width: parent.width

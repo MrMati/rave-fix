@@ -4,6 +4,7 @@
 #include <QObject>
 #include <QSettings>
 #include <QStringList>
+#include <QString>
 
 class Playlists : public QObject{
     Q_OBJECT
@@ -15,6 +16,7 @@ class Playlists : public QObject{
         Q_INVOKABLE void addPlaylist(const QString &playlistName);
         Q_INVOKABLE void addSongToPlaylist(const QString &playlistName, const QString &song);
         Q_INVOKABLE void removePlaylist(const QString &playlistName);
+        Q_INVOKABLE int getPlaylistSize(const QString &playlistName);
 
     private:
         QSettings settings;

@@ -1,6 +1,7 @@
 #include "playlists.h"
+#include <QDebug>
 
-Playlists::Playlists(QObject *parent): QObject(parent),settings("AL", "Rave"){}
+Playlists::Playlists(QObject *parent): QObject(parent), settings("AL", "Rave"){}
 
 QStringList Playlists::getPlaylists() const{
     return settings.childGroups();
@@ -31,4 +32,8 @@ void Playlists::addSongToPlaylist(const QString &playlistName, const QString &so
 
 void Playlists::removePlaylist(const QString &playlistName){
     settings.remove(playlistName);
+}
+
+int Playlists::getPlaylistSize(const QString &playlistName) {
+    return getPlaylistContents(playlistName).size();
 }

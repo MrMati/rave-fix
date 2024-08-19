@@ -7,3 +7,4 @@
 - add sorting 
 - add searching
 - add text scrolling for too long texts
+- all popups have to be closed by pressing escape
