@@ -22,11 +22,20 @@ void Playlists::addPlaylist(const QString &playlistName){
     }
 }
 
-void Playlists::addSongToPlaylist(const QString &playlistName, const QString &song){
+void Playlists::addSongToPlaylist(const QString &playlistName, const QString &songUrl) {
+    // Start working within the specified playlist's group in QSettings
     settings.beginGroup(playlistName);
+
+    // Retrieve the list of songs from the "songs" key
     QStringList songs = settings.value("songs").toStringList();
-    songs.append(song);
-    settings.setValue("songs", songs);
+
+    // Add the song if it doesn't already exist in the playlist
+    if (!songs.contains(songUrl)) {
+        songs.append(songUrl);
+        settings.setValue("songs", songs);  // Update the "songs" key with the new list
+    }
+
+    // End working within the specified playlist's group
     settings.endGroup();
 }
 

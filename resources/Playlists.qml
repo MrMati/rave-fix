@@ -269,7 +269,9 @@ Item {
                                 playlists_s.selectedPlaylist = modelData;
                                 confirmDeletePopup.open();
                             } else {
-                                playlistContentsView.model = playlistsModel.getPlaylistContents(modelData);
+                                playlists_s.selectedPlaylist = modelData;  // Set the selected playlist
+                                displayPlaylistsSongs.open();
+                                playlistContentsView.model = playlistsModel.getPlaylistContents(playlists_s.selectedPlaylist);
                             }
                         }
                     }
@@ -340,26 +342,213 @@ Item {
             }
         }
 
-        ListView{
-            id: playlistContentsView
-            anchors.top: playlistGridViewScroll.bottom
-            anchors.left: parent.left
-            anchors.right: parent.right
-            height: 200
-            model: []
+        Popup {
+            id: displayPlaylistsSongs
+            width: 500
+            height: 500
+            modal: true
+            focus: true
+            closePolicy: Popup.CloseOnPressOutside
+            x: (parent.width - width) / 2
+            y: (parent.height - height) / 2
+            background: Rectangle {
+                color: "#555555"
+                radius: 10
+                border.color: "#222222"
+                border.width: 2
+            }
 
-            delegate: Item{
-                width: parent.width
-                height: 40
+            Image{
+                id: addSong
+                width: 45
+                height: 45
+                anchors {
+                    right: parent.right
+                    top: parent.top
+                    margins: 10
+                }
+                fillMode: Image.PreserveAspectFit
+                source: "qrc:/resources/images/add_dark.png"
 
-                Text{
-                    text: modelData
-                    font.pixelSize: 18
-                    anchors.verticalCenter: parent.verticalCenter
+                MouseArea {
+                    id: addSongButton
+                    anchors.fill: parent
+                    onPressed: addSong.opacity = 0.7
+                    onReleased: addSong.opacity = 1.0
+                    onCanceled: addSong.opacity = 1.0
+                    onClicked: musicSelecting.open()
+                }
+            }
+
+            Image{
+                id: removeSong
+                width: 45
+                height: 45
+                anchors{
+                    right: addSong.left
+                    top: parent.top
+                    margins: 10
+                }
+                fillMode: Image.PreserveAspectFit
+                source: "qrc:/resources/images/remove_dark.png"
+
+                MouseArea {
+                    id: removeSongButton
+                    anchors.fill: parent
+                    onPressed: removeSong.opacity = 0.7
+                    onReleased: removeSong.opacity = 1.0
+                    onCanceled: removeSong.opacity = 1.0
+                }
+            }
+
+            ListView {
+                id: playlistContentsView
+                anchors.top: parent.top
+                anchors.horizontalCenter: parent.horizontalCenter
+                anchors.topMargin: 70
+                spacing: 1
+                width: parent.width * 0.95
+                height: 400
+                clip: true
+
+                model: playlistsModel.getPlaylistContents(playlists_s.selectedPlaylist)
+
+                delegate: Rectangle {
+                    height: 45
+                    width: parent.width
+                    color: "#777777"
+
+                    Text {
+                        font.pixelSize: 15
+                        color: "#F0F0F0"
+                        text: modelData
+                        anchors.verticalCenter: parent.verticalCenter
+                        anchors.left: parent.left
+                        anchors.leftMargin: 10
+                    }
+                }
+            }
+
+
+        }
+    }
+
+    Popup {
+        id: musicSelecting
+        width: 500
+        height: 500
+        modal: true
+        focus: true
+        closePolicy: Popup.CloseOnPressOutside
+        x: (parent.width - width) / 2
+        y: (parent.height - height) / 2
+        background: Rectangle {
+            color: "#555555"
+            radius: 10
+            border.color: "#222222"
+            border.width: 2
+        }
+
+        Image{
+            id: reject
+            width: 45
+            height: 45
+            anchors {
+                right: parent.right
+                top: parent.top
+                margins: 10
+            }
+            fillMode: Image.PreserveAspectFit
+            source: "qrc:/resources/images/reject.png"
+
+            MouseArea {
+                id: rejectButton
+                anchors.fill: parent
+                onPressed: reject.opacity = 0.7
+                onReleased: reject.opacity = 1.0
+                onCanceled: reject.opacity = 1.0
+                onClicked: musicSelecting.close()
+            }
+        }
+
+        Image{
+            id: accept
+            width: 45
+            height: 45
+            anchors{
+                right: reject.left
+                top: parent.top
+                margins: 10
+            }
+            fillMode: Image.PreserveAspectFit
+            source: "qrc:/resources/images/accept_dark.png"
+
+            MouseArea {
+                id: acceptButton
+                anchors.fill: parent
+                onPressed: accept.opacity = 0.7
+                onReleased: accept.opacity = 1.0
+                onCanceled: accept.opacity = 1.0
+            }
+        }
+
+        ListView {
+            id: playlistsSongs
+            anchors.top: parent.top
+            anchors.horizontalCenter: parent.horizontalCenter
+            anchors.topMargin: 70
+            spacing: 1
+            width: parent.width * 0.95
+            height: 400
+            clip: true
+            model: songs.songList
+
+            delegate: Rectangle {
+                id: songP
+                height: 45
+                width: playlistsSongs.width
+                color: "#777777"
+                property string songTitle: model.name
+                property string songAuthor: model.artist
+                property string songUrl: model.fileUrl
+
+                Text {
+                    id: titleText
+                    font.pixelSize: 15
+                    color: "#F0F0F0"
                     anchors.left: parent.left
                     anchors.leftMargin: 10
+                    verticalAlignment: Text.AlignVCenter
+                    height: parent.height
+                    width: 300
+                    text: songTitle
+                }
+
+                Text {
+                    id: authorText
+                    font.pixelSize: 15
+                    color: "#F0F0F0"
+                    anchors.left: titleText.right
+                    anchors.leftMargin: 10
+                    verticalAlignment: Text.AlignVCenter
+                    height: parent.height
+                    width: 300
+                    text: songAuthor
+                }
+
+                MouseArea {
+                    id: addSongToPlaylistArea
+                    anchors.fill: parent
+                    onClicked: {
+                            console.log("Adding song to playlist:", playlists_s.selectedPlaylist);
+                            playlistsModel.addSongToPlaylist(playlists_s.selectedPlaylist, songUrl);
+                            musicSelecting.close();
+                            playlistGridView.model = playlistsModel.getPlaylists();  // Refresh the playlist view if needed
+                        }
                 }
             }
         }
     }
 }
+
+// about adding: not refreshed instantly, can add one at a time

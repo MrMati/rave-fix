@@ -28,3 +28,7 @@ https://www.flaticon.com/free-icon/next_3874931?term=next+song&page=1&position=7
 <a href="https://www.flaticon.com/free-icons/context-menu" title="context menu icons">Context menu icons created by kyleware - Flaticon</a>
 
 https://www.flaticon.com/free-icon/list_2099125?term=menu&related_id=2099125
+
+https://www.flaticon.com/free-icon/accept-circular-button-outline_58679?term=accept&page=1&position=5&origin=search&related_id=58679
+
+<a href="https://www.flaticon.com/free-icons/wrong" title="wrong icons">Wrong icons created by Elastic1 - Flaticon</a>
