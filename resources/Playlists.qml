@@ -449,7 +449,7 @@ Item {
             border.width: 2
         }
 
-        Image{
+        Image {
             id: reject
             width: 45
             height: 45
@@ -471,11 +471,11 @@ Item {
             }
         }
 
-        Image{
+        Image {
             id: accept
             width: 45
             height: 45
-            anchors{
+            anchors {
                 right: reject.left
                 top: parent.top
                 margins: 10
@@ -489,6 +489,15 @@ Item {
                 onPressed: accept.opacity = 0.7
                 onReleased: accept.opacity = 1.0
                 onCanceled: accept.opacity = 1.0
+                onClicked: {
+                    // Add selected songs to the playlist
+                    selectedSongs.forEach(function(songUrl) {
+                        playlistsModel.addSongToPlaylist(playlists_s.selectedPlaylist, songUrl);
+                    });
+                    musicSelecting.close();
+                    playlistGridView.model = playlistsModel.getPlaylists();  // Refresh the playlist view if needed
+                    selectedSongs = [];  // Clear selected songs after adding
+                }
             }
         }
 
@@ -507,7 +516,7 @@ Item {
                 id: songP
                 height: 45
                 width: playlistsSongs.width
-                color: "#777777"
+                color: "#777777"  // Highlight selected song
                 property string songTitle: model.name
                 property string songAuthor: model.artist
                 property string songUrl: model.fileUrl
@@ -540,15 +549,20 @@ Item {
                     id: addSongToPlaylistArea
                     anchors.fill: parent
                     onClicked: {
-                            console.log("Adding song to playlist:", playlists_s.selectedPlaylist);
-                            playlistsModel.addSongToPlaylist(playlists_s.selectedPlaylist, songUrl);
-                            musicSelecting.close();
-                            playlistGridView.model = playlistsModel.getPlaylists();  // Refresh the playlist view if needed
+                        if (selectedSongs.includes(songUrl)) {
+                            songP.color = "#999999"
+                        } else {
+                            songP.color = "#777777"
+                            selectedSongs.push(songUrl);  // Select if not already selected
                         }
+                    }
                 }
             }
         }
     }
+
+    // Add a property to track selected songs
+    property var selectedSongs: []
 }
 
 // about adding: not refreshed instantly, can add one at a time
