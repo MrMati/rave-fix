@@ -22,20 +22,13 @@ void Playlists::addPlaylist(const QString &playlistName){
     }
 }
 
-void Playlists::addSongToPlaylist(const QString &playlistName, const QString &songUrl) {
-    // Start working within the specified playlist's group in QSettings
+void Playlists::addSongToPlaylist(const QString &playlistName, const QString &songUrl){
     settings.beginGroup(playlistName);
-
-    // Retrieve the list of songs from the "songs" key
     QStringList songs = settings.value("songs").toStringList();
-
-    // Add the song if it doesn't already exist in the playlist
-    if (!songs.contains(songUrl)) {
+    if(!songs.contains(songUrl)){
         songs.append(songUrl);
-        settings.setValue("songs", songs);  // Update the "songs" key with the new list
+        settings.setValue("songs", songs);
     }
-
-    // End working within the specified playlist's group
     settings.endGroup();
 }
 
@@ -43,6 +36,16 @@ void Playlists::removePlaylist(const QString &playlistName){
     settings.remove(playlistName);
 }
 
-int Playlists::getPlaylistSize(const QString &playlistName) {
+int Playlists::getPlaylistSize(const QString &playlistName){
     return getPlaylistContents(playlistName).size();
+}
+
+void Playlists::removeSongFromPlaylist(const QString &playlistName, const QString &songUrl){
+    settings.beginGroup(playlistName);
+    QStringList songs = settings.value("songs").toStringList();
+    if(songs.contains(songUrl)){
+        songs.removeAll(songUrl);
+        settings.setValue("songs", songs);
+    }
+    settings.endGroup();
 }

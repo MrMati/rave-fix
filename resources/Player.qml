@@ -41,7 +41,7 @@ Item{
                 onReleased: home.opacity = 1.0
                 onCanceled: home.opacity = 1.0
                 onClicked:{
-                    stackView.pop();
+                    stackView.push(homeComponent);
                 }
             }
         }

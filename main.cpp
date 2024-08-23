@@ -34,9 +34,3 @@ int main(int argc, char *argv[])
 
     return app.exec();
 }
-
-/* to add:
-    - music queue
-    - shuffling music
-    - too long text should be automatically scrollable when hovered above it
-*/

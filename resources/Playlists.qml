@@ -7,6 +7,9 @@ Item {
     height: parent.height
     property bool isRemoving: false
     property string selectedPlaylist: ""
+    property var selectedSongs: []
+    property var songsToAdd: []
+    property var songsToRemove: []
 
     Rectangle{
         id: container
@@ -202,6 +205,7 @@ Item {
                 margins: 10
             }
 
+
             GridView {
                 id: playlistGridView
                 anchors.fill: parent
@@ -351,6 +355,7 @@ Item {
             closePolicy: Popup.CloseOnPressOutside
             x: (parent.width - width) / 2
             y: (parent.height - height) / 2
+
             background: Rectangle {
                 color: "#555555"
                 radius: 10
@@ -376,7 +381,10 @@ Item {
                     onPressed: addSong.opacity = 0.7
                     onReleased: addSong.opacity = 1.0
                     onCanceled: addSong.opacity = 1.0
-                    onClicked: musicSelecting.open()
+                    onClicked: {
+
+                        musicSelecting.open()
+                    }
                 }
             }
 
@@ -398,37 +406,62 @@ Item {
                     onPressed: removeSong.opacity = 0.7
                     onReleased: removeSong.opacity = 1.0
                     onCanceled: removeSong.opacity = 1.0
-                }
-            }
-
-            ListView {
-                id: playlistContentsView
-                anchors.top: parent.top
-                anchors.horizontalCenter: parent.horizontalCenter
-                anchors.topMargin: 70
-                spacing: 1
-                width: parent.width * 0.95
-                height: 400
-                clip: true
-
-                model: playlistsModel.getPlaylistContents(playlists_s.selectedPlaylist)
-
-                delegate: Rectangle {
-                    height: 45
-                    width: parent.width
-                    color: "#777777"
-
-                    Text {
-                        font.pixelSize: 15
-                        color: "#F0F0F0"
-                        text: modelData
-                        anchors.verticalCenter: parent.verticalCenter
-                        anchors.left: parent.left
-                        anchors.leftMargin: 10
+                    onClicked: {
+                        playlistSongsForRemoval.model = playlistsModel.getPlaylistContents(playlists_s.selectedPlaylist)
+                        removeSongPopup.open()
                     }
                 }
             }
 
+            ScrollView {
+                id: playlistContentScrollView
+                anchors{
+                    top: addSong.bottom
+                    topMargin: 10
+                    left: parent.left
+                    right: parent.right
+                    bottom: parent.bottom
+                }
+                width: parent.width
+
+                ListView {
+                    id: playlistContentsView
+                    anchors.top: parent.top
+                    anchors.horizontalCenter: parent.horizontalCenter
+                    spacing: 1
+                    width: parent.width * 0.95
+                    height: 400
+                    clip: true
+                    model: playlistsModel.getPlaylistContents(playlists_s.selectedPlaylist)
+
+                    delegate: Rectangle {
+                        height: 45
+                        width: parent.width - 10
+                        color: "#777777"
+                        property string songUrl: modelData
+                        property string songTitle: songs.getSongTitleByUrl(songUrl)
+                        property string songAuthor: songs.getSongAuthorByUrl(songUrl)
+
+                        Text {
+                            font.pixelSize: 15
+                            color: "#F0F0F0"
+                            text: songTitle  // Display the song title
+                            anchors.verticalCenter: parent.verticalCenter
+                            anchors.left: parent.left
+                            anchors.leftMargin: 10
+                        }
+
+                        Text {
+                            font.pixelSize: 15
+                            color: "#F0F0F0"
+                            text: songAuthor  // Display the song author
+                            anchors.verticalCenter: parent.verticalCenter
+                            anchors.left: parent.left
+                            anchors.leftMargin: 320  // Adjust this margin as needed
+                        }
+                    }
+                }
+            }
 
         }
     }
@@ -442,6 +475,11 @@ Item {
         closePolicy: Popup.CloseOnPressOutside
         x: (parent.width - width) / 2
         y: (parent.height - height) / 2
+        onClosed:{
+            songsToAdd = []
+            songsToRemove = []
+        }
+
         background: Rectangle {
             color: "#555555"
             radius: 10
@@ -490,70 +528,92 @@ Item {
                 onReleased: accept.opacity = 1.0
                 onCanceled: accept.opacity = 1.0
                 onClicked: {
-                    // Add selected songs to the playlist
-                    selectedSongs.forEach(function(songUrl) {
+                    songsToAdd.forEach(function(songUrl) {
                         playlistsModel.addSongToPlaylist(playlists_s.selectedPlaylist, songUrl);
                     });
+                    songsToRemove.forEach(function(songUrl) {
+                        playlistsModel.removeSongFromPlaylist(playlists_s.selectedPlaylist, songUrl);
+                    });
+                    songsToAdd = []
+                    songsToRemove = []
                     musicSelecting.close();
-                    playlistGridView.model = playlistsModel.getPlaylists();  // Refresh the playlist view if needed
-                    selectedSongs = [];  // Clear selected songs after adding
+                    playlistGridView.model = playlistsModel.getPlaylists();
+                    playlistSongsForRemoval.model = playlistsModel.getPlaylistContents(playlists_s.selectedPlaylist);
                 }
             }
         }
 
-        ListView {
-            id: playlistsSongs
-            anchors.top: parent.top
-            anchors.horizontalCenter: parent.horizontalCenter
-            anchors.topMargin: 70
-            spacing: 1
-            width: parent.width * 0.95
-            height: 400
-            clip: true
-            model: songs.songList
+        ScrollView {
+            id: songsAddingScrollView
+            anchors{
+                top: accept.bottom
+                topMargin: 10
+                left: parent.left
+                right: parent.right
+                bottom: parent.bottom
+            }
+            width: parent.width
 
-            delegate: Rectangle {
-                id: songP
-                height: 45
-                width: playlistsSongs.width
-                color: "#777777"  // Highlight selected song
-                property string songTitle: model.name
-                property string songAuthor: model.artist
-                property string songUrl: model.fileUrl
+            ListView {
+                id: playlistsSongs
+                anchors.top: parent.top
+                anchors.horizontalCenter: parent.horizontalCenter
+                spacing: 1
+                width: parent.width * 0.95
+                height: 400
+                clip: true
+                model: songs.songList
 
-                Text {
-                    id: titleText
-                    font.pixelSize: 15
-                    color: "#F0F0F0"
-                    anchors.left: parent.left
-                    anchors.leftMargin: 10
-                    verticalAlignment: Text.AlignVCenter
-                    height: parent.height
-                    width: 300
-                    text: songTitle
-                }
+                delegate: Rectangle {
+                    id: songP
+                    height: 45
+                    width: playlistsSongs.width - 10
+                    property string songTitle: model.name
+                    property string songAuthor: model.artist
+                    property string songUrl: model.fileUrl
+                    color: playlistsModel.getPlaylistContents(selectedPlaylist).includes(songUrl) ? "#999999" : "#777777"
 
-                Text {
-                    id: authorText
-                    font.pixelSize: 15
-                    color: "#F0F0F0"
-                    anchors.left: titleText.right
-                    anchors.leftMargin: 10
-                    verticalAlignment: Text.AlignVCenter
-                    height: parent.height
-                    width: 300
-                    text: songAuthor
-                }
+                    Text {
+                        id: titleText
+                        font.pixelSize: 15
+                        color: "#F0F0F0"
+                        anchors.left: parent.left
+                        anchors.leftMargin: 10
+                        verticalAlignment: Text.AlignVCenter
+                        height: parent.height
+                        width: 300
+                        text: songTitle
+                    }
 
-                MouseArea {
-                    id: addSongToPlaylistArea
-                    anchors.fill: parent
-                    onClicked: {
-                        if (selectedSongs.includes(songUrl)) {
-                            songP.color = "#999999"
-                        } else {
-                            songP.color = "#777777"
-                            selectedSongs.push(songUrl);  // Select if not already selected
+                    Text {
+                        id: authorText
+                        font.pixelSize: 15
+                        color: "#F0F0F0"
+                        anchors.left: titleText.right
+                        anchors.leftMargin: 10
+                        verticalAlignment: Text.AlignVCenter
+                        height: parent.height
+                        width: 300
+                        text: songAuthor
+                    }
+
+                    MouseArea {
+                        id: addSongToPlaylistArea
+                        anchors.fill: parent
+                        onClicked: {
+                            if (songsToRemove.includes(songUrl)) {
+                                songP.color = "#777777"
+                                songsToRemove = songsToRemove.filter(function(url) { return url !== songUrl; });
+                            } else if (songsToAdd.includes(songUrl)) {
+                                songP.color = "#777777"
+                                songsToAdd = songsToAdd.filter(function(url) { return url !== songUrl; });
+                            } else if (playlistsModel.getPlaylistContents(playlists_s.selectedPlaylist).includes(songUrl)) {
+                                songP.color = "#777777"
+                                songsToRemove.push(songUrl);
+                            } else {
+                                songP.color = "#999999"
+                                songsToAdd.push(songUrl);
+                            }
                         }
                     }
                 }
@@ -561,8 +621,147 @@ Item {
         }
     }
 
-    // Add a property to track selected songs
-    property var selectedSongs: []
+    Popup {
+        id: removeSongPopup
+        width: 500
+        height: 500
+        modal: true
+        focus: true
+        closePolicy: Popup.CloseOnPressOutside
+        x: (parent.width - width) / 2
+        y: (parent.height - height) / 2
+        onClosed:{
+            songsToRemove = []
+
+        }
+
+        background: Rectangle {
+            color: "#555555"
+            radius: 10
+            border.color: "#222222"
+            border.width: 2
+        }
+
+        Image {
+            id: rejectRemove
+            width: 45
+            height: 45
+            anchors {
+                right: parent.right
+                top: parent.top
+                margins: 10
+            }
+            fillMode: Image.PreserveAspectFit
+            source: "qrc:/resources/images/reject.png"
+
+            MouseArea {
+                id: rejectRemoveButton
+                anchors.fill: parent
+                onPressed: rejectRemove.opacity = 0.7
+                onReleased: rejectRemove.opacity = 1.0
+                onCanceled: rejectRemove.opacity = 1.0
+                onClicked: removeSongPopup.close()
+            }
+        }
+
+        Image {
+            id: acceptRemove
+            width: 45
+            height: 45
+            anchors {
+                right: rejectRemove.left
+                top: parent.top
+                margins: 10
+            }
+            fillMode: Image.PreserveAspectFit
+            source: "qrc:/resources/images/accept_dark.png"
+
+            MouseArea {
+                id: acceptRemoveButton
+                anchors.fill: parent
+                onPressed: acceptRemove.opacity = 0.7
+                onReleased: acceptRemove.opacity = 1.0
+                onCanceled: acceptRemove.opacity = 1.0
+                onClicked: {
+                    songsToRemove.forEach(function(songUrl) {
+                        playlistsModel.removeSongFromPlaylist(playlists_s.selectedPlaylist, songUrl);
+                    });
+                    songsToRemove = []
+                    removeSongPopup.close();
+                    playlistContentsView.model = playlistsModel.getPlaylistContents(playlists_s.selectedPlaylist);
+                }
+            }
+        }
+
+        ScrollView {
+            id: songsRemovingScrollView
+            anchors{
+                top: rejectRemove.bottom
+                topMargin: 10
+                left: parent.left
+                right: parent.right
+                bottom: parent.bottom
+            }
+            width: parent.width
+
+            ListView {
+                id: playlistSongsForRemoval
+                anchors.top: parent.top
+                anchors.horizontalCenter: parent.horizontalCenter
+                spacing: 1
+                width: parent.width * 0.95
+                height: 400
+                clip: true
+                model: playlistsModel.getPlaylistContents(playlists_s.selectedPlaylist)
+
+                delegate: Rectangle {
+                    id: songForRemoval
+                    height: 45
+                    width: playlistSongsForRemoval.width - 10
+                    property string songUrl: modelData
+                    color: playlists_s.songsToRemove.includes(songUrl) ? "#999999" : "#777777"
+
+                    Text {
+                        id: songTitleForRemoval
+                        font.pixelSize: 15
+                        color: "#F0F0F0"
+                        anchors.left: parent.left
+                        anchors.leftMargin: 10
+                        verticalAlignment: Text.AlignVCenter
+                        height: parent.height
+                        width: 300
+                        text: songs.getSongTitleByUrl(songUrl)
+                    }
+
+                    Text {
+                        id: songAuthorForRemoval
+                        font.pixelSize: 15
+                        color: "#F0F0F0"
+                        anchors.left: songTitleForRemoval.right
+                        anchors.leftMargin: 10
+                        verticalAlignment: Text.AlignVCenter
+                        height: parent.height
+                        width: 100
+                        text: songs.getSongAuthorByUrl(songUrl)
+                    }
+
+                    MouseArea {
+                        id: removeSongFromPlaylistArea
+                        anchors.fill: parent
+                        onClicked: {
+                            if (playlists_s.songsToRemove.includes(songUrl)) {
+                                songForRemoval.color = "#777777"
+                                playlists_s.songsToRemove = playlists_s.songsToRemove.filter(function(url) { return url !== songUrl; });
+                            } else {
+                                songForRemoval.color = "#999999"
+                                playlists_s.songsToRemove.push(songUrl);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 // about adding: not refreshed instantly, can add one at a time

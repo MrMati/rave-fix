@@ -3,8 +3,15 @@
 - play button state and like are not linked correctly
 - add playlists creation and management
 - create queue
+- music shuffling
 - add scroll sidebar to list of songs
 - add sorting 
 - add searching
 - add text scrolling for too long texts
 - all popups have to be closed by pressing escape
+- previously selected songs to add are not selected but highlighted
+- when added song then popup has to be closed to display it
+- tab has to be closed to display new number of songs
+- to change the color of scrollbar
+- music queue
+- shuffling music

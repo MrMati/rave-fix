@@ -29,8 +29,8 @@ void Player::playPause(){
     saveLastSong(m_currentSongUrl);
 }
 
-void Player::setSource(const QUrl &source) {
-    if (m_currentSongUrl != source) {
+void Player::setSource(const QUrl &source){
+    if(m_currentSongUrl != source){
         m_currentSongUrl = source;
         player->setSource(source);
         emit currentSongUrlChanged(m_currentSongUrl);
@@ -39,25 +39,25 @@ void Player::setSource(const QUrl &source) {
     }
 }
 
-bool Player::isCurrentSongLiked() const {
-    for (Song* song : songs->getLibrary()) {
-        if (song->getFileUrl() == m_currentSongUrl) {
+bool Player::isCurrentSongLiked() const{
+    for(Song* song : songs->getLibrary()){
+        if(song->getFileUrl() == m_currentSongUrl){
             return song->isLiked();
         }
     }
     return false;
 }
 
-void Player::setCurrentSongLiked(bool liked) {
-    for (Song* song : songs->getLibrary()) {
-        if (song->getFileUrl() == m_currentSongUrl) {
+void Player::setCurrentSongLiked(bool liked){
+    for(Song* song : songs->getLibrary()){
+        if(song->getFileUrl() == m_currentSongUrl){
             song->setLiked(liked);
             break;
         }
     }
 }
 
-void Player::saveLastSong(const QUrl &song) {
+void Player::saveLastSong(const QUrl &song){
     QSettings settings("AL", "Rave");
     settings.setValue("last_song", song);
 }
@@ -86,43 +86,40 @@ int Player::volume() const{
     return qRound(audioOutput->volume() * 100);
 }
 
-void Player::setVolume(int volume) {
+void Player::setVolume(int volume){
     qreal linearVolume = volume / 100.0;
-    if (volume == 0) {
+    if(volume == 0){
         previousVolume = qRound(audioOutput->volume() * 100);
         audioOutput->setVolume(0.0);
-    } else {
+    }else{
         audioOutput->setVolume(linearVolume);
     }
-
     QSettings settings("AL", "Rave");
     settings.setValue("last_vol", volume);
-
     emit volumeChanged(volume);
 }
 
-QString Player::title() const {
+QString Player::title() const{
     return m_title;
 }
 
-QString Player::author() const {
+QString Player::author() const{
     return m_author;
 }
 
-void Player::updateMetaData() {
+void Player::updateMetaData(){
     m_title = player->metaData().value(QMediaMetaData::Title).toString();
     m_author = player->metaData().value(QMediaMetaData::ContributingArtist).toString();
     emit titleChanged(m_title);
     emit authorChanged(m_author);
 }
 
-bool Player::isPlaying() const {
+bool Player::isPlaying() const{
     return player->playbackState() == QMediaPlayer::PlayingState;
 }
 
 
-void Player::playAndPause()
-{
+void Player::playAndPause(){
     if(player->playbackState() == QMediaPlayer::PlayingState){
         player->pause();
     }else{
@@ -130,6 +127,6 @@ void Player::playAndPause()
     }
 }
 
-QUrl Player::currentSongUrl() const {
+QUrl Player::currentSongUrl() const{
     return m_currentSongUrl;
 }
